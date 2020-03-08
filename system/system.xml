@@ -24,11 +24,11 @@
 
 
 	<LOCATORLIST>
-		<LOCATOR id="1" IP="server1.igunz.net" />
+		<LOCATOR id="1" IP="127.0.0.1" />
 		</LOCATORLIST>
 	
 	<TLOCATORLIST>
-		<LOCATOR id="1" IP="server1.igunz.net" />
+		<LOCATOR id="1" IP="127.0.0.1" />
 		</TLOCATORLIST>
 	
 	</XML>
