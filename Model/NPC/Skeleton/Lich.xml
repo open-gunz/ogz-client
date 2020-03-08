@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="Lich" filename="Lich.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"		filename="Lich_idle.elu.ani" 	 	gm="0"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="neglect1"		filename="Lich_neglect.elu.ani" 	gm="0"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="melee_attacked1"	filename="Lich_damage_melee.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="melee_attacked2"	filename="Lich_damage_melee2.elu.ani" gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="lightning"		filename="Lich_damage_lightning.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="melee_attack"	filename="Lich_standshot.elu.ani" gm="1" motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="run"		filename="Lich_run.elu.ani"		gm="1" 	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="die"		filename="Lich_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" 	> </AddAnimation>
+	
+	<AddAnimation name="special_attack1" 	filename="Lich_special.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" 	> </AddAnimation>
+	
+	<AddAnimation name="special_attack2" 	filename="Lich_cast.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" 	> </AddAnimation>
+	
+	<AddAnimation name="wing_attack" 	filename="Lich_wing.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" 	> </AddAnimation>
+	
+	<AddAnimation name="stunned" 		filename="Lich_damage_down.elu.ani"	gm="1"	motion_type="0" motion_loop_type="lastframe" 	> </AddAnimation>
+
+</xml>

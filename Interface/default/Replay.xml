@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Replay">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Replay 화면 구성
+   
+   Last Update : 24.DEC.2004
+   Editor      : Lim Dong Hwan
+-->
+
+
+<!-- FRAME: 프레임 생성 : Replay -->
+	<FRAME item="Replay">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<FRAME item="ReplayGroup" parent="Replay">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>600</W>
+			<H>295</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>STR:UI_REPLAY_01</TEXT> <!-- 리플레이 -->
+	</FRAME>
+	
+	<!-- LABEL : 파일 선택 표시 라벨 -->
+	<LABEL item="Label" parent="ReplayGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>16</X>
+			<Y>33</Y>
+			<W>266</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_REPLAY_02</TEXT> <!-- ../내 문서/Gunz/Replay -->
+	</LABEL>
+	
+	<!-- LISTBOX : 리플레이 파일 리스트 -->
+	<LISTBOX item="Replay_FileList" parent="ReplayGroup">
+		<BOUNDS>
+			<X>16</X>
+			<Y>56</Y>
+			<W>266</W>
+			<H>150</H>
+		</BOUNDS>
+		<ITEMHEIGHT>16</ITEMHEIGHT>
+	</LISTBOX>
+	
+	<!-- Label : 표시 -->
+	<LABEL item="Label" parent="ReplayGroup">
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>16</X>
+			<Y>193</Y>
+			<W>280</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>STR:UI_REPLAY_03</TEXT> <!-- 버젼이 낮은 경우에 재생시 일부 차이가 있을 수 -->
+	</LABEL>
+	
+	<!-- Label : 표시 -->
+	<LABEL item="Label" parent="ReplayGroup">
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>16</X>
+			<Y>207</Y>
+			<W>280</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>STR:UI_REPLAY_04</TEXT> <!-- 있습니다. -->
+	</LABEL>
+	
+	<!-- BUTTON : 리플레이 보기 버튼-->
+	<BUTTON item="Replay_View" parent="ReplayGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>250</Y>
+			<W>133</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_REPLAY_05</TEXT> <!-- 보기(&amp;V) -->
+		<CONFIRMMESSAGE>STR:UI_REPLAY_06</CONFIRMMESSAGE> <!-- 선택한 리플레이를 보시겠습니까? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BUTTON>
+
+	<!-- BUTTON : 종료 버튼-->
+	<BUTTON item="ReplayClose" parent="ReplayGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>152</X>
+			<Y>250</Y>
+			<W>133</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_REPLAY_A01</TEXT> <!-- 닫기 -->
+	</BUTTON>
+	
+
+	
+<!-- 리플레이 -->
+	<!-- 리플레이 확인창 -->
+	<FRAME item="ReplayConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>350</W>
+			<H>150</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<TEXT>STR:UI_REPLAY_07</TEXT> <!-- 리플레이 다시 보기 -->
+	</FRAME>
+
+	<!-- Label : 표시 -->
+	<LABEL item="Label" parent="ReplayConfirm">
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>30</Y>
+			<W>250</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_REPLAY_08</TEXT> <!-- 리플레이 동영상을 다시 보시겠습니까? -->
+	</LABEL>
+	
+	<!-- Button : 리플레이 다시 보기 버튼 -->
+	<BUTTON item="ReplayOkButton" parent="ReplayConfirm">
+		<BOUNDS>
+			<X>130</X>
+			<Y>103</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_REPLAY_09</TEXT> <!-- 다시 보기(&amp;R) -->
+	</BUTTON>
+
+	<!-- Button : 종료 버튼 -->
+	<BUTTON item="Exit" parent="ReplayConfirm">
+		<BOUNDS>
+			<X>233</X>
+			<Y>103</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_REPLAY_10</TEXT> <!-- 종료(&amp;X) -->
+	</BUTTON>
+</XML>

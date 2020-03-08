@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+	<XMLHEADER>version="1.0" encoding="UTF-8"</XMLHEADER>
+
+	<SKIN>Default</SKIN>
+
+	<DEFFONT>Arial</DEFFONT>
+
+	<IME>true</IME>
+
+	<BAREPORT>
+		<ADDR>www.battlearena.com</ADDR>
+		<DIR>incoming/gunz_global</DIR>
+	</BAREPORT>
+
+	<HOMEPAGE>
+	    <URL>http://www.gunzonline.com</URL>
+	    <TITLE>GunZ the Dual</TITLE>
+	</HOMEPAGE>
+	
+	<EMBLEM_URL>http://localhost/emblems/</EMBLEM_URL>
+        
+	<TEMBLEM_URL>http://localhost/emblems/</TEMBLEM_URL>
+
+
+	<LOCATORLIST>
+		<LOCATOR id="1" IP="server1.igunz.net" />
+		</LOCATORLIST>
+	
+	<TLOCATORLIST>
+		<LOCATOR id="1" IP="server1.igunz.net" />
+		</TLOCATORLIST>
+	
+	</XML>

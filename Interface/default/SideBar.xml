@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SideBar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="SideBar">
+		<FRAMELOOK>SideBar</FRAMELOOK>
+		<BOUNDS>
+			<X>-1</X>
+			<Y>-1</Y>
+			<W>-1</W>
+			<H>50</H>
+		</BOUNDS>
+		<TITLEBAR>FALSE</TITLEBAR>
+		<RESIZABLE>FALSE</RESIZABLE>
+	</FRAME>
+	<BUTTON item="Menu" parent="SideBar">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+		</ANCHORS>
+		<BOUNDS>
+			<X>4</X>
+			<Y>8</Y>
+			<W>80</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXT>Menu</TEXT>
+	</BUTTON>
+	<FRAME item="HotBar" parent="SideBar">
+		<FRAMELOOK>SideBar</FRAMELOOK>
+		<BOUNDS>
+			<X>90</X>
+			<Y>4</Y>
+			<W>360</W>
+			<H>40</H>
+		</BOUNDS>
+		<TITLEBAR>FALSE</TITLEBAR>
+		<RESIZABLE>FALSE</RESIZABLE>
+	</FRAME>
+</XML>

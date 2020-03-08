@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+
+	<!-- 장비버튼 -->
+	<REBOUNDS item="EquipmentCaller">
+		<X>392</X>
+		<Y>32</Y>
+		<W>135</W>
+		<H>38</H>
+	</REBOUNDS>
+
+	<REBOUNDS item="Equip_nullbutton">
+		<X>392</X>
+		<Y>32</Y>
+		<W>135</W>
+		<H>38</H>
+	</REBOUNDS>
+	
+	<REBOUNDS item="Shop_to_Equipment">
+		<X>392</X>
+		<Y>32</Y>
+		<W>135</W>
+		<H>38</H>
+	</REBOUNDS>
+
+	<!-- 옵션 버튼 -->
+	<REBOUNDS item="LobbyOptionFrame">
+		<X>689</X>
+		<Y>32</Y>
+		<W>105</W>
+		<H>38</H>
+	</REBOUNDS>
+
+	<REBOUNDS item="Stage_OptionFrame">
+		<X>689</X>
+		<Y>32</Y>
+		<W>105</W>
+		<H>38</H>
+	</REBOUNDS>
+
+	<REBOUNDS item="Equip_OptionFrame">
+		<X>689</X>
+		<Y>32</Y>
+		<W>105</W>
+		<H>38</H>
+	</REBOUNDS>
+	
+	<REBOUNDS item="Shop_OptionFrame">
+		<X>689</X>
+		<Y>32</Y>
+		<W>105</W>
+		<H>38</H>
+	</REBOUNDS>
+
+	
+<!-- 112Confirm.xml -->
+	
+	
+<!-- CharCreation.xml -->
+
+
+<!-- CharSelection.xml -->
+<!-- 
+	<REBOUNDS item="CS_DeleteChar">
+		<X>145</X>
+		<Y>562</Y>
+		<W>136</W>
+		<H>38</H>	
+	</REBOUNDS>
+	<REBOUNDS item="CS_SelectChar">
+		<X>530</X>
+		<Y>562</Y>
+		<W>136</W>
+		<H>38</H>
+	</REBOUNDS>
+	<REBOUNDS item="CS_Label_01">
+		<X>19</X>
+		<Y>30</Y>
+		<W>260</W>
+		<H>20</H>
+	</REBOUNDS>
+	<REBOUNDS item="CS_Label_02">
+		<X>19</X>
+		<Y>43</Y>
+		<W>260</W>
+		<H>20</H>
+	</REBOUNDS>
+	<REBOUNDS item="CS_DeleteCharNameEdit">
+		<X>19</X>
+		<Y>77</Y>
+		<W>100</W>
+		<H>24</H>
+	</REBOUNDS>
+-->
+<!-- GameResult.xml -->
+	<REBOUNDS item="CombatResult">
+		<X>-15</X>
+		<Y>20</Y>
+		<W>800</W>
+		<H>600</H>
+	</REBOUNDS>
+	<REBOUNDS item="ClanResult">
+		<X>-5</X>
+		<Y>20</Y>
+		<W>800</W>
+		<H>600</H>
+	</REBOUNDS>
+	<REBOUNDS item="ClanResult_PlayerNameListLabel1">
+		<X>100</X>
+		<Y>140</Y>
+		<W>300</W>
+		<H>20</H>
+	</REBOUNDS>
+	<REBOUNDS item="ClanResult_PlayerNameList1">
+		<X>100</X>
+		<Y>165</Y>
+		<W>260</W>
+		<H>400</H>
+	</REBOUNDS>
+	<REBOUNDS item="ClanResult_PlayerNameListLabel2">
+		<X>100</X>
+		<Y>375</Y>
+		<W>300</W>
+		<H>20</H>
+	</REBOUNDS>
+	<REBOUNDS item="ClanResult_PlayerNameList2">
+		<X>100</X>
+		<Y>400</Y>
+		<W>260</W>
+		<H>400</H>
+	</REBOUNDS>
+	<REBOUNDS item="QuestResult_GetPlusXP">
+		<X>120</X>
+		<Y>118</Y>
+		<W>190</W>
+		<H>32</H>
+	</REBOUNDS>
+	<REBOUNDS item="QuestResult_GetMinusXP">
+		<X>120</X>
+		<Y>146</Y>
+		<W>190</W>
+		<H>32</H>
+	</REBOUNDS>
+	<REBOUNDS item="QuestResult_GetTotalXP">
+		<X>120</X>
+		<Y>174</Y>
+		<W>190</W>
+		<H>32</H>
+	</REBOUNDS>
+	<REBOUNDS item="QuestResult_GetBounty">
+		<X>120</X>
+		<Y>216</Y>
+		<W>190</W>
+		<H>32</H>
+	</REBOUNDS>
+	<REBOUNDS item="GameResult_RemaindTime">
+		<X>200</X>
+		<Y>548</Y>
+		<W>400</W>
+		<H>25</H>
+	</REBOUNDS>
+
+<!-- ResizeConfirm.xml -->
+<!--
+	<REBOUNDS item="RC_Label03">
+		<X>19</X>
+		<Y>78</Y>
+		<W>282</W>
+		<H>20</H>
+	</REBOUNDS>
+	<REBOUNDS item="RC_Label04">
+		<X>19</X>
+		<Y>90</Y>
+		<W>282</W>
+		<H>20</H>
+	</REBOUNDS>
+-->
+<!-- StageSettingFrame.xml -->
+<!--
+	<REBOUNDS item="StageSettingFrame">
+		<X>0</X>
+		<Y>0</Y>
+		<W>310</W>
+		<H>340</H>
+	</REBOUNDS>
+	<REBOUNDS item="SSF_Label01">
+		<X>20</X>
+		<Y>40</Y>
+		<W>110</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="StageLimitTime">
+		<X>135</X>
+		<Y>40</Y>
+		<W>150</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="SSF_Label02">
+		<X>20</X>
+		<Y>72</Y>
+		<W>110</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="StageIntrude">
+		<X>135</X>
+		<Y>72</Y>
+		<W>150</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="SSF_Label03">
+		<X>20</X>
+		<Y>104</Y>
+		<W>110</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="StageTeamKill">
+		<X>135</X>
+		<Y>104</Y>
+		<W>150</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="SSF_Label04">
+		<X>20</X>
+		<Y>136</Y>
+		<W>110</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="StageLevelLimit">
+		<X>135</X>
+		<Y>136</Y>
+		<W>150</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="SSF_Label05">
+		<X>20</X>
+		<Y>168</Y>
+		<W>110</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="StageObserver">
+		<X>135</X>
+		<Y>168</Y>
+		<W>150</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="SSF_Label06">
+		<X>20</X>
+		<Y>200</Y>
+		<W>110</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="StageVote">
+		<X>135</X>
+		<Y>200</Y>
+		<W>150</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="SSF_Label07">
+		<X>20</X>
+		<Y>232</Y>
+		<W>110</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="StageWinFirstGame">
+		<X>135</X>
+		<Y>232</Y>
+		<W>150</W>
+		<H>24</H>
+	</REBOUNDS>
+	<REBOUNDS item="StageSettingApplyBtn">
+		<X>51</X>
+		<Y>287</Y>
+		<W>102</W>
+		<H>32</H>
+	</REBOUNDS>
+	<REBOUNDS item="ParentClose">
+		<X>157</X>
+		<Y>287</Y>
+		<W>102</W>
+		<H>32</H>
+	</REBOUNDS>
+
+-->
+</XML>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="PrivateStageJoinFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>345</W>
+			<H>173</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_PSJF_01</TEXT> <!-- 게임방 비밀번호 입력 -->
+	</FRAME>
+
+	<LABEL item="Label" parent="PrivateStageJoinFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>51</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_PSJF_02</TEXT> <!-- 게임 제목 -->
+	</LABEL>	
+	<LABEL item="Label" parent="PrivateStageJoinFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>80</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_PSJF_03</TEXT> <!-- 비밀번호 -->
+	</LABEL>	
+
+	
+	<EDIT item="PrivateStageName" parent="PrivateStageJoinFrame">
+		<BOUNDS>
+			<X>95</X>
+			<Y>51</Y>
+			<W>230</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>32</MAXLENGTH>
+	</EDIT>
+	<EDIT item="PrivateStagePassword" parent="PrivateStageJoinFrame">
+		<BOUNDS>
+			<X>95</X>
+			<Y>80</Y>
+			<W>230</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>32</MAXLENGTH>
+	</EDIT>
+	<BUTTON item="PrivateStageJoinBtn" parent="PrivateStageJoinFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>121</X>
+			<Y>122</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+	<BUTTON item="ParentClose" parent="PrivateStageJoinFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>226</X>
+			<Y>122</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+</XML>

@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Equipment">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Equipment 화면 구성
+   
+   Last Update : 10.DEV.2004
+   Editor      : Lim Dong Hwan
+-->
+	
+
+<!-- FRAME : Equipment 화면 구성 -->
+	<FRAME item="Equipment">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 상단 바탕화면 이미지 -->
+	<PICTURE item="Equip_MainBGTop" parent="Equipment">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_t.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 상단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="Equip_StripTop" parent="Equipment">
+		<BOUNDS>
+			<X>288</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+		<DRAWMODE>1</DRAWMODE>
+	</PICTURE>
+
+	<!-- Picture : 좌측 상단 GUNZ 로고 -->
+	<PICTURE item="Equip_Logo" parent="Equipment">
+		<BOUNDS>
+			<X>10</X>
+			<Y>3</Y>
+			<W>164</W>
+			<H>76</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gunz_logo_hq.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 하단 바탕화면 이미지 -->
+	<PICTURE item="Equip_MainBGBottom" parent="Equipment">
+		<BOUNDS>
+			<X>0</X>
+			<Y>552</Y>
+			<W>800</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_b.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 하단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="Equip_StripBottom" parent="Equip_MainBGBottom">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- CHARACTERVIEW : 캐릭터 뷰 -->
+	<CHARACTERVIEW item="EquipmentInformation" parent="Equipment">
+		<BOUNDS>
+			<X>0</X>
+			<Y>120</Y>
+			<W>460</W>
+			<H>420</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLEEQUIPMENT>true</VISIBLEEQUIPMENT>
+	</CHARACTERVIEW>
+
+<!-- 프레임 생성 : Main Window -->
+	<FRAME item="Equip_Main_Frame" parent="Equipment">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>800</W>
+			<H>467</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 장비 정보 표시창 이미지 출력 -->
+	<PICTURE item ="Equip_MessageBG" parent="Equipment">
+		<BOUNDS>
+			<X>0</X>
+			<Y>80</Y>
+			<W>800</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>title_bar.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 장비 정보 표시 -->
+	<LABEL item="Equip_Message" parent="Equipment">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>36</X>
+			<Y>86</Y>
+			<W>380</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Equipment</TEXT>
+	</LABEL>
+
+	<!-- Picture : 장비 프레임 이미지 출력 -->
+	<PICTURE item ="Equip_Frame" parent="Equipment">
+		<BOUNDS>
+			<X>327</X>
+			<Y>175</Y>
+			<W>464</W>
+			<H>364</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>framepanel.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 탭 라밸 이미지 출력 -->
+	<PICTURE item ="Equip_TabLabel" parent="Equipment">
+		<BOUNDS>
+			<X>327</X>
+			<Y>106</Y>
+			<W>464</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>framepaneltab1.tga</BITMAP>
+	</PICTURE>
+
+	<!-- BMBUTTON : 내 장비 탭 버튼 -->
+	<BMBUTTON item="Equipment_CharacterTab" parent="Equipment">
+		<BOUNDS>
+			<X>470</X>
+			<Y>112</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">equip_myequip_off.tga</BITMAP>
+		<BITMAP type="over">equip_myequip_on.tga</BITMAP>
+		<BITMAP type="down">equip_myequip_on.tga</BITMAP>
+	</BMBUTTON>		
+	
+	<!-- Picture : 내 장비 프레임 탭 라벨 -->
+	<PICTURE item ="Equipment_FrameTabLabel1" parent="Equipment">
+		<BOUNDS>
+			<X>470</X>
+			<Y>107</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP>equip_myequip_on.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- BMBUTTON : 중앙은행 탭 버튼 -->
+	<BMBUTTON item="Equipment_AccountTab" parent="Equipment">
+		<BOUNDS>
+			<X>577</X>
+			<Y>112</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">equip_centralbank_off.tga</BITMAP>
+		<BITMAP type="over">equip_centralbank_on.tga</BITMAP>
+		<BITMAP type="down">equip_centralbank_on.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- Picture : 중앙은행 탭 라벨 출력 -->
+	<PICTURE item ="Equipment_FrameTabLabel2" parent="Equipment">
+		<BOUNDS>
+			<X>577</X>
+			<Y>107</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP>equip_centralbank_on.tga</BITMAP>
+	</PICTURE>
+
+	<!-- EQUIPMENTLISTBOX : 내 장비 목록 -->
+	<EQUIPMENTLISTBOX item="EquipmentList" parent="Equipment">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>477</X>
+			<Y>177</Y>
+			<W>302</W>
+			<H>262</H>
+		</BOUNDS>
+		<STRETCH/>
+	</EQUIPMENTLISTBOX>
+	<!-- LABEL : 장비 종류 -->
+	<LABEL item="lavel" parent="Equipment">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>477</X>
+			<Y>145</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>STR:UI_EQUIPMENT_01</TEXT> <!-- 장비 종류 :  -->
+	</LABEL>
+		
+	<!-- COMBOBOX : 종류별로 보기 -->
+	<COMBOBOX item="Equip_AllEquipmentFilter" parent="Equipment">
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>549</X>
+			<Y>145</Y>
+			<W>230</W>
+			<H>25</H>
+		</BOUNDS>
+		<LISTITEM selected="true">STR:UI_EQUIPMENT_LIST_01_01</LISTITEM> <!--    모든 장비 보기 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_02</LISTITEM> <!--    방어구 : 머리 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_03</LISTITEM> <!--    방어구 : 상의 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_04</LISTITEM> <!--    방어구 : 장갑 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_05</LISTITEM> <!--    방어구 : 하의 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_06</LISTITEM> <!--    방어구 : 신발 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_07</LISTITEM> <!--    무기류 : 근거리 무기 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_08</LISTITEM> <!--    무기류 : 원거리 무기 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_09</LISTITEM> <!--    장비류 : 회복/수리 키트, 수류탄 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_10</LISTITEM> <!--    아이템 : 반지 -->
+		<LISTITEM>STR:UI_EQUIPMENT_LIST_01_11</LISTITEM> <!--    아이템 : 퀘스트 아이템 -->
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<DROPSIZE>220</DROPSIZE>
+	</COMBOBOX>
+
+	<!-- EQUIPMENTLISTBOX : 중앙 은행 장비 목록 -->
+	<EQUIPMENTLISTBOX item="AccountItemList" parent="Equipment">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>477</X>
+			<Y>145</Y>
+			<W>302</W>
+			<H>294</H>
+		</BOUNDS>
+		<STRETCH/>
+	</EQUIPMENTLISTBOX>
+
+	<!-- Picture : 리스트 라벨 출력 1 -->
+	<PICTURE item ="Equip_ListLabel1" parent="Equipment">
+		<BOUNDS>
+			<X>370</X>
+			<Y>53</Y>
+			<W>223</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>listlabel.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 리스트 라벨 출력2 -->
+	<PICTURE item ="Equip_ListLabel2" parent="Equipment">
+		<BOUNDS>
+			<X>370</X>
+			<Y>53</Y>
+			<W>223</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>listlabel.tga</BITMAP>
+	</PICTURE>
+
+	<!-- BUTTON : 장비 장착하기 버튼 -->
+	<BUTTON item="Equip" parent="Equipment">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>490</X>
+			<Y>449</Y>
+			<W>133</W>
+			<H>33</H>
+		</BOUNDS>
+		<STRETCH/>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_EQUIPMENT_02</TEXT> <!-- 장착 -->
+	</BUTTON>	
+
+	<!-- BUTTON : 중앙은행으로 보내기 버튼 -->
+	<BUTTON item="SendAccountItemBtn" parent="Equipment">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>624</X>
+			<Y>449</Y>
+			<W>133</W>
+			<H>33</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>STR:UI_EQUIPMENT_03</TEXT> <!-- 중앙은행에 보냄 -->
+	</BUTTON>	
+	
+	<!-- BUTTON : 장비 가져오기 버튼 -->
+	<BUTTON item="BringAccountItemBtn" parent="Equipment">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>490</X>
+			<Y>449</Y>
+			<W>267</W>
+			<H>33</H>
+		</BOUNDS>
+		<STRETCH/>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_EQUIPMENT_04</TEXT> <!-- 내 장비로 가져오기 -->
+		<CONFIRMMESSAGE>STR:UI_EQUIPMENT_05</CONFIRMMESSAGE> <!-- 아이템을 가져오시겠습니까? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BUTTON>	
+	
+	<!-- TEXTAREA : 캐릭터 정보 표시 -->
+	<TEXTAREA item="Equip_MyInfo" parent="Equipment">
+		<BOUNDS>
+			<X>326</X>
+			<Y>119</Y>
+			<W>150</W>
+			<H>150</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- LABEL : Weight 표시 - [ 장비 무게 ]
+	<LABEL item="label" parent="Equipment">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>326</X>
+			<Y>111</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_EQUIPMENT_06</TEXT>
+	</LABEL> -->
+	
+	<!-- LABEL : 무게 표시 라벨 - 0  /  0 Wt.
+	<LABEL item="Equip_MyInfo" parent="Equipment">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>170</R>
+			<G>170</G>
+			<B>170</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>333</X>
+			<Y>126</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_EQUIPMENT_07</TEXT>
+	</LABEL> -->
+
+	<!-- LABEL : LV/HP/AP 표시 - [ 레벨/체력/방어 ]
+	<LABEL item="label" parent="Equipment">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>326</X>
+			<Y>152</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_EQUIPMENT_08</TEXT>
+	</LABEL> -->
+	
+	<!-- LABEL : LV/HP/AP 표시 라벨 - 0Lv.  /  0  /  0
+	<LABEL item="Equip_MyInfo2" parent="Equipment">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>170</R>
+			<G>170</G>
+			<B>170</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>335</X>
+			<Y>167</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_EQUIPMENT_09</TEXT>
+	</LABEL> -->
+	
+	
+<!-- 선택한 장비 표시창 -->
+	<!-- PICTURE : 선택한 장비 아이콘 -->
+	<PICTURE item ="Equip_ItemIcon" parent="Equipment">
+		<BOUNDS>
+			<X>337</X>
+			<Y>207</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- TEXTAREA : 장비 설명1 -->
+	<TEXTAREA item="Equip_ItemDescription1" parent="Equipment">
+		<BOUNDS>
+			<X>332</X>
+			<Y>245</Y>
+			<W>120</W>
+			<H>187</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<!-- TEXTAREA : 장비 설명2 -->
+	<TEXTAREA item="Equip_ItemDescription2" parent="Equipment">
+		<BOUNDS>
+			<X>332</X>
+			<Y>451</Y>
+			<W>120</W>
+			<H>50</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- TEXTAREA : 장비 설명3 -->
+	<TEXTAREA item="Equip_ItemDescription3" parent="Equipment">
+		<BOUNDS>
+			<X>332</X>
+			<Y>503</Y>
+			<W>450</W>
+			<H>32</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+
+	
+<!-- 장비 리스트 -->
+	<FRAME item="Equip_MyEquipListFrame" parent="Equipment">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>94</Y>
+			<W>300</W>
+			<H>450</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- Picture : 리스트 프레임 배경 이미지(Close) -->
+	<PICTURE item="Equip_BGListFrameClose" parent="Equip_MyEquipListFrame">
+		<BOUNDS>
+			<X>2</X>
+			<Y>26</Y>
+			<W>65</W>
+			<H>419</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP>listframeclose.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 리스트 프레임 배경 이미지(Open) -->
+	<PICTURE item="Equip_BGListFrameOpen" parent="Equip_MyEquipListFrame">
+		<BOUNDS>
+			<X>2</X>
+			<Y>26</Y>
+			<W>265</W>
+			<H>419</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>listframeopen.tga</BITMAP>
+	</PICTURE>
+
+	<!-- ITEMSLOT : 머리 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Head" parent="Equip_MyEquipListFrame" parts="head">
+		<BOUNDS>
+			<X>10</X>
+			<Y>32</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>			
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 가슴 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Chest" parent="Equip_MyEquipListFrame" parts="chest">
+		<BOUNDS>
+			<X>10</X>
+			<Y>66</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 손 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Hands" parent="Equip_MyEquipListFrame" parts="hands">
+		<BOUNDS>
+			<X>10</X>
+			<Y>100</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 다리 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Legs" parent="Equip_MyEquipListFrame" parts="legs">
+		<BOUNDS>
+			<X>10</X>
+			<Y>134</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 발 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Feet" parent="Equip_MyEquipListFrame" parts="feet">
+		<BOUNDS>
+			<X>10</X>
+			<Y>168</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 보조 무기 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Melee" parent="Equip_MyEquipListFrame" parts="melee">
+		<BOUNDS>
+			<X>10</X>
+			<Y>202</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 주 무기1 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Primary" parent="Equip_MyEquipListFrame" parts="primary">
+		<BOUNDS>
+			<X>10</X>
+			<Y>236</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 주 무기2 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Secondary" parent="Equip_MyEquipListFrame" parts="secondary">
+		<BOUNDS>
+			<X>10</X>
+			<Y>270</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 보조 아이템1 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Custom1" parent="Equip_MyEquipListFrame" parts="custom1">
+		<BOUNDS>
+			<X>10</X>
+			<Y>304</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 보조 아이템2 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_Custom2" parent="Equip_MyEquipListFrame" parts="custom2">
+		<BOUNDS>
+			<X>10</X>
+			<Y>338</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 아이템1 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_FingerL" parent="Equip_MyEquipListFrame" parts="fingerl">
+		<BOUNDS>
+			<X>10</X>
+			<Y>372</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 아이템1 -->
+	<ITEMSLOT item="Equip_EquipmentSlot_FingerR" parent="Equip_MyEquipListFrame" parts="fingerr">
+		<BOUNDS>
+			<X>10</X>
+			<Y>406</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- BMBUTTON : 리스트 프레임 Open 버튼 -->
+	<BMBUTTON item="Equip_EquipListFrameOpenButton" parent="Equip_MyEquipListFrame">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>48</X>
+			<Y>159</Y>
+			<W>22</W>
+			<H>110</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">listframeopenbtn_off.tga</BITMAP>
+		<BITMAP type="over">listframeopenbtn_on.tga</BITMAP>
+		<BITMAP type="down">listframeopenbtn_on.tga</BITMAP>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</BMBUTTON>
+
+	<!-- BMBUTTON : 리스트 프레임 Close 버튼 -->
+	<BMBUTTON item="Equip_EquipListFrameCloseButton" parent="Equip_MyEquipListFrame">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>248</X>
+			<Y>159</Y>
+			<W>22</W>
+			<H>110</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">listframeclosebtn_off.tga</BITMAP>
+		<BITMAP type="over">listframeclosebtn_on.tga</BITMAP>
+		<BITMAP type="down">listframeclosebtn_on.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	
+
+	
+<!-- 상단 버튼 배열 -->
+	<!-- BMBUTTON : 상점버튼 -->
+	<BMBUTTON item="Equipment_to_Shop" parent="Equipment">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>289</X>
+			<Y>32</Y>
+			<W>93</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shop_off_kr.tga</BITMAP>
+		<BITMAP type="over">shop_on_kr.tga</BITMAP>
+		<BITMAP type="down">shop_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	
+	<!-- Picture : 장비버튼 -->
+	<PICTURE item="Equip_nullbutton" parent="Equipment">
+		<BOUNDS>
+			<X>392</X>
+			<Y>32</Y>
+			<W>93</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>equip_on_kr.tga</BITMAP>
+	</PICTURE>
+
+	<!-- BMBUTTON : 장비버튼
+	<BMBUTTON item="Equip_nullbutton" parent="Equipment">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>392</X>
+			<Y>32</Y>
+			<W>89</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">equip_off_kr.tga</BITMAP>
+		<BITMAP type="over">equip_on_kr.tga</BITMAP>
+		<BITMAP type="down">equip_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+		<ENABLE>false</ENABLE>
+	</BMBUTTON> -->
+	
+	<!-- BMBUTTON : 옵션버튼 
+	<BMBUTTON item="Equip_OptionFrame" parent="Equipment">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>689</X>
+			<Y>32</Y>
+			<W>91</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">option_off_kr.tga</BITMAP>
+		<BITMAP type="over">option_on_kr.tga</BITMAP>
+		<BITMAP type="down">option_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+		<ENABLE>false</ENABLE>
+	</BMBUTTON> -->
+
+
+<!-- 하단 버튼 배열 -->
+	<!-- BMBUTTON : 나가기 버튼 -->
+	<BMBUTTON item ="EquipmentClose" parent="Equipment">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>677</X>
+			<Y>562</Y>
+			<W>112</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">exit_off_kr.tga</BITMAP>
+		<BITMAP type="over">exit_on_kr.tga</BITMAP>
+		<BITMAP type="down">exit_on_kr.tga</BITMAP>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BMBUTTON>
+
+	<!-- BUTTON : 나가기 버튼 -->
+	<BUTTON item ="EquipmentClose" parent="Equipment">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+</XML>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="CombatInterface">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+<!-- 채팅창 -->
+
+	<FRAME item="CombatChatFrame">
+		<FRAMELOOK>ChatFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>350</Y>
+			<W>500</W>
+			<H>240</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>TRUE</LEFT>
+			<TOP>FALSE</TOP>
+			<RIGHT>FALSE</RIGHT>
+			<BOTTOM>TRUE</BOTTOM>
+		</ANCHORS>
+	</FRAME>
+	<!--
+	<LISTBOX item="CombatChatOutput" parent="CombatChatFrame">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>7</X>
+			<Y>22</Y>
+			<W>440</W>
+			<H>118</H>
+		</BOUNDS>
+		<SELECTED>false</SELECTED>
+		<FOCUSABLE>false</FOCUSABLE>
+		<ITEMTEXTMULTILINE/>
+		<NULLFRAME/>
+	</LISTBOX>
+	-->
+	<TEXTAREA item = "CombatChatOutput" parent = "CombatChatFrame">
+		<FONT>FONTa9</FONT>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>7</X>
+			<Y>112</Y>
+			<W>480</W>
+			<H>118</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<INDENTATION>50</INDENTATION>
+		<SCROLLBAR>false</SCROLLBAR>
+	</TEXTAREA>
+
+	<TEXTAREA item = "CombatChatOutputAdmin" parent = "CombatChatFrame">
+		<FONT>FONTa10b</FONT>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>7</X>
+			<Y>0</Y>
+			<W>480</W>
+			<H>118</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<INDENTATION>50</INDENTATION>
+		<SCROLLBAR>false</SCROLLBAR>
+	</TEXTAREA>
+	
+	<LABEL item="CombatChatModeToAll" parent="CombatChatFrame">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>208</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_01</TEXT> <!-- 모두에게: -->
+	</LABEL>
+	<LABEL item="CombatChatModeToTeam" parent="CombatChatFrame">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>208</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_02</TEXT> <!-- 팀원에게: -->
+	</LABEL>
+	<EDIT item="CombatChatInput" parent="CombatChatFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>67</X>
+			<Y>215</Y>
+			<W>336</W>
+			<H>18</H>
+		</BOUNDS>
+	</EDIT>
+
+<!-- Score Board -->
+	<FRAMELOOKTEMPLATE item="ScoreBoardFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>241</G>
+			<B>241</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>10</X>
+			<Y></Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">NULL</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+
+	<SCOREBOARD item="CombatScoreBoardFrame">
+		<FRAMELOOK>ScoreBoardFrameLook</FRAMELOOK>
+		<VISIBLE>false</VISIBLE>
+		<BOUNDS>
+			<X>50</X>
+			<Y>50</Y>
+			<W>520</W>
+			<H>400</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+	</SCOREBOARD>
+	<LABEL item="CombatScoreGameType" parent="CombatScoreBoardFrame">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Death Match</TEXT>
+	</LABEL>
+	<LABEL item="CombatScoreRound" parent="CombatScoreBoardFrame">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<BOUNDS>
+			<X>240</X>
+			<Y>0</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Round 10/10</TEXT>
+	</LABEL>
+	<SCORELISTBOX item="CombatScoreListBox" parent="CombatScoreBoardFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>520</W>
+			<H>370</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+	</SCORELISTBOX>
+
+<!--
+	<LABEL item="CombatItemName" parent="CombatInfo2">
+		<BOUNDS>
+			<X>65</X>
+			<Y>100</Y>
+			<W>50</W>
+			<H>18</H>
+		</BOUNDS>
+		<TEXT>Pistol</TEXT>
+	</LABEL>
+-->
+<!-- 센터 메세지 -->
+	<LABEL item="CenterMessage">
+		<LABELLOOK>CenterMessageLabelLook</LABELLOOK>
+		<VISIBLE>false</VISIBLE>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>600</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>No Message</TEXT>
+	</LABEL>
+
+	<LABEL item="Time">
+		<LABELLOOK>CenterMessageLabelLook</LABELLOOK>
+		<VISIBLE>false</VISIBLE>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>top</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>600</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>No Message</TEXT>
+	</LABEL>
+
+<!-- 메뉴 -->
+
+	<FRAME item="CombatMenuFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>260</W>
+			<H>284</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>true</MOVABLE>
+		<VISIBLE>false</VISIBLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<TEXT>STR:UI_CI_03</TEXT> <!-- 게임 메뉴 -->
+	</FRAME>
+
+	<BUTTON item="OptionFrame" parent="CombatMenuFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>222</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_04</TEXT> <!-- 옵션(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="TrainingFrame" parent="CombatMenuFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>83</Y>
+			<W>222</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Training (&amp;T)</TEXT>
+	</BUTTON>
+	<BUTTON item="CombatMenuClose" parent="CombatMenuFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>120</Y>
+			<W>222</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_05</TEXT> <!-- 게임으로 돌아가기(&amp;X) -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	<BUTTON item="BattleExit" parent="CombatMenuFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>157</Y>
+			<W>222</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_06</TEXT> <!-- 대기방으로 나가기(&amp;R) -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BUTTON>
+	<BUTTON item="StageExit" parent="CombatMenuFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>194</Y>
+			<W>222</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_07</TEXT> <!-- 게임에서 나가기(&amp;L) -->
+		<CONFIRMMESSAGE>STR:UI_CI_08</CONFIRMMESSAGE> <!-- 게임에서 나가시겠습니까? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BUTTON>
+	<BUTTON item="Exit" parent="CombatMenuFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>231</Y>
+			<W>222</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_09</TEXT> <!-- 프로그램 종료(&amp;Q) -->
+		<CONFIRMMESSAGE>STR:UI_CI_10</CONFIRMMESSAGE> <!-- GUNZ를 종료하시겠습니까? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BUTTON>
+
+	<!-- 콤보 등의 메세지 -->
+
+	<LABEL item="CombatEffectMsgLabel">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>30</X>
+			<Y>75</Y>
+			<W>260</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	
+	
+	
+<!-- ZBMNUMLABEL : 클랜전일때는 클랜정보 표시 -->
+	<FRAME item="CombatTDMInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<PICTURE item ="TDM_ScoreboardBG" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>276</X>
+			<Y>0</Y>
+			<W>248</W>
+			<H>49</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>team_scorebg.tga</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="TDM_RedWin" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>291</X>
+			<Y>11</Y>
+			<W>72</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>team_score_red.tga</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="TDM_BlueWin" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>437</X>
+			<Y>11</Y>
+			<W>72</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>team_score_blue.tga</BITMAP>
+	</PICTURE>
+
+	<ZBMNUMLABEL item="TDM_Score_Red" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>291</X>
+			<Y>5</Y>
+			<W>72</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<ZBMNUMLABEL item="TDM_Score_Blue" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>437</X>
+			<Y>5</Y>
+			<W>72</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<ZBMNUMLABEL item="TDM_Score_Max" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>360</X>
+			<Y>12</Y>
+			<W>80</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<PICTURE item ="TDM_Scoreboard" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>276</X>
+			<Y>0</Y>
+			<W>248</W>
+			<H>49</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>team_score.tga</BITMAP>
+	</PICTURE>
+
+<!-- Nice 애니메이션 -->
+<!--
+	<ANIMATIONTEMPLATE item="CombatNiceAnimTemplate">
+		<DELAY>100</DELAY>
+		<BITMAP>nice01.png</BITMAP>
+		<BITMAP>nice02.png</BITMAP>
+	</ANIMATIONTEMPLATE>
+	<ANIMATION item="CombatNice">
+		<PLAYMODE>repetition</PLAYMODE>
+		<ANIMTEMPLATE>CombatNiceAnimTemplate</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>30</X>
+			<Y>75</Y>
+			<W>128</W>
+			<H>64</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</ANIMATION>
+-->
+<!-- 옵져버 정보 -->
+<!--
+	<LABEL item="ObserverInfoLabel">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>0</X>
+			<Y>50</Y>
+			<W>600</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+-->
+</XML>

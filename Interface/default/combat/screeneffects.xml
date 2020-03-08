@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<!--
+		AddEffectElu -> 모델만 있는  이펙트와 연결할 경우
+
+			등록된 에니메이션의 이름은 기본적으로는 "play" 로 호출
+			에니메이션의 종류가 하나 이상이라면 프로그래머에게 이야기 하여야 함..
+
+		lit_model : 라이트의 영향을 안받는 렌더링.( 1 : true 0 : false ) 이펙트 모델은 기본 true
+		name_sort : 모델 내부에서의 이름 정렬 .
+	-->
+
+	<AddEffectElu name="hppanel">
+		<AddBaseModel name="hppanel" filename="ef_in_hp.elu" />
+		<AddAnimation name="play" filename="ef_in_hp.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+<!--
+	<AddEffectElu name="ef_in_result.elu">
+		<AddBaseModel name="ef_in_result.elu" filename="ef_in_result.elu" />
+		<AddAnimation name="play" filename="ef_in_result.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+-->
+	<AddEffectElu name="ef_in_tab.elu">
+		<AddBaseModel name="ef_in_tab.elu" filename="ef_in_tab.elu" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_in_icon_sword.elu">
+		<AddBaseModel name="ef_in_icon_sword.elu" filename="ef_in_icon_sword.elu" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_in_icon_blade.elu">
+		<AddBaseModel name="ef_in_icon_blade.elu" filename="ef_in_icon_blade.elu" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_in_icon_katana.elu">
+		<AddBaseModel name="ef_in_icon_katana.elu" filename="ef_in_icon_katana.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_pistol.elu">
+		<AddBaseModel name="ef_in_icon_pistol.elu" filename="ef_in_icon_pistol.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_d_pistol.elu">
+		<AddBaseModel name="ef_in_icon_d_pistol.elu" filename="ef_in_icon_d_pistol.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_shotgun.elu">
+		<AddBaseModel name="ef_in_icon_shotgun.elu" filename="ef_in_icon_shotgun.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_rifle.elu">
+		<AddBaseModel name="ef_in_icon_rifle.elu" filename="ef_in_icon_rifle.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_grenade.elu">
+		<AddBaseModel name="ef_in_icon_grenade.elu" filename="ef_in_icon_grenade.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_dagger.elu">
+		<AddBaseModel name="ef_in_icon_dagger.elu" filename="ef_in_icon_dagger.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_d_dagger.elu">
+		<AddBaseModel name="ef_in_icon_d_dagger.elu" filename="ef_in_icon_d_dagger.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_rocket.elu">
+		<AddBaseModel name="ef_in_icon_rocket.elu" filename="ef_in_icon_rocket.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_medikit.elu">
+		<AddBaseModel name="ef_in_icon_medikit.elu" filename="ef_in_icon_medikit.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_repairkit.elu">
+		<AddBaseModel name="ef_in_icon_repairkit.elu" filename="ef_in_icon_repairkit.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_food.elu">
+		<AddBaseModel name="ef_in_icon_food.elu" filename="ef_in_icon_food.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_magazine.elu">
+		<AddBaseModel name="ef_in_icon_magazine.elu" filename="ef_in_icon_magazine.elu" />
+	</AddEffectElu>
+
+
+	<AddEffectElu name="ef_in_icon_machinegun.elu">
+		<AddBaseModel name="ef_in_icon_machinegun.elu" filename="ef_in_icon_machinegun.elu" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_in_icon_flashbang.elu">
+		<AddBaseModel name="ef_in_icon_flashbang.elu" filename="ef_in_icon_flashbang.elu" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_in_icon_smg.elu">
+		<AddBaseModel name="ef_in_icon_smg.elu" filename="ef_in_icon_smg.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_d_smg.elu">
+		<AddBaseModel name="ef_in_icon_d_smg.elu" filename="ef_in_icon_d_smg.elu" />
+	</AddEffectElu>
+<!--
+	<AddEffectElu name="ef_in_icon_item.elu">
+		<AddBaseModel name="ef_in_icon_item.elu" filename="ef_in_icon_item.elu" />
+	</AddEffectElu>
+-->
+	<AddEffectElu name="round">
+		<AddBaseModel name="round" filename="ef_round.elu" />
+		<AddAnimation name="play" filename="ef_round.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round0">
+		<AddBaseModel name="round0" filename="ef_round_num_0.elu" />
+		<AddAnimation name="play" filename="ef_round_num_0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round1">
+		<AddBaseModel name="round1" filename="ef_round_num_1.elu" />
+		<AddAnimation name="play" filename="ef_round_num_1.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round2">
+		<AddBaseModel name="round1" filename="ef_round_num_2.elu" />
+		<AddAnimation name="play" filename="ef_round_num_2.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round3">
+		<AddBaseModel name="round3" filename="ef_round_num_3.elu" />
+		<AddAnimation name="play" filename="ef_round_num_3.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round4">
+		<AddBaseModel name="round4" filename="ef_round_num_4.elu" />
+		<AddAnimation name="play" filename="ef_round_num_4.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round5">
+		<AddBaseModel name="round5" filename="ef_round_num_5.elu" />
+		<AddAnimation name="play" filename="ef_round_num_5.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round6">
+		<AddBaseModel name="round6" filename="ef_round_num_6.elu" />
+		<AddAnimation name="play" filename="ef_round_num_6.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round7">
+		<AddBaseModel name="round7" filename="ef_round_num_7.elu" />
+		<AddAnimation name="play" filename="ef_round_num_7.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round8">
+		<AddBaseModel name="round8" filename="ef_round_num_8.elu" />
+		<AddAnimation name="play" filename="ef_round_num_8.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="round9">
+		<AddBaseModel name="round9" filename="ef_round_num_9.elu" />
+		<AddAnimation name="play" filename="ef_round_num_9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="finalround">
+		<AddBaseModel name="finalround" filename="ef_final-round.elu" />
+		<AddAnimation name="play" filename="ef_final-round.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="finishround">
+		<AddBaseModel name="finishround" filename="ef_finish.elu" />
+		<AddAnimation name="play" filename="ef_finish.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="rock">
+		<AddBaseModel name="rock" filename="ef_rock.elu" />
+		<AddAnimation name="play" filename="ef_rock.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="combo_begin">
+		<AddBaseModel name="combo_begin" filename="ef_combo_begin.elu" />
+		<AddAnimation name="play" filename="ef_combo_begin.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo_end">
+		<AddBaseModel name="combo_end" filename="ef_combo_end.elu" />
+		<AddAnimation name="play" filename="ef_combo_end.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo0">
+		<AddBaseModel name="combo0" filename="ef_combo_num_0.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo1">
+		<AddBaseModel name="combo1" filename="ef_combo_num_1.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_1.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo2">
+		<AddBaseModel name="combo1" filename="ef_combo_num_2.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_2.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo3">
+		<AddBaseModel name="combo3" filename="ef_combo_num_3.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_3.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo4">
+		<AddBaseModel name="combo4" filename="ef_combo_num_4.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_4.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo5">
+		<AddBaseModel name="combo5" filename="ef_combo_num_5.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_5.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo6">
+		<AddBaseModel name="combo6" filename="ef_combo_num_6.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_6.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo7">
+		<AddBaseModel name="combo7" filename="ef_combo_num_7.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_7.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo8">
+		<AddBaseModel name="combo8" filename="ef_combo_num_8.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_8.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="combo9">
+		<AddBaseModel name="combo9" filename="ef_combo_num_9.elu" />
+		<AddAnimation name="play" filename="ef_combo_num_9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="exp-">
+		<AddBaseModel name="exp-" filename="ef_exp_-.elu" />
+		<AddAnimation name="play" filename="ef_exp_-.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp+">
+		<AddBaseModel name="exp+" filename="ef_exp_+.elu" />
+		<AddAnimation name="play" filename="ef_exp_+.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp0">
+		<AddBaseModel name="exp0" filename="ef_exp_num_0.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp1">
+		<AddBaseModel name="exp1" filename="ef_exp_num_1.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_1.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp2">
+		<AddBaseModel name="exp1" filename="ef_exp_num_2.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_2.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp3">
+		<AddBaseModel name="exp3" filename="ef_exp_num_3.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_3.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp4">
+		<AddBaseModel name="exp4" filename="ef_exp_num_4.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_4.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp5">
+		<AddBaseModel name="exp5" filename="ef_exp_num_5.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_5.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp6">
+		<AddBaseModel name="exp6" filename="ef_exp_num_6.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_6.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp7">
+		<AddBaseModel name="exp7" filename="ef_exp_num_7.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_7.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp8">
+		<AddBaseModel name="exp8" filename="ef_exp_num_8.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_8.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="exp9">
+		<AddBaseModel name="exp9" filename="ef_exp_num_9.elu" />
+		<AddAnimation name="play" filename="ef_exp_num_9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="win">
+		<AddBaseModel name="win" filename="ef_win.elu" />
+		<AddAnimation name="play" filename="ef_win.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="lose">
+		<AddBaseModel name="lose" filename="ef_lose.elu" />
+		<AddAnimation name="play" filename="ef_lose.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="draw">
+		<AddBaseModel name="draw" filename="ef_draw.elu" />
+		<AddAnimation name="play" filename="ef_draw.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="excellent">
+		<AddBaseModel name="excellent" filename="ef_excellent.elu" />
+		<AddAnimation name="play" filename="ef_excellent.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="allkill">
+		<AddBaseModel name="allkill" filename="ef_all_kill.elu" />
+		<AddAnimation name="play" filename="ef_all_kill.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="headshot">
+		<AddBaseModel name="headshot" filename="ef_head-shot.elu" />
+		<AddAnimation name="play" filename="ef_head-shot.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="fantastic">
+		<AddBaseModel name="fantastic" filename="ef_fantastic.elu" />
+		<AddAnimation name="play" filename="ef_fantastic.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="unbelievable">
+		<AddBaseModel name="unbelievable" filename="ef_unbelievable.elu" />
+		<AddAnimation name="play" filename="ef_unbelievable.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="good">
+		<AddBaseModel name="good" filename="ef_good.elu" />
+		<AddAnimation name="play" filename="ef_good.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="nice">
+		<AddBaseModel name="nice" filename="ef_nice.elu" />
+		<AddAnimation name="play" filename="ef_nice.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="great">
+		<AddBaseModel name="great" filename="ef_great.elu" />
+		<AddAnimation name="play" filename="ef_great.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="wonderful">
+		<AddBaseModel name="wonderful" filename="ef_wonderful.elu" />
+		<AddAnimation name="play" filename="ef_wonderful.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="cool">
+		<AddBaseModel name="cool" filename="ef_cool.elu" />
+		<AddAnimation name="play" filename="ef_cool.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="alert_front">
+		<AddBaseModel name="alert_front" filename="ef_alert_front.elu" />
+		<AddAnimation name="play" filename="ef_alert_front.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="alert_right">
+		<AddBaseModel name="alert_right" filename="ef_alert_right.elu" />
+		<AddAnimation name="play" filename="ef_alert_right.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="alert_back">
+		<AddBaseModel name="alert_back" filename="ef_alert_back.elu" />
+		<AddAnimation name="play" filename="ef_alert_back.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="alert_left">
+		<AddBaseModel name="alert_left" filename="ef_alert_left.elu" />
+		<AddAnimation name="play" filename="ef_alert_left.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="spectator">
+		<AddBaseModel name="spectator" filename="ef_spectator.elu" />
+		<AddAnimation name="play" filename="ef_spectator.elu.ani" motion_type="0" motion_loop_type="onceidle" />
+	</AddEffectElu>
+
+	<AddEffectElu name="reload">
+		<AddBaseModel name="reload" filename="ef_reload.elu" />
+		<AddAnimation name="play" filename="ef_reload.elu.ani" motion_type="0" motion_loop_type="loop" />
+	</AddEffectElu>
+
+	<AddEffectElu name="empty">
+		<AddBaseModel name="empty" filename="ef_empty.elu" />
+		<AddAnimation name="play" filename="ef_empty.elu.ani" motion_type="0" motion_loop_type="loop" />
+	</AddEffectElu>
+
+	<AddEffectElu name="hit">
+		<AddBaseModel name="hit" filename="ef_hit.elu" />
+		<AddAnimation name="play" filename="ef_hit.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	
+<!--	
+	<AddEffectElu name="teamredwin">
+		<AddBaseModel name="teamredwin" filename="ef_team_r_win.elu" />
+		<AddAnimation name="play" filename="ef_team_r_win.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+-->
+<!--
+	<AddEffectElu name="teambluewin">
+		<AddBaseModel name="teambluewin" filename="ef_team_b_win.elu" />
+		<AddAnimation name="play" filename="ef_team_b_win.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+-->
+<!--
+	<AddEffectElu name="teamdraw">
+		<AddBaseModel name="teamdraw" filename="ef_team_draw.elu" />
+		<AddAnimation name="play" filename="ef_team_draw.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+-->
+
+	<AddEffectElu name="clan_draw">
+		<AddBaseModel name="clan_draw" filename="ef_clan_draw.elu" />
+		<AddAnimation name="play" filename="ef_clan_draw.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="clan_win">
+		<AddBaseModel name="clan_win" filename="ef_clan_win.elu" />
+		<AddAnimation name="play" filename="ef_clan_win.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="clan_lose">
+		<AddBaseModel name="clan_lose" filename="ef_clan_lose.elu" />
+		<AddAnimation name="play" filename="ef_clan_lose.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="maiet_logo">
+		<AddBaseModel name="maiet_logo" filename="ef_maiet_logo.elu" />
+		<AddAnimation name="play" filename="ef_maiet_logo.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="duel0">
+		<AddBaseModel name="duel0" filename="ef_duel_num_0.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel1">
+		<AddBaseModel name="duel1" filename="ef_duel_num_1.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_1.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel2">
+		<AddBaseModel name="duel2" filename="ef_duel_num_2.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_2.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel3">
+		<AddBaseModel name="duel3" filename="ef_duel_num_3.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_3.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel4">
+		<AddBaseModel name="duel4" filename="ef_duel_num_4.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_4.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel5">
+		<AddBaseModel name="duel5" filename="ef_duel_num_5.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_5.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel6">
+		<AddBaseModel name="duel6" filename="ef_duel_num_6.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_6.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel7">
+		<AddBaseModel name="duel7" filename="ef_duel_num_7.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_7.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel8">
+		<AddBaseModel name="duel8" filename="ef_duel_num_8.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_8.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="duel9">
+		<AddBaseModel name="duel9" filename="ef_duel_num_9.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+<!--
+	<AddEffectElu name="td_scoreboard">
+		<AddBaseModel name="td_scoreboard" filename="ef_team_score.elu" />
+	</AddEffectElu>
+
+	<AddEffectElu name="td_scoreblink_r">
+		<AddBaseModel name="td_scoreblink_r" filename="ef_team_score_add_r.elu" />
+		<AddAnimation name="play" filename="ef_team_score_add_r.elu.ani" motion_type="0"/>
+	</AddEffectElu>
+
+	<AddEffectElu name="td_scoreblink_b">
+		<AddBaseModel name="td_scoreblink_b" filename="ef_team_score_add_b.elu" />
+		<AddAnimation name="play" filename="ef_team_score_add_b.elu.ani" motion_type="0"/>
+	</AddEffectElu>
+-->
+
+</xml>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="BitmapAlias">
+
+<!-- 로비 페이지 선택 1~6 버튼 -->
+  <BITMAPALIAS name="page1_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>0</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page1_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>16</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page2_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>32</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page2_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>48</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page3_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>64</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page3_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>80</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page4_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>96</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page4_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>112</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page5_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>128</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page5_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>144</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page6_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>160</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page6_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>176</X>
+  		<Y>0</Y>
+  		<W>16</W>
+  		<H>16</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  
+<!-- 스테이지 플레이어 상태 아이콘 -->
+
+  <!-- Red -->
+  <BITMAPALIAS name="stg_status_member_red_ready.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>0</X>
+  		<Y>16</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_member_red_equip.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>32</X>
+  		<Y>16</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_member_red.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>64</X>
+  		<Y>16</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_red_ready.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>96</X>
+  		<Y>16</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_red_equip.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>128</X>
+  		<Y>16</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_red.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>160</X>
+  		<Y>16</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+
+  <!-- normal -->
+  <BITMAPALIAS name="stg_status_member_normal_ready.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>0</X>
+  		<Y>48</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_member_normal_equip.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>32</X>
+  		<Y>48</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_member_normal.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>64</X>
+  		<Y>48</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_normal_ready.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>96</X>
+  		<Y>48</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_normal_equip.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>128</X>
+  		<Y>48</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_normal.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>160</X>
+  		<Y>48</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+
+  <!-- Blue -->
+  <BITMAPALIAS name="stg_status_member_blue_ready.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>0</X>
+  		<Y>80</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_member_blue_equip.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>32</X>
+  		<Y>80</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_member_blue.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>64</X>
+  		<Y>80</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_blue_ready.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>96</X>
+  		<Y>80</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_blue_equip.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>128</X>
+  		<Y>80</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_blue.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>160</X>
+  		<Y>80</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+
+  <!-- Observer -->
+  <BITMAPALIAS name="stg_status_member_observer.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>64</X>
+  		<Y>48</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="stg_status_master_observer.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>160</X>
+  		<Y>48</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  
+<!-- 로비 페이지 화살표 -->
+  <BITMAPALIAS name="player_cursor_t_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>0</X>
+  		<Y>112</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="player_cursor_t_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>32</X>
+  		<Y>112</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="player_cursor_b_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>64</X>
+  		<Y>112</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="player_cursor_b_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>96</X>
+  		<Y>112</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page_cursor_r_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>128</X>
+  		<Y>112</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page_cursor_r_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>160</X>
+  		<Y>112</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page_cursor_l_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>192</X>
+  		<Y>112</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="page_cursor_l_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>224</X>
+  		<Y>112</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+
+<!-- 로비 플레이어 상태 -->
+  <BITMAPALIAS name="player_status_stage.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>192</X>
+  		<Y>0</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="player_status_player.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>224</X>
+  		<Y>0</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="player_status_lobby.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>192</X>
+  		<Y>32</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="player_status_game.tga">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>224</X>
+  		<Y>32</Y>
+  		<W>32</W>
+  		<H>32</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+
+<!-- 스크롤바 버튼 및 thumb -->
+  <BITMAPALIAS name="scrollbtn_up_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>0</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="scrollbtn_up_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>22</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="scrollbtn_dn_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>44</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="scrollbtn_dn_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>66</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="scrollbtn_rt_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>88</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="scrollbtn_rt_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>110</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="scrollbtn_lt_off.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>132</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="scrollbtn_lt_on.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>154</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+  <BITMAPALIAS name="scrollbtn_thumb.png">
+  	<SOURCE>interface.tga</SOURCE>
+  	<BOUNDS>
+  		<X>176</X>
+  		<Y>144</Y>
+  		<W>22</W>
+  		<H>22</H>
+  	</BOUNDS>
+  </BITMAPALIAS>
+
+</XML>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="goblin_king_b" filename="goblin_king_b.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"		filename="goblinK_idle.elu.ani" 	 	gm="0"	motion_type="0" motion_loop_type="loop" > 
+	</AddAnimation>
+	<AddAnimation name="neglect1"		filename="goblinK_neglect.elu.ani" 	gm="0"	motion_type="0" motion_loop_type="loop" > 
+	</AddAnimation>
+	<AddAnimation name="melee_attacked1"	filename="goblinK_damage_melee.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > 
+	</AddAnimation>
+
+	<AddAnimation name="melee_attacked2"	filename="goblinK_damage_melee2.elu.ani" gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="range_attacked1"	filename="goblinK_damage_range.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="lightning"		filename="goblinK_damage_lightning.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > 
+	</AddAnimation>
+
+	<AddAnimation name="melee_attack"	filename="goblinK_standshot.elu.ani"		gm="1"	motion_type="0" motion_loop_type="loop" 	> 
+	</AddAnimation>
+
+	<AddAnimation name="run"		filename="goblinK_run.elu.ani"		gm="1" 	motion_type="0" motion_loop_type="loop" > 
+	</AddAnimation>
+		
+	<AddAnimation name="die"		filename="goblinK_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 
+	</AddAnimation>
+
+	<AddAnimation name="special_attack1" 	filename="goblinK_special.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" 	>  
+	</AddAnimation>
+	<AddAnimation name="special_attack2" 	filename="goblinK_special2.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 
+	</AddAnimation>
+
+	<AddAnimation name="stunned" 		filename="goblinK_damage_down.elu.ani"	gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 
+	</AddAnimation>
+
+</xml>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="main">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<INCLUDE>BitmapAlias.xml</INCLUDE>
+	<INCLUDE>templates.xml</INCLUDE>
+	
+<!--	<INCLUDE>SideBar.xml</INCLUDE> -->
+<!--	<INCLUDE>ChatFrame.xml</INCLUDE> -->
+<!--	<INCLUDE>InfoFrame.xml</INCLUDE> -->
+<!--	<INCLUDE>TargetFrame.xml</INCLUDE> -->
+<!--	<INCLUDE>SkillFrame.xml</INCLUDE> -->
+<!--	<INCLUDE>InventoryFrame.xml</INCLUDE> -->
+<!--	<INCLUDE>Logo.xml</INCLUDE>	-->
+<!--	<INCLUDE>LoginFrame.xml</INCLUDE> -->
+<!--	<INCLUDE>ChannelFrame.xml</INCLUDE> -->
+	<INCLUDE>Login.xml</INCLUDE>
+	<INCLUDE>CreateAccount.xml</INCLUDE>
+	<INCLUDE>NetmarbleLogin.xml</INCLUDE>
+	<INCLUDE>Lobby.xml</INCLUDE>
+	<INCLUDE>Stage.xml</INCLUDE>
+	<INCLUDE>StageCreateFrame.xml</INCLUDE>
+	<INCLUDE>StageJoinFrame.xml</INCLUDE>
+	<INCLUDE>PrivateStageJoinFrame.xml</INCLUDE>
+	<INCLUDE>StageListFrame.xml</INCLUDE>
+	<INCLUDE>StageSettingFrame.xml</INCLUDE>
+	<INCLUDE>ChannelListFrame.xml</INCLUDE>
+	<INCLUDE>MapFrame.xml</INCLUDE>
+	<INCLUDE>CombatInterface.xml</INCLUDE>
+	<INCLUDE>Greeter.xml</INCLUDE>
+	<INCLUDE>Option.xml</INCLUDE>
+	<INCLUDE>Shop.xml</INCLUDE>
+	<INCLUDE>BuyConfirm.xml</INCLUDE>
+	<INCLUDE>Equipment.xml</INCLUDE>
+	<INCLUDE>CharSelection.xml</INCLUDE>
+	<INCLUDE>CharCreation.xml</INCLUDE>
+	<INCLUDE>CharDetail_Info.xml</INCLUDE>
+	<INCLUDE>ResizeConfirm.xml</INCLUDE>
+	<INCLUDE>NetPortConfirm.xml</INCLUDE>
+	<INCLUDE>112Confirm.xml</INCLUDE>
+	<INCLUDE>Clan.xml</INCLUDE>
+	<INCLUDE>CharInfo.xml</INCLUDE>
+	<INCLUDE>Replay.xml</INCLUDE>
+	<INCLUDE>GameResult.xml</INCLUDE>
+	<INCLUDE>MonsterBook.xml</INCLUDE>
+	<INCLUDE>WarningMessages.xml</INCLUDE>
+		
+	<INCLUDE>LocaleAddition.xml</INCLUDE> <!-- LocaleAddition.xml은 제일 마지막에 있어야 합니다. -->
+	
+	<INCLUDE>Training.xml</INCLUDE>
+</XML>

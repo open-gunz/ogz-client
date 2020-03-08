@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+	<FRAME item="112Confirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>350</W>
+			<H>220</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_112C_01</TEXT> <!-- 불량유저 신고 -->
+		<VISIBLE>FALSE</VISIBLE>
+		<FOCUSABLE>false</FOCUSABLE>
+	</FRAME>
+
+<!--
+	<LABEL item="112_Label_1" parent="112Confirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_112C_02</TEXT>
+	</LABEL>
+	<EDIT item="112_ConfirmEdit" parent="112Confirm">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>19</X>
+			<Y>92</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+	</EDIT>
+-->
+
+	<!-- TEXTAREA -->
+	<TEXTAREA item = "ChannelChattingOutput" parent = "112Confirm">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>40</Y>
+			<W>310</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<TEXT>STR:UI_112C_13</TEXT>
+	</TEXTAREA>
+	
+	
+	<!-- COMBOBOX : 신고 대상 -->
+	<LABEL item="112_Label" parent="112Confirm">
+		<BOUNDS>
+			<X>20</X>
+			<Y>90</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_112C_03</TEXT>
+	</LABEL>
+
+	<COMBOBOX item="112_ConfirmID" parent="112Confirm">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>130</X>
+			<Y>90</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+
+	<!-- COMBOBOX : 신고 사유 -->
+	<LABEL item="112_Label" parent="112Confirm">
+		<BOUNDS>
+			<X>20</X>
+			<Y>125</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_112C_04</TEXT>
+	</LABEL>
+
+	<COMBOBOX item="112_ConfirmReason" parent="112Confirm">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>130</X>
+			<Y>125</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<DROPSIZE>210</DROPSIZE>
+		<LISTITEM selected="true">STR:UI_112C_05</LISTITEM>
+		<LISTITEM>STR:UI_112C_06</LISTITEM>
+		<LISTITEM>STR:UI_112C_07</LISTITEM>
+		<LISTITEM>STR:UI_112C_08</LISTITEM>
+		<LISTITEM>STR:UI_112C_09</LISTITEM>
+		<LISTITEM>STR:UI_112C_10</LISTITEM>
+		<LISTITEM>STR:UI_112C_11</LISTITEM>
+		<LISTITEM>STR:UI_112C_12</LISTITEM>
+	</COMBOBOX>
+	
+	
+	<BUTTON item="112_ConfirmOKButton" parent="112Confirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>70</X>
+			<Y>175</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="112_ConfirmCancelButton" parent="112Confirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>180</X>
+			<Y>175</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+
+</XML>

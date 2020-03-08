@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Login">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="NetmarbleLogin">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+	</FRAME>
+	<FRAME item="NetmarbleLoginFrame" parent="NetmarbleLogin">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>214</W>
+			<H>145</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TITLEBAR>true</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>STR:UI_NL_01</TEXT> <!-- 로그인 -->
+	</FRAME>	
+	<LABEL item="NetmarbleLoginMessage" parent="NetmarbleLoginFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>40</Y>
+			<W>180</W>
+			<H>25</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_NL_02</TEXT> <!-- 넷마블에 연결중입니다. -->
+	</LABEL>
+	<BUTTON item="Exit" parent="NetmarbleLoginFrame">
+		<BUTTONLOOK>DefaultFrameLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>128</X>
+			<Y>96</Y>
+			<W>79</W>
+			<H>20</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취 소(&amp;C) -->
+		<CONFIRMMESSAGE>STR:UI_NL_03</CONFIRMMESSAGE> <!-- GUNZ를 종료하시겠습니까? -->
+		<CONFIRMLOOK>NormalFrameLook</CONFIRMLOOK>
+	</BUTTON>		
+</XML>

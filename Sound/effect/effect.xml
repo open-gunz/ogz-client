@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--  거리 단위 cm 기본값 : 200/4000, 1m = 100
+	타입 (type)
+	0 = 3d
+	1 = 2d
+	2 = 2d and 3d
+	3 = 2d stereo
+	4 = 2d loop *
+	5 = 2d stereo loop *
+	6 = 3d loop
+	* loop 속성은 실시간으로 바꿀수 없음
+  -->
+<XML>
+<!-- 사운드 2차 추가분 -->
+	<EFFECT NAME="fx_guard"	MINDISTANCE="150" MAXDISTANCE="1000"/>
+	<EFFECT NAME="fx_openportal" MINDISTANCE="150" MAXDISTANCE="5000" type="1"/>
+	<EFFECT NAME="fx_magic_death" MINDISTANCE="150" MAXDISTANCE="3000"/>
+	<EFFECT NAME="fx_magic_death_2d" MINDISTANCE="150" MAXDISTANCE="3000" type="1"/>
+	
+	<EFFECT NAME="we_smash" MINDISTANCE="150" MAXDISTANCE="1000"/>
+	<EFFECT NAME="we_smash_2d" MINDISTANCE="150" MAXDISTANCE="1000" type="1"/>
+	<EFFECT NAME="we_rubber_smash" MINDISTANCE="150" MAXDISTANCE="1000"/>
+	<EFFECT NAME="we_rubber_smash_2d" MINDISTANCE="150" MAXDISTANCE="1000" type="1"/>
+	<EFFECT NAME="we_enfire" MINDISTANCE="150" MAXDISTANCE="1000"/>
+	<EFFECT NAME="we_enfire_2d" MINDISTANCE="150" MAXDISTANCE="1000" type="1"/>
+	<EFFECT NAME="we_enice" MINDISTANCE="150" MAXDISTANCE="1000"/>
+	<EFFECT NAME="we_enice_2d" MINDISTANCE="150" MAXDISTANCE="1000" type="1"/>
+	<EFFECT NAME="we_enlight" MINDISTANCE="150" MAXDISTANCE="1000"/>
+	<EFFECT NAME="we_enlight_2d" MINDISTANCE="150" MAXDISTANCE="1000" type="1"/>
+	<EFFECT NAME="we_enpoison" MINDISTANCE="150" MAXDISTANCE="1000"/>
+	<EFFECT NAME="we_enpoison_2d" MINDISTANCE="150" MAXDISTANCE="1000" type="1"/>
+
+<!-- type 0 -->
+	<!-- 칼 -->
+  	<EFFECT NAME="bind_a_male" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="blade_concrete" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="blade_damage" MINDISTANCE="150" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="fx_bladeon_concrete" MINDISTANCE="150" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="uppercut" MINDISTANCE="150" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="rubber_concrete" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="rubber_damage" MINDISTANCE="150" MAXDISTANCE="1000"/>
+  	<!-- 총알 -->
+  	<EFFECT NAME="fx_bullethit_mt_con" MINDISTANCE="150" MAXDISTANCE="500"/>
+  	<EFFECT NAME="fx_bullethit_mt_drt" MINDISTANCE="150" MAXDISTANCE="500"/>
+  	<EFFECT NAME="fx_bullethit_mt_fsh" MINDISTANCE="150" MAXDISTANCE="500"/>
+  	<EFFECT NAME="fx_bullethit_mt_gls" MINDISTANCE="150" MAXDISTANCE="500"/>
+  	<EFFECT NAME="fx_bullethit_mt_met" MINDISTANCE="150" MAXDISTANCE="500"/>
+  	<EFFECT NAME="fx_bullethit_mt_snd" MINDISTANCE="150" MAXDISTANCE="500"/>
+  	<EFFECT NAME="fx_bullethit_mt_wat" MINDISTANCE="150" MAXDISTANCE="500"/>
+  	<EFFECT NAME="fx_bullethit_mt_wod" MINDISTANCE="150" MAXDISTANCE="500"/>
+  	<!-- 탄피 -->
+  	<EFFECT NAME="fx_slugdrop_mt_con" MINDISTANCE="150" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="fx_slugdrop_mt_met" MINDISTANCE="150" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="fx_slugdrop_mt_wod" MINDISTANCE="150" MAXDISTANCE="1000"/>
+  	<!-- 총기류 fire -->
+  	<EFFECT NAME="we_smg_fire" MINDISTANCE="320"/>
+  	<EFFECT NAME="we_shotgunpa_fire" MINDISTANCE="320"/>
+  	<EFFECT NAME="we_rocket_fire" MINDISTANCE="200"/>
+  	<EFFECT NAME="we_revolver_fire" MINDISTANCE="320"/>
+  	<EFFECT NAME="we_pistol_fire" MINDISTANCE="320"/>
+  	<EFFECT NAME="we_machinegun_fire" MINDISTANCE="320"/>
+  	<EFFECT NAME="we_bowgun_fire" MINDISTANCE="320"/>
+<!--  	<EFFECT NAME="we_grenade_fire" MINDISTANCE="320"/>		-->
+  	<EFFECT NAME="we_rifle_fire" MINDISTANCE="320"/>
+  	<!-- 총기류 reload -->
+  	<EFFECT NAME="we_smg_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="we_shotgunpa_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="we_rocket_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="we_revolver_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="we_pistol_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="we_machinegun_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="we_grenade_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="we_rifle_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="we_bowgun_reload" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<!-- 폭발 -->
+	<EFFECT NAME="fx_explosion01" MINDISTANCE="1000"/>
+  	<EFFECT NAME="we_grenade_explosion" MINDISTANCE="1000"/>
+  	<EFFECT NAME="we_gasgrenade_explosion" MINDISTANCE="500"/>
+  	<EFFECT NAME="we_flashbang_explosion" MINDISTANCE="1000"/>
+	<!-- 기타 -->
+	<EFFECT NAME="rebirth" MINDISTANCE="100" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="ricochet_concrete01" MINDISTANCE="100" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="hangonwall" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="rubber_hangonwall" MINDISTANCE="200" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="hitbody00" MINDISTANCE="150" MAXDISTANCE="1000"/>
+  	<EFFECT NAME="death01_a_male" MINDISTANCE="200" MAXDISTANCE="1000"/>
+<!-- type 1 -->
+  	<EFFECT NAME="fx_respawn" type="1"/>
+  	<EFFECT NAME="fx_whoosh01" type="1"/>
+  	<EFFECT NAME="fx_whoosh02" type="1"/>
+  	<EFFECT NAME="if_click" type="1"/>
+  	<EFFECT NAME="if_error" type="1"/>
+  	<EFFECT NAME="if_mouseover" type="1"/>
+  	<EFFECT NAME="fx_itemget" type="1"/>
+  	<EFFECT NAME="nice"  type="1"/>
+  	<EFFECT NAME="we_weapon_rdy" type="1"/>
+  	
+<!-- type 2 -->
+	<!-- 칼 -->
+	<EFFECT NAME="fx_blade_sheath" MINDISTANCE="150" MAXDISTANCE="1000" type="2"/>
+	<EFFECT NAME="blade_swing" MINDISTANCE="150" MAXDISTANCE="1000" type="2"/>
+	<EFFECT NAME="fx_dagger_sheath" MINDISTANCE="200" MAXDISTANCE="1000" type="2"/>
+	<EFFECT NAME="fx_rubber_sheath" MINDISTANCE="150" MAXDISTANCE="1000" type="2"/>
+	<!-- 총 -->
+  	<EFFECT NAME="357magrevolver_dryfire" MINDISTANCE="150" MAXDISTANCE="1000" type="2"/>
+  	<EFFECT NAME="762arifle_dryfire" MINDISTANCE="150" MAXDISTANCE="1000" type="2"/>
+  	<EFFECT NAME="bowgun_dryfire" MINDISTANCE="150" MAXDISTANCE="1000" type="2"/>
+  	<!--<EFFECT NAME="we_rocket_fire" MINDISTANCE="200" type="2"/>
+  	<EFFECT NAME="we_shotgunpa_fire" MINDISTANCE="320" type="2"/>
+  	<EFFECT NAME="we_shotgunpa_reload" MINDISTANCE="200" MAXDISTANCE="1000" type="2"/>
+  	<EFFECT NAME="we_machinegun_fire" MINDISTANCE="320" type="2"/>
+  	<EFFECT NAME="we_pistol_fire" MINDISTANCE="320" type="2"/>
+  	<EFFECT NAME="we_revolver_fire" MINDISTANCE="320" type="2"/>
+  	<EFFECT NAME="we_rifle_fire" MINDISTANCE="320" type="2"/>
+  	<EFFECT NAME="we_smg_fire" MINDISTANCE="320" type="2"/>-->
+  	<!-- 기타 무기류 -->
+  	<EFFECT NAME="we_grenade_fire" MINDISTANCE="200" MAXDISTANCE="1000" type="2"/>
+  	<!-- 캐릭터 -->
+  	<EFFECT NAME="fx_dash" MINDISTANCE="300" MAXDISTANCE="1000" type="2"/>
+  	<EFFECT NAME="man_jump_mt_con" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_jump_mt_drt" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_jump_mt_met" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_jump_mt_snd" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_jump_mt_wat" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_jump_mt_wod" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_jump_mt_pnt" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_jump_mt_snw" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+
+  	<EFFECT NAME="man_fs_l_mt_con" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_r_mt_con" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_l_mt_drt" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_r_mt_drt" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_l_mt_met" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_r_mt_met" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_l_mt_snd" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_r_mt_snd" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_l_mt_wat" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_r_mt_wat" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_l_mt_wod" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="man_fs_r_mt_wod" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="man_fs_l_mt_pnt" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="man_fs_r_mt_pnt" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="man_fs_l_mt_snw" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="man_fs_r_mt_snw" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	
+
+  	<EFFECT NAME="run_a_male" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="ooh_female" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	<EFFECT NAME="ooh_male" MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+  	
+<!-- type 3 -->
+  	<EFFECT NAME="if_score_flyby" type="3"/>
+  	<EFFECT NAME="if_score_get" type="3"/>
+  	<!-- 자신의 캐릭터가 낼 경우 다음의 2d stereo 사운드가 플레이 된다 -->
+  	<!-- 총기류 fire -->
+  	<EFFECT NAME="we_smg_fire_2d" type="3"/>
+  	<EFFECT NAME="we_shotgunpa_fire_2d" type="3"/>
+  	<EFFECT NAME="we_rocket_fire_2d" type="3"/>
+  	<EFFECT NAME="we_revolver_fire_2d" type="3"/>
+  	<EFFECT NAME="we_pistol_fire_2d" type="3"/>
+  	<EFFECT NAME="we_machinegun_fire_2d" type="3"/>
+  	<EFFECT NAME="we_grenade_fire_2d" type="3"/>
+  	<EFFECT NAME="we_rifle_fire_2d" type="3"/>
+  	<EFFECT NAME="we_bowgun_fire_2d" type="3"/>
+  	<!-- 총기류 reload -->
+  	<EFFECT NAME="we_smg_reload_2d" type="3"/>
+  	<EFFECT NAME="we_shotgunpa_reload_2d" type="3"/>
+  	<EFFECT NAME="we_rocket_reload_2d" type="3"/>
+  	<EFFECT NAME="we_revolver_reload_2d" type="3"/>
+  	<EFFECT NAME="we_pistol_reload_2d" type="3"/>
+  	<EFFECT NAME="we_machinegun_reload_2d" type="3"/>
+  	<EFFECT NAME="we_grenade_reload_2d" type="3"/>
+  	<EFFECT NAME="we_rifle_reload_2d" type="3"/>
+  	<EFFECT NAME="fx_myhit" type="3"/>
+  	<EFFECT NAME="we_bowgun_reload_2d" type="3"/>
+<!-- type 4 -->
+  	<EFFECT NAME="fx_flashbang" type="4"/>
+
+   	<EFFECT NAME="amb_generator" type="4"/>
+  	<EFFECT NAME="amb_dropwater" type="4"/>
+  	<EFFECT NAME="amb_factory" type="4"/>
+  	<EFFECT NAME="amb_factory2" type="4"/>
+  	<EFFECT NAME="amb_fireplace" type="4"/>
+  	<EFFECT NAME="amb_steam" type="4"/>
+  	<EFFECT NAME="amb_steam2" type="4"/>
+	<EFFECT NAME="amb_fan" type="4"/>
+	<EFFECT NAME="amb_fan2" type="4"/>
+	<EFFECT NAME="amb_engine" type="4"/>
+	<EFFECT NAME="amb_flapping" type="4"/>
+	<EFFECT NAME="amb_chain" type="4"/>
+	<EFFECT NAME="amb_firesource" type="4"/>
+<!-- type 5 -->
+	<EFFECT NAME="amb_dropwater_2d" type="5"/>
+	<EFFECT NAME="amb_factory_2d" type="5"/>
+	<EFFECT NAME="amb_factory2_2d" type="5"/>
+	<EFFECT NAME="amb_generator_2d" type="5"/>
+	<EFFECT NAME="amb_steam_2d" type="5"/>
+	<EFFECT NAME="amb_steam2_2d" type="5"/>
+	<EFFECT NAME="amb_wind_hole_2d" type="5"/>
+	<EFFECT NAME="amb_fan_2d" type="5"/>
+	<EFFECT NAME="amb_fan2_2d" type="5"/>
+	<EFFECT NAME="amb_engine_2d" type="5"/>
+	<EFFECT NAME="amb_geyser_2d" type="5"/>
+	<EFFECT NAME="amb_shore_2d" type="5"/>
+<!-- type 6 -->
+
+
+
+<!-- 확장 이펙트 사운드 -->
+	<!-- Effect -->
+	<EFFECT NAME="fx2/MAL01"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/MAL02"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/MAL05"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/MAL06"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/MAL07"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/MAL08"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/MAL10"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/MAL11"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/MAL12"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/MAL13"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/MAL_shot_01"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/MAL_shot_02"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/MAL_shot_03"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/MAL_shot_04"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM01"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM02"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/FEM05"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/FEM06"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/FEM07"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/FEM08"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/> 
+	<EFFECT NAME="fx2/FEM10"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM11"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM12"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM13"		MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM_shot_01"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM_shot_02"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM_shot_03"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FEM_shot_04"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FX_ChargeComplete"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+	<EFFECT NAME="fx2/FX_rubber_ChargeComplete"	MINDISTANCE="400" MAXDISTANCE="1200" type="2"/>
+
+	<!-- Praise voice sound -->
+	<EFFECT NAME="nar/NAR01"					type="1"/>
+	<EFFECT NAME="nar/NAR02"					type="1"/>
+	<EFFECT NAME="nar/NAR03"					type="1"/>
+	<EFFECT NAME="nar/NAR04"					type="1"/>
+	<EFFECT NAME="nar/NAR05"					type="1"/>
+	<EFFECT NAME="nar/NAR06"					type="1"/>
+	<EFFECT NAME="nar/NAR07"					type="1"/>
+	<EFFECT NAME="nar/NAR08"					type="1"/>
+	<EFFECT NAME="nar/NAR09"					type="1"/>
+	<EFFECT NAME="nar/NAR10"					type="1"/>
+	<EFFECT NAME="nar/NAR11"					type="1"/>
+	<EFFECT NAME="nar/NAR12"					type="1"/>
+	<EFFECT NAME="nar/NAR13"					type="1"/>
+	<EFFECT NAME="nar/NAR14"					type="1"/>
+	<EFFECT NAME="nar/NAR15"					type="1"/>
+	<EFFECT NAME="nar/NAR16"					type="1"/>
+	<EFFECT NAME="nar/NAR17"					type="1"/>
+	<EFFECT NAME="nar/NAR18"					type="1"/>
+	<EFFECT NAME="nar/NAR19"					type="1"/>
+	<EFFECT NAME="nar/NAR20"					type="1"/>
+	<EFFECT NAME="nar/NAR22"					type="1"/>
+	<EFFECT NAME="nar/NAR26"					type="1"/>
+	<EFFECT NAME="nar/NAR27"					type="1"/>
+	<EFFECT NAME="nar/NAR28"					type="1"/>
+	<EFFECT NAME="nar/NAR29"					type="1"/>
+
+	<!-- MALE: Sound additions -->
+	<EFFECT NAME="we_mal_01"	MINDISTANCE="320"/> <!-- Laugh -->
+	<EFFECT NAME="we_mal_02"	MINDISTANCE="320"/> <!-- Cry -->
+	<EFFECT NAME="we_mal_05"	MINDISTANCE="320"/> <!-- Massive Charge -->
+	<EFFECT NAME="we_mal_11"	MINDISTANCE="320"/> <!-- Taunt - Gimme your best shot baby -->
+	<EFFECT NAME="we_mal_12"	MINDISTANCE="320"/> <!-- Taunt - Are you kidding me? -->
+	<EFFECT NAME="we_mal_13"	MINDISTANCE="320"/> <!-- Taunt - You don't have anything on me -->
+	
+	<!-- FEMALE: Sound additions -->
+	<EFFECT NAME="we_fem_01"	MINDISTANCE="320"/> <!-- Laugh -->
+	<EFFECT NAME="we_fem_02"	MINDISTANCE="320"/> <!-- Cry -->
+	<EFFECT NAME="we_fem_05"	MINDISTANCE="320"/> <!-- Massive Charge -->
+	<EFFECT NAME="we_fem_11"	MINDISTANCE="320"/> <!-- Taunt - Show me what you got -->
+	<EFFECT NAME="we_fem_12"	MINDISTANCE="320"/> <!-- Taunt - You want some of this? -->
+	<EFFECT NAME="we_fem_13"	MINDISTANCE="320"/> <!-- Taunt - Think you can handle this? -->
+
+<!-- 몬스터 사운드 -->
+
+	<!-- 고블린 공통 -->
+	<EFFECT NAME="quest/goblin/GoblinClan_neglect"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/Goblin_die"					MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	
+	<!-- 병정 고블린 -->
+	<EFFECT NAME="quest/goblin/Goblin_attack"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/Goblin_neglect"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	
+	<!-- 고블린 거너 -->
+	<EFFECT NAME="quest/goblin/GoblinG_attack"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinG_die"					MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 고블린 위자드 -->
+	<EFFECT NAME="quest/goblin/GoblinW_castFirst"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinW_castSecond"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinW_FX_Healing"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 대장 고블린 -->
+	<EFFECT NAME="quest/goblin/GoblinH_attack"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinH_die"					MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 고블린 족장 -->
+	<EFFECT NAME="quest/goblin/GoblinC_attack"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinC_neglect"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinC_dieFirst"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinC_dieSecond"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinC_castFirst"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinC_castSecond"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinC_FX_Slow"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinC_FX_Fireball"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 고블린 킹 -->
+	<EFFECT NAME="quest/goblin/GoblinK_attack"				MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinK_neglect"				MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinK_die"					MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinK_special"				MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinK_FX_L"				MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinK_FX_R"				MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/goblin/GoblinK_FX_Fireball"			MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+
+
+
+	<!-- 리쟈드 -->
+	<EFFECT NAME="quest/lizard/Lizard_attack"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/lizard/Lizard_die"					MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 리쟈드 샤만 -->
+	<EFFECT NAME="quest/lizard/LizardS_attack"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/lizard/LizardS_cast"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/lizard/LizardS_cast2"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/lizard/LizardS_neglect"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 대장 리쟈드 -->
+	<EFFECT NAME="quest/lizard/LizardC_neglect"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 리쟈드 왕 -->
+	<EFFECT NAME="quest/lizard/LizardK_attack"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/lizard/LizardK_die"					MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/lizard/LizardK_breath"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/lizard/LizardK_neglect"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 골렘 -->
+	<EFFECT NAME="quest/golem/Golem_attack"					MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/golem/Golem_die"					MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/golem/Golem_neglect"				MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/golem/Golem_special"				MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/golem/Golem_stunfist"				MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+
+
+
+	<!-- 스켈레톤 -->
+	<EFFECT NAME="quest/skeleton/Skeleton_die"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 스켈레톤 메이지 -->
+	<EFFECT NAME="quest/skeleton/SkeletonM_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonM_neglect"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonM_die"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonM_FX_Burn"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonM_FX_MagicArrow"	MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 대장 스켈레톤 -->
+	<EFFECT NAME="quest/skeleton/SkeletonC_die"				MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonC_neglect"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonC_FX_SwordSlash"	MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 거대 스켈레톤 -->
+	<EFFECT NAME="quest/skeleton/SkeletonB_attackFirst"		MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonB_attackSecond"	MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonB_neglectFirst"	MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonB_neglectSecond"	MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonB_dieFirst"		MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonB_dieSecond"		MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonB_dieThird"		MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 저주받은 시신 -->
+	<EFFECT NAME="quest/skeleton/SkeletonCc_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonCc_cast"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonCc_die"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonCc_FX_Lightning"	MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 리치폰 -->
+	<EFFECT NAME="quest/skeleton/SkeletonLp_die"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLp_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLp_neglect"		MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 거대 스켈레톤 -->
+	<EFFECT NAME="quest/skeleton/SkeletonSp_attackFirst"	MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonSp_attackSecond"	MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonSp_neglectFirst"	MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonSp_neglectSecond"	MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonSp_dieFirst"		MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonSp_dieSecond"		MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonSp_dieThird"		MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	
+	<!-- 아네라몬 -->
+	<EFFECT NAME="quest/skeleton/SkeletonAn_attack"			MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonAn_cast"			MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonAn_die"			MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonAn_FX_Lightning"	MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	
+	<!-- 리치 -->
+	<EFFECT NAME="quest/skeleton/SkeletonLc_die"			MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLc_Wing"			MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLc_attack"			MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLc_breathready"	MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLc_cast"			MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLc_neglect"		MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLc_FX_Burn"		MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+	<EFFECT NAME="quest/skeleton/SkeletonLc_FX_Stomp"		MINDISTANCE="1300" MAXDISTANCE="5000" type="0"/>
+
+	<!-- 팜포아 베이비 -->
+	<EFFECT NAME="quest/Palmpoa/palmpou_babymelee_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/palmpou_baby_run"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/palmpou_baby_die"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 팜포우,팜포아 -->
+	<EFFECT NAME="quest/Palmpoa/palmpo-au_die"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/palmpo-au_melee_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/palmpo-au_run"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/palmpoa_special_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/palmpou_special_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 대장팜포우 -->
+	<EFFECT NAME="quest/Palmpoa/cpalmpoh_die"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/cpalmpoh_melee_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/cpalmpoh_run"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/cpalmpoh_special_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+
+	<!-- 저주받은 팜포우 -->
+	<EFFECT NAME="quest/Palmpoa/cpalmpoa_die"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/cpalmpoa_melee_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/cpalmpoa_run"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+	<EFFECT NAME="quest/Palmpoa/cpalmpoa_special_attack"			MINDISTANCE="800" MAXDISTANCE="2500" type="0"/>
+</XML>

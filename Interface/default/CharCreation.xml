@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="CharCreation">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	
+<!--
+   캐릭터 생성 윈도우
+   
+   Last Update : 29.OCT.2004
+   Editor      : Lim Dong Hwan
+-->
+
+
+<!-- 프레임 생성 : CharCreation -->
+	<FRAME item="CharCreation">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>530</X>
+			<Y>190</Y>
+			<W>253</W>
+			<H>367</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_01</TEXT> <!-- 캐릭터 생성 -->
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+<!-- 이름 -->
+	<!-- Label : 이름 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_02</TEXT> <!-- 이름 -->
+	</LABEL>
+
+	<!-- Edit : 이름 입력창 -->
+	<EDIT item="CC_CharName" parent="CharCreation">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>46</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>16</MAXLENGTH>
+	</EDIT>
+	
+	
+<!-- 성별 -->
+	<!-- Label : 성별 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>19</X>
+			<Y>75</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_03</TEXT> <!-- 성별 -->
+	</LABEL>
+
+	<!-- Combobox : 성별 선택창 -->
+	<COMBOBOX item="CC_Sex" parent="CharCreation">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>75</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">STR:UI_CC_LIST_01_01</LISTITEM> <!-- 남자 -->
+		<LISTITEM>STR:UI_CC_LIST_01_02</LISTITEM> <!-- 여자 -->
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>120</COMBOFIRSTSIZE>
+	</COMBOBOX>
+
+
+<!-- 헤어 -->
+	<!-- Label : 헤어 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>19</X>
+			<Y>104</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_04</TEXT> <!-- 헤어 -->
+	</LABEL>
+
+	<!-- Conbobox : 헤어 선택창 -->
+	<COMBOBOX item="CC_Hair" parent="CharCreation">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>104</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">STR:UI_CC_LIST_02_01</LISTITEM> <!-- 타입1 -->
+		<LISTITEM>STR:UI_CC_LIST_02_02</LISTITEM> <!-- 타입2 -->
+		<LISTITEM>STR:UI_CC_LIST_02_03</LISTITEM> <!-- 타입3 -->
+		<LISTITEM>STR:UI_CC_LIST_02_04</LISTITEM> <!-- 타입4 -->
+		<!-- <LISTITEM>5</LISTITEM> -->
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+	
+
+<!-- 얼굴 -->
+	<!-- Label : 얼굴 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>19</X>
+			<Y>133</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_05</TEXT> <!-- 얼굴 -->
+	</LABEL>
+
+	<!-- Combobox : 얼굴 선택창 -->
+	<COMBOBOX item="CC_Face" parent="CharCreation">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>133</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">STR:UI_CC_LIST_02_01</LISTITEM> <!-- 타입1 -->
+		<LISTITEM>STR:UI_CC_LIST_02_02</LISTITEM> <!-- 타입2 -->
+		<LISTITEM>STR:UI_CC_LIST_02_03</LISTITEM> <!-- 타입3 -->
+		<LISTITEM>STR:UI_CC_LIST_02_04</LISTITEM> <!-- 타입4 -->
+		<LISTITEM>Type5</LISTITEM>
+		<LISTITEM>Type6</LISTITEM>
+		<LISTITEM>Type7</LISTITEM>
+		<LISTITEM>Type8</LISTITEM>
+		<LISTITEM>Type9</LISTITEM>
+		<LISTITEM>Type10</LISTITEM>
+		<LISTITEM>Type11</LISTITEM>
+		<LISTITEM>Type12</LISTITEM>
+		<LISTITEM>Type13</LISTITEM>
+		<LISTITEM>Type14</LISTITEM>
+		<LISTITEM>Type15</LISTITEM>
+		<LISTITEM>Type16</LISTITEM>
+		<LISTITEM>Type17</LISTITEM>
+		<LISTITEM>Type18</LISTITEM>
+		<!-- <LISTITEM>Type19</LISTITEM>
+		<LISTITEM>Type20</LISTITEM> -->
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+	
+
+<!-- 기본장비 -->
+	<!-- Label : 기본장비 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>19</X>
+			<Y>162</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_06</TEXT> <!-- 기본장비 -->
+	</LABEL>
+
+	<!-- Combobox : 기본장비 선택창 -->
+	<COMBOBOX item="CC_Costume" parent="CharCreation">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>162</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">STR:UI_CC_LIST_03_01</LISTITEM> <!-- 액시움 건나이트 -->
+		<LISTITEM>STR:UI_CC_LIST_03_02</LISTITEM> <!-- 트라비아 건파이터 -->
+		<LISTITEM>STR:UI_CC_LIST_03_03</LISTITEM> <!-- 액시움 애서신 -->
+		<LISTITEM>STR:UI_CC_LIST_03_04</LISTITEM> <!-- 트라비아 스카우트 -->
+		<LISTITEM>STR:UI_CC_LIST_03_05</LISTITEM> <!-- 액시움 건프리스트 -->
+		<LISTITEM>STR:UI_CC_LIST_03_06</LISTITEM> <!-- 트라비아 닥터 -->
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	
+	
+<!-- 장비 목록 -->
+	<!-- Label : 데빌 슬레이어 -->
+	<LABEL item="CC_MeleeLabel" parent="CharCreation">
+		<BOUNDS>
+			<X>90</X>
+			<Y>196</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CC_07</TEXT> <!-- 데빌 슬레이어 -->
+	</LABEL>
+
+	<!-- Label : 월콤 -->
+	<LABEL item="CC_PrimaryLabel" parent="CharCreation">
+		<BOUNDS>
+			<X>90</X>
+			<Y>216</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CC_08</TEXT> <!-- 월콤 XLx2 -->
+	</LABEL>
+
+	<!-- Label : 월콤 -->
+	<LABEL item="CC_SecondaryLabel" parent="CharCreation">
+		<BOUNDS>
+			<X>90</X>
+			<Y>236</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CC_09</TEXT> <!-- 월콤 XLx2 -->
+	</LABEL>
+	
+	<!-- Label : 수류탄 -->
+	<LABEL item="CC_Item1Label" parent="CharCreation">
+		<BOUNDS>
+			<X>90</X>
+			<Y>256</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CC_10</TEXT> <!-- 수류탄 FG-2 -->
+	</LABEL>
+
+	<!-- Label : 의료킷 -->
+	<LABEL item="CC_Item2Label" parent="CharCreation">
+		<BOUNDS>
+			<X>90</X>
+			<Y>276</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CC_11</TEXT> <!-- 의료킷 K-11 -->
+	</LABEL>
+
+
+	
+<!-- 버튼 -->
+	<!-- Button : 확인 -->
+	<BUTTON item="CC_CreateChar" parent="CharCreation">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>19</X>
+			<Y>322</Y>
+			<W>105</W>
+			<H>30</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+
+	<!-- Button : 취소 -->
+	<BUTTON item="CC_Cancel" parent="CharCreation">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>129</X>
+			<Y>322</Y>
+			<W>105</W>
+			<H>30</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+
+</XML>

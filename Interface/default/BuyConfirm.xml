@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="BuyConfirm">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="BuyConfirm">
+		<FRAMELOOK>NormalFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>320</W>
+			<H>240</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT></TEXT>
+	</FRAME>
+
+	<LISTBOX item="BuyConfirmList" parent="BuyConfirm">
+		<LISTBOXLOOK>NormalListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>2</X>
+			<Y>20</Y>
+			<W>316</W>
+			<H>150</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<SELECTED>false</SELECTED>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+	</LISTBOX>
+
+	<LABEL item="Label" parent="BuyConfirm">
+		<BOUNDS>
+			<X>90</X>
+			<Y>175</Y>
+			<W>40</W>
+			<H>16</H>
+		</BOUNDS>
+		<TEXT>STR:UI_BC_01</TEXT> <!-- 합 계 -->
+	</LABEL>
+	<LABEL item="BuyConfirm_Total" parent="BuyConfirm">
+		<BOUNDS>
+			<X>150</X>
+			<Y>175</Y>
+			<W>150</W>
+			<H>16</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="BuyConfirm">
+		<BOUNDS>
+			<X>150</X>
+			<Y>191</Y>
+			<W>150</W>
+			<H>16</H>
+		</BOUNDS>
+		<TEXT>STR:UI_BC_02</TEXT> <!-- 구입하시겠습니까? -->
+	</LABEL>
+
+	<!-- 버튼 -->
+
+	<BUTTON item="BuyConfirm_Buy" parent="BuyConfirm">
+		<BUTTONLOOK>NormalButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>155</X>
+			<Y>213</Y>
+			<W>79</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확 인 -->
+	</BUTTON>
+	<BUTTON item="ParentClose" parent="BuyConfirm">
+		<BUTTONLOOK>NormalButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>234</X>
+			<Y>213</Y>
+			<W>79</W>
+			<H>20</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취 소 -->
+	</BUTTON>
+
+</XML>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="MonsterBook">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   MonsterBook 화면 구성
+   
+   Last Update : 10.DEV.2004
+   Editor      : Lim Dong Hwan
+-->
+	
+
+<!-- FRAME : MonBook 화면 구성 -->
+	<FRAME item="MonsterBook">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 상단 바탕화면 이미지 -->
+	<PICTURE item="MonsterBook_MainBGTop" parent="MonsterBook">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_t.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 상단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="MonsterBook_StripTop" parent="MonsterBook">
+		<BOUNDS>
+			<X>288</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+		<DRAWMODE>1</DRAWMODE>
+	</PICTURE>
+
+	<!-- Picture : 좌측 상단 GUNZ 로고 -->
+	<PICTURE item="MonsterBook_Logo" parent="MonsterBook">
+		<BOUNDS>
+			<X>10</X>
+			<Y>3</Y>
+			<W>164</W>
+			<H>76</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gunz_logo_hq.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 하단 바탕화면 이미지 -->
+	<PICTURE item="MonsterBook_MainBGBottom" parent="MonsterBook">
+		<BOUNDS>
+			<X>0</X>
+			<Y>552</Y>
+			<W>800</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_b.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 하단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="MonsterBook_StripBottom" parent="MonsterBook_MainBGBottom">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+	</PICTURE>
+
+
+
+<!-- 프레임 생성 : Main Window -->
+	<FRAME item="MonsterBook_MainFrame" parent="MonsterBook">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>800</W>
+			<H>467</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 몬스터 도감 정보 표시창 이미지 출력 -->
+	<PICTURE item ="MonsterBook_MessageBG" parent="MonsterBook">
+		<BOUNDS>
+			<X>18</X>
+			<Y>83</Y>
+			<W>425</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>title_bar.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 몬스터 도감 정보 표시 -->
+	<LABEL item="MonsterBook_Message" parent="MonsterBook">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>92</Y>
+			<W>380</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_MB_01</TEXT> <!-- 몬스터 도감 -->
+	</LABEL>
+
+
+
+<!-- UI 관련 -->
+	<!-- Picture : 배경 책 이미지 -->
+	<PICTURE item="MonsterBook_BookBG" parent="MonsterBook">
+		<BOUNDS>
+			<X>30</X>
+			<Y>125</Y>
+			<W>740</W>
+			<H>405</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- Picture : 몬스터 일러스트 -->
+	<PICTURE item="MonsterBook_MonsterIllust" parent="MonsterBook">
+		<BOUNDS>
+			<X>79</X>
+			<Y>163</Y>
+			<W>300</W>
+			<H>300</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- Label : 달성률 표시 -->
+	<LABEL item="MonsterBook_Complete" parent="MonsterBook">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>165</R>
+			<G>122</G>
+			<B>47</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>440</X>
+			<Y>270</Y>
+			<W>275</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- Label : 몬스터 이름 표시 -->
+	<LABEL item="MonsterBook_MonsterName" parent="MonsterBook">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>50</R>
+			<G>30</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>428</X>
+			<Y>167</Y>
+			<W>275</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- Label : 몬스터 등급 표시 -->
+	<LABEL item="MonsterBook_MonsterGrade" parent="MonsterBook">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>50</R>
+			<G>30</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>435</X>
+			<Y>187</Y>
+			<W>135</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<!-- Label : 몬스터 HP 표시 -->
+	<LABEL item="MonsterBook_MonsterHP" parent="MonsterBook">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>55</R>
+			<G>30</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>580</X>
+			<Y>187</Y>
+			<W>135</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 몬스터 설명 -->
+	<TEXTAREA item="MonsterBook_MonsterDesc" parent="MonsterBook">
+		<FONT>FONTa9</FONT>
+		<BOUNDS>
+			<X>435</X>
+			<Y>230</Y>
+			<W>275</W>
+			<H>80</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXTAREALOOK>TextAreaLook</TEXTAREALOOK>
+	</TEXTAREA>
+	
+	<!-- TEXTAREA : 특수기 설명 -->
+	<TEXTAREA item="MonsterBook_Attacks" parent="MonsterBook">
+		<FONT>FONTa9</FONT>
+		<BOUNDS>
+			<X>435</X>
+			<Y>331</Y>
+			<W>275</W>
+			<H>80</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXTAREALOOK>TextAreaLook</TEXTAREALOOK>
+	</TEXTAREA>
+
+		
+
+<!-- 드롭 아이템 -->
+	<!-- Picture : 드롭 아이템 0 -->
+	<PICTURE item="MonsterBook_DropItem0" parent="MonsterBook">
+		<BOUNDS>
+			<X>435</X>
+			<Y>430</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</PICTURE>
+
+	<!-- Picture : 드롭 아이템 1 -->
+	<PICTURE item="MonsterBook_DropItem1" parent="MonsterBook">
+		<BOUNDS>
+			<X>470</X>
+			<Y>430</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- Picture : 드롭 아이템 2 -->
+	<PICTURE item="MonsterBook_DropItem2" parent="MonsterBook">
+		<BOUNDS>
+			<X>505</X>
+			<Y>430</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</PICTURE>
+
+	<!-- Picture : 드롭 아이템 3 -->
+	<PICTURE item="MonsterBook_DropItem3" parent="MonsterBook">
+		<BOUNDS>
+			<X>540</X>
+			<Y>430</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- Picture : 드롭 아이템 4 -->
+	<PICTURE item="MonsterBook_DropItem4" parent="MonsterBook">
+		<BOUNDS>
+			<X>575</X>
+			<Y>430</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</PICTURE>
+
+	
+
+	
+	<!-- Label : 페이지 번호 표시 -->
+	<LABEL item="MonsterBook_PageNumber" parent="MonsterBook">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>150</R>
+			<G>115</G>
+			<B>60</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>215</X>
+			<Y>498</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>- 0 -</TEXT>
+	</LABEL>
+
+	<!-- BMBUTTON: 이전 페이지 버튼 -->
+	<BMBUTTON item="MonsterBook_PrevPageButton" parent="MonsterBook">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>85</X>
+			<Y>481</Y>
+			<W>64</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">book_prev_off.tga</BITMAP>
+		<BITMAP type="over">book_prev_on.tga</BITMAP>
+		<BITMAP type="down">book_prev_on.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- BMBUTTON: 다음 페이지 버튼 -->
+	<BMBUTTON item="MonsterBook_NextPageButton" parent="MonsterBook">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>657</X>
+			<Y>477</Y>
+			<W>64</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">book_next_off.tga</BITMAP>
+		<BITMAP type="over">book_next_on.tga</BITMAP>
+		<BITMAP type="down">book_next_on.tga</BITMAP>
+	</BMBUTTON>
+
+
+	
+<!-- 상단 버튼 배열 -->
+	<!-- BMBUTTON : 상점버튼 -->
+	<BMBUTTON item="MonsterBook_nullbutton" parent="MonsterBook">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>289</X>
+			<Y>32</Y>
+			<W>93</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shop_off_kr.tga</BITMAP>
+		<BITMAP type="over">shop_on_kr.tga</BITMAP>
+		<BITMAP type="down">shop_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+		<ENABLE>false</ENABLE>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 장비버튼 -->
+	<BMBUTTON item="MonsterBook_nullbutton" parent="MonsterBook">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>392</X>
+			<Y>32</Y>
+			<W>89</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">equip_off_kr.tga</BITMAP>
+		<BITMAP type="over">equip_on_kr.tga</BITMAP>
+		<BITMAP type="down">equip_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+		<ENABLE>false</ENABLE>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 옵션버튼 -->
+	<BMBUTTON item="MonsterBook_OptionFrame" parent="MonsterBook">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>689</X>
+			<Y>32</Y>
+			<W>91</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">option_off_kr.tga</BITMAP>
+		<BITMAP type="over">option_on_kr.tga</BITMAP>
+		<BITMAP type="down">option_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+		<ENABLE>false</ENABLE>
+	</BMBUTTON>
+
+
+
+<!-- 하단 버튼 배열 -->
+	<!-- BMBUTTON : 나가기 버튼 -->
+	<BMBUTTON item ="MonsterBook_Close" parent="MonsterBook">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>677</X>
+			<Y>562</Y>
+			<W>112</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">exit_off_kr.tga</BITMAP>
+		<BITMAP type="over">exit_on_kr.tga</BITMAP>
+		<BITMAP type="down">exit_on_kr.tga</BITMAP>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BMBUTTON>
+
+	<!-- BUTTON : 나가기 버튼 -->
+	<BUTTON item ="MonsterBook_Close2" parent="MonsterBook">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+</XML>

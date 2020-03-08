@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="ChannelList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="ChannelListFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>404</W>
+			<H>435</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_CLF_01</TEXT> <!-- 채널 리스트 -->
+	</FRAME>
+	
+	<BUTTON item="ChannelList_Normal" parent="ChannelListFrame">	
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>59</Y>
+			<W>95</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLF_02</TEXT> <!-- 일반 -->
+		<GROUP>ChannelList</GROUP>
+	</BUTTON>
+
+	<BUTTON item="ChannelList_Private" parent="ChannelListFrame">	
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>99</Y>
+			<W>95</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLF_03</TEXT> <!-- 사설 -->
+		<GROUP>ChannelList</GROUP>
+	</BUTTON>
+
+	<BUTTON item="ChannelList_Clan" parent="ChannelListFrame">	
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>139</Y>
+			<W>95</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLF_04</TEXT> <!-- 클랜 -->
+		<GROUP>ChannelList</GROUP>
+	</BUTTON>
+			
+	<LISTBOX item="ChannelList" parent="ChannelListFrame">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>119</X>
+			<Y>60</Y>
+			<W>266</W>
+			<H>266</H>
+		</BOUNDS>
+		<ITEMHEIGHT>20</ITEMHEIGHT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LISTBOX>
+	<BUTTON item="ChannelJoin" parent="ChannelListFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>181</X>
+			<Y>390</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+	<BUTTON item="ChannelListClose" parent="ChannelListFrame">	
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>288</X>
+			<Y>390</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+	<EDIT item="PrivateChannelInput" parent="ChannelListFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>119</X>
+			<Y>341</Y>
+			<W>170</W>
+			<H>24</H>
+		</BOUNDS>
+		<MAXLENGTH>128</MAXLENGTH>
+		<VISIBLE>false</VISIBLE>
+	</EDIT>
+	<BUTTON item="PrivateChannelEnter" parent="ChannelListFrame">	
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>298</X>
+			<Y>340</Y>
+			<W>89</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLF_05</TEXT> <!-- 입장 -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<VISIBLE>false</VISIBLE>
+	</BUTTON>
+
+	<BUTTON item="MyClanChannel" parent="ChannelListFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>118</X>
+			<Y>340</Y>
+			<W>269</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLF_06</TEXT> <!-- 내 클랜 채널로 이동 -->
+		<VISIBLE>false</VISIBLE>
+	</BUTTON>
+		
+</XML>

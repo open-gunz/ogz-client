@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!-- 클랜 생성에 동의하시겠습니까 ? -->
+	<FRAME item="ClanSponsorAgreementConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CLAN_01</TEXT> <!-- 클랜생성 동의 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+
+	<TEXTAREA item="ClanSponsorAgreementConfirm_Textarea" parent="ClanSponsorAgreementConfirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ClanSponsorAgreementConfirm_OK" parent="ClanSponsorAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_02</TEXT> <!-- 동의(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="ClanSponsorAgreementConfirm_Cancel" parent="ClanSponsorAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_CLAN_03</TEXT> <!-- 거부(&amp;C) -->
+	</BUTTON>
+	<LABEL item="ClanSponsorAgreementConfirm_RemainDesc" parent="ClanSponsorAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_04</TEXT> <!-- 제한시간 : -->
+	</LABEL>
+	<LABEL item="ClanSponsorAgreementConfirm_Remain" parent="ClanSponsorAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+<!-- 클랜 생성 멤버들이 동의할동안 기다려주십시오  -->
+	<FRAME item="ClanSponsorAgreementWait">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CLAN_05</TEXT> <!-- 클랜생성 동의 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	<TEXTAREA item="ClanSponsorAgreementWait_Textarea" parent="ClanSponsorAgreementWait">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_06</TEXT> <!-- 클랜생성멤버들이 동의할동안 기다려주십시오. -->
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ClanSponsorAgreementWait_Cancel" parent="ClanSponsorAgreementWait">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>130</Y>
+			<W>110</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<VISIBLE>true</VISIBLE>
+	</BUTTON>
+
+	<LABEL item="ClanSponsorAgreementWait_RemainDesc" parent="ClanSponsorAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_07</TEXT> <!-- 제한시간 : -->
+	</LABEL>
+	<LABEL item="ClanSponsorAgreementWait_Remain" parent="ClanSponsorAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+<!-- 클랜 가입에 동의하시겠습니까 ? -->
+
+	<FRAME item="ClanJoinerAgreementConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CLAN_08</TEXT> <!-- 클랜 가입자 동의 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	<TEXTAREA item="ClanJoinerAgreementConfirm_Textarea" parent="ClanJoinerAgreementConfirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ClanJoinerAgreementConfirm_OK" parent="ClanJoinerAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_02</TEXT> <!-- 동의(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="ClanJoinerAgreementConfirm_Cancel" parent="ClanJoinerAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_CLAN_03</TEXT> <!-- 거부(&amp;C) -->
+	</BUTTON>
+	<LABEL item="ClanJoinerAgreementConfirm_RemainDesc" parent="ClanJoinerAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_04</TEXT> <!-- 제한시간 : -->
+	</LABEL>
+	<LABEL item="ClanJoinerAgreementConfirm_Remain" parent="ClanJoinerAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+<!-- 가입자가 동의할동안 기다려주십시오 -->
+	<FRAME item="ClanJoinerAgreementWait">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CLAN_08</TEXT> <!-- 클랜 가입자 동의 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	<TEXTAREA item="ClanJoinerAgreementWait_Textarea" parent="ClanJoinerAgreementWait">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_09</TEXT> <!-- 클랜 가입자가 동의할동안 기다려주십시오. -->
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ClanJoinerAgreementWait_Cancel" parent="ClanJoinerAgreementWait">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>130</Y>
+			<W>110</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<VISIBLE>true</VISIBLE>
+	</BUTTON>
+
+	<LABEL item="ClanJoinerAgreementWait_RemainDesc" parent="ClanJoinerAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_04</TEXT> <!-- 제한시간 : -->
+	</LABEL>
+	<LABEL item="ClanJoinerAgreementWait_Remain" parent="ClanJoinerAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+
+	<!-- 클랜 생성할때 나오는 다이얼로그 프레임 -->
+	<FRAME item="ClanCreateDialog" >
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>400</W>
+			<H>335</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<MOVABLE>false</MOVABLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<TEXT>STR:UI_CLAN_10</TEXT> <!-- 클랜 생성 -->
+	</FRAME>
+	<LABEL item="Lobby_PlayerName" parent="ClanCreateDialog">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>20</X>
+			<Y>100</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_11</TEXT> <!-- 클랜이름 -->
+	</LABEL>
+	<EDIT item="ClanCreate_ClanName" parent="ClanCreateDialog">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>120</X>
+			<Y>100</Y>
+			<W>257</W>
+			<H>24</H>
+		</BOUNDS>
+		<MAXLENGTH>12</MAXLENGTH>
+	</EDIT>
+	<TEXTAREA item = "ClanCreate_Message" parent = "ClanCreateDialog">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>14</X>
+			<Y>40</Y>
+			<W>365</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_12</TEXT> <!-- 클랜을 만들기 위해서는 10레벨 이상, 1000 BP가 필요하며 영문12자(한글 6자)이내의 고유한 이름과 추가로 4명의 클랜 창단 멤버가 있어야 합니다. -->
+		<EDITABLE>FALSE</EDITABLE>
+	</TEXTAREA>
+	<LABEL item="Lobby_PlayerName" parent="ClanCreateDialog">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>20</X>
+			<Y>133</Y>
+			<W>120</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_13</TEXT> <!-- 창단멤버 -->
+	</LABEL>
+	<PLAYERSELECTLISTBOX item="ClanSponsorSelect" parent="ClanCreateDialog">
+		<BOUNDS>
+			<X>120</X>
+			<Y>133</Y>
+			<W>257</W>
+			<H>130</H>
+		</BOUNDS>
+		<MULTISELECT/>
+	</PLAYERSELECTLISTBOX>
+
+	<BUTTON item="ClanCreateDialogOk" parent="ClanCreateDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>172</X>
+			<Y>280</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="ClanCreateDialogClose" parent="ClanCreateDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>280</X>
+			<Y>280</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+
+
+<!-- 범용적인 동의대기창  -->
+	<FRAME item="ProposalAgreementWait">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CLAN_14</TEXT> <!-- 동의대기 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	<TEXTAREA item="ProposalAgreementWait_Textarea" parent="ProposalAgreementWait">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ProposalAgreementWait_Cancel" parent="ProposalAgreementWait">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>130</Y>
+			<W>110</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<VISIBLE>true</VISIBLE>
+	</BUTTON>
+
+	<LABEL item="ProposalAgreementWait_RemainDesc" parent="ProposalAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_04</TEXT> <!-- 제한시간 : -->
+	</LABEL>
+	<LABEL item="ProposalAgreementWait_Remain" parent="ProposalAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+<!-- 범용적인 동의 응답창 -->
+	<FRAME item="ProposalAgreementConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CLAN_15</TEXT> <!-- 동의 응답 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+
+	<TEXTAREA item="ProposalAgreementConfirm_Textarea" parent="ProposalAgreementConfirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ProposalAgreementConfirm_OK" parent="ProposalAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_02</TEXT> <!-- 동의(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="ProposalAgreementConfirm_Cancel" parent="ProposalAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_CLAN_03</TEXT> <!-- 거부(&amp;C) -->
+	</BUTTON>
+	<LABEL item="ProposalAgreementConfirm_RemainDesc" parent="ProposalAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CLAN_04</TEXT> <!-- 제한시간 : -->
+	</LABEL>
+	<LABEL item="ProposalAgreementConfirm_Remain" parent="ProposalAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+</XML>

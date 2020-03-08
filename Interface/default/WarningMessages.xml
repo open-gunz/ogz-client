@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Login">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="HackWarnings">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+	</FRAME>
+	<FRAME item="WarningFrame" parent="HackWarnings">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>314</W>
+			<H>145</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TITLEBAR>true</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>STR:UI_WARNING_TITLE</TEXT> <!-- 해킹 검출 -->
+	</FRAME>	
+	<LABEL item="WarningMessage" parent="WarningFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>40</Y>
+			<W>280</W>
+			<H>25</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_WARNING_01</TEXT> 
+	</LABEL>
+	<BUTTON item="WarningExit" parent="WarningFrame">
+		<BUTTONLOOK>DefaultFrameLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>128</X>
+			<Y>96</Y>
+			<W>79</W>
+			<H>20</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인 -->
+	</BUTTON>		
+</XML>

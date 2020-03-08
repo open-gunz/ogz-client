@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Training">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="Training">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<FRAME item="TrainingGroup" parent="Training">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>528</W>
+			<H>480</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<TEXT>Training Options</TEXT>
+	</FRAME>
+	
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>12</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Me</TEXT>
+	</LABEL>
+	
+	<BUTTON item="TrainingGodmodeOption" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>63</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>63</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Godmode</TEXT>
+	</LABEL>
+	
+	<BUTTON item="TrainingNoStunsOption" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>93</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>93</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>No stuns</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>162</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Bot</TEXT>
+	</LABEL>
+	
+	<BUTTON item="TrainingBotGodmodeOption" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>152</X>
+			<Y>63</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>192</X>
+			<Y>63</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Godmode</TEXT>
+	</LABEL>
+	
+	<BUTTON item="TrainingBotNoStunsOption" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>152</X>
+			<Y>93</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>192</X>
+			<Y>93</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>No stuns</TEXT>
+	</LABEL>
+	
+	<BUTTON item="TrainingBotLoopOption" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>152</X>
+			<Y>123</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>192</X>
+			<Y>123</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Loop recordings</TEXT>
+	</LABEL>
+	
+	<BUTTON item="TrainingBotCamOption" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>152</X>
+			<Y>153</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>192</X>
+			<Y>153</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Show cam</TEXT>
+	</LABEL>
+
+	<BUTTON item="TrainingToggleBotButton" parent="TrainingGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>152</X>
+			<Y>183</Y>
+			<W>150</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Create bot (&amp;B)</TEXT>
+	</BUTTON>
+
+	<BUTTON item="TrainingToggleRecordingButton" parent="TrainingGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>152</X>
+			<Y>213</Y>
+			<W>150</W>
+			<H>32</H>
+		</BOUNDS>
+		<ENABLE>false</ENABLE>
+		<TEXT>Start recording (&amp;Y)</TEXT>
+	</BUTTON>
+
+	<BUTTON item="TrainingCloseButton" parent="TrainingGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>409</X>
+			<Y>429</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Close (&amp;C)</TEXT>
+	</BUTTON>
+
+</XML>

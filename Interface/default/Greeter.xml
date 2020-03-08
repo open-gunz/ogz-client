@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Greeter">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="Greeter">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+	</FRAME>
+	<!--
+	<PICTURE item="Logo" parent="Greeter">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>640</W>
+			<H>480</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BITMAP>title.png</BITMAP>
+	</PICTURE>
+	-->
+	<GROUP item="GreeterFrame" parent="Greeter">
+		<GROUPLOOK>NormalGroupLook</GROUPLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>200</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+	</GROUP>
+	<BUTTON item="LoginState" parent="GreeterFrame">
+		<BOUNDS>
+			<X>50</X>
+			<Y>40</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_GREETER_01</TEXT> <!-- 시작 (&amp;G) -->
+	</BUTTON>
+	
+	<!--
+	<BUTTON item="OptionFrame" parent="GreeterFrame">
+		<BOUNDS>
+			<X>50</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>설정 (&amp;O)</TEXT>
+	</BUTTON>
+	<BUTTON item="Exit" parent="GreeterFrame">
+		<BOUNDS>
+			<X>50</X>
+			<Y>120</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>종료 (&amp;X)</TEXT>
+	</BUTTON>
+	-->
+
+	<!-- For Debug -->
+
+	<!--
+	<MESHVIEWLIST item="MeshViewList" parent="Greeter">
+		<BOUNDS>
+			<X>20</X>
+			<Y>40</Y>
+			<W>600</W>
+			<H>90</H>
+		</BOUNDS>
+		<ITEMWIDTH>100</ITEMWIDTH>
+	</MESHVIEWLIST>
+	-->
+</XML>

@@ -1,0 +1,3001 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Option">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="Option">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<FRAME item="OptionGroup" parent="Option">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>528</W>
+			<H>480</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<TEXT>STR:UI_OPTION_01</TEXT> <!-- 옵션 -->
+	</FRAME>
+
+
+
+<!-- Video -->
+	<FRAME item="VideoOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>140</X>
+			<Y>70</Y>
+			<W>350</W>
+			<H>350</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_02</TEXT> <!-- 해상도 -->
+	</LABEL>
+	<COMBOBOX item="ScreenResolution" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>105</X>
+			<Y>0</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</COMBOBOX>
+
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Fullscreen Mode</TEXT>
+	</LABEL>
+	<COMBOBOX item="FullscreenMode" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>105</X>
+			<Y>30</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM selected="true">Fullscreen</LISTITEM>
+		<LISTITEM>Borderless</LISTITEM>
+		<LISTITEM>Windowed</LISTITEM>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>60</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_03</TEXT> <!-- 밝기 -->
+	</LABEL>
+	<SLIDER item="VideoGamma" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>105</X>
+			<Y>60</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>90</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_04</TEXT> <!-- 반사효과 -->
+	</LABEL>
+	<BUTTON item="Reflection" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+
+	<LABEL item="Lightmap Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>120</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_05</TEXT> <!-- 라이트맵 -->
+	</LABEL>
+	<BUTTON item="LightMap" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>120</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+
+	<LABEL item="Shader Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>150</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_06</TEXT> <!-- 쉐이더 -->
+	</LABEL>
+	<BUTTON item="Shader" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>150</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>180</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_07</TEXT> <!-- 동적라이트 -->
+	</LABEL>
+	<BUTTON item="DynamicLight" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>180</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<CUSTOM/>
+	</BUTTON>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>210</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_08</TEXT> <!-- 캐릭터 이미지 품질 -->
+	</LABEL>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>240</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_09</TEXT> <!-- 배경 이미지 품질 -->
+	</LABEL>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>270</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_10</TEXT> <!-- 이펙트 품질 -->
+	</LABEL>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>300</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_11</TEXT> <!-- 텍스쳐 품질 -->
+	</LABEL>
+
+	<COMBOBOX item="CharTexLevel" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>165</X>
+			<Y>210</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM selected="true">STR:UI_OPTION_LIST_01_01</LISTITEM> <!-- 좋음 -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_02</LISTITEM> <!-- 보통 -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_03</LISTITEM> <!-- 낮음 -->
+		<LISTITEM>Archetype's</LISTITEM> <!-- 낮음 -->
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<COMBOBOX item="MapTexLevel" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>165</X>
+			<Y>240</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM selected="true">STR:UI_OPTION_LIST_01_01</LISTITEM> <!-- 좋음 -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_02</LISTITEM> <!-- 보통 -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_03</LISTITEM> <!-- 낮음 -->
+		<LISTITEM>Archetype's</LISTITEM> <!-- 낮음 -->
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<COMBOBOX item="EffectLevel" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>165</X>
+			<Y>270</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM selected="true">STR:UI_OPTION_LIST_01_01</LISTITEM> <!-- 좋음 -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_02</LISTITEM> <!-- 보통 -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_03</LISTITEM> <!-- 낮음 -->
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<COMBOBOX item="TextureFormat" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>165</X>
+			<Y>300</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM>16bit</LISTITEM>
+		<LISTITEM selected="true">32bit</LISTITEM>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+<!-- Audio -->
+	<FRAME item="AudioOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>140</X>
+			<Y>70</Y>
+			<W>350</W>
+			<H>300</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<LABEL item="LabelBGMMute" parent="AudioOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_13</TEXT> <!-- 배경음악 -->
+	</LABEL>
+	<BUTTON item="BGMMute" parent="AudioOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>0</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+	<LABEL item="LabelBGMVolume" parent="AudioOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>3</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_14</TEXT> <!-- 배경음악 볼륨 -->
+	</LABEL>
+	<SLIDER item="BGMVolumeSlider" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>105</X>
+			<Y>30</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+
+	<LABEL item="LabelEffectMute" parent="AudioOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>3</X>
+			<Y>60</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_15</TEXT> <!-- 효과음 -->
+	</LABEL>
+	<BUTTON item="EffectMute" parent="AudioOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+	<LABEL item="LabelEffectVolume" parent="AudioOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>3</X>
+			<Y>90</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_16</TEXT> <!-- 효과음 볼륨 -->
+	</LABEL>
+	<SLIDER item="EffectVolumeSlider" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>105</X>
+			<Y>90</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+
+<!--	<BUTTON item="8BitSound" parent="AudioOptionGroup">
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>130</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>8비트사운드</TEXT>
+	</BUTTON>
+
+	<BUTTON item="16BitSound" parent="AudioOptionGroup">
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>190</X>
+			<Y>130</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>16비트사운드</TEXT>
+	</BUTTON>
+	-->
+
+	<LABEL item="Label" parent="AudioOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>160</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_17</TEXT> <!-- 3D사운드 좌우반전 -->
+	</LABEL>
+	<BUTTON item="InverseSound" parent="AudioOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>160</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+
+	<LABEL item="Label" parent="AudioOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>190</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_18</TEXT> <!-- 하드웨어 믹싱지원 -->
+	</LABEL>
+	<BUTTON item="HWMixing" parent="AudioOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>190</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+
+	<LABEL item="Label" parent="AudioOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>220</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_19</TEXT> <!-- 적 명중시 표시음 -->
+	</LABEL>
+	<BUTTON item="HitSound" parent="AudioOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>220</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+
+	<LABEL item="Label" parent="AudioOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>250</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_74</TEXT> <!-- 해설자 음성 출력 -->
+	</LABEL>
+	<BUTTON item="NarrationSound" parent="AudioOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>250</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+
+<!--
+	<LABEL item="LabelEffect3D" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>3</X>
+			<Y>91</Y>
+			<W>100</W>
+			<H>16</H>
+		</BOUNDS>
+		<TEXT>3차원 소리</TEXT>
+	</LABEL>
+	<BUTTON item="Effect3D" parent="AudioOptionGroup">
+		<BUTTONLOOK>NormalButton2Look</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>91</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+-->
+
+<!-- Mouse Option -->
+<!--
+	<FRAME item="MouseOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>140</X>
+			<Y>70</Y>
+			<W>350</W>
+			<H>330</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+-->
+	
+<!-- Keyboard Option -->
+	<FRAME item="KeyboardOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>140</X>
+			<Y>40</Y>
+			<W>350</W>
+			<H>430</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="KeyboardOptionGroup1" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>40</Y>
+			<W>350</W>
+			<H>400</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="KeyboardOptionGroup2" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>40</Y>
+			<W>350</W>
+			<H>400</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="KeyboardOptionGroup3" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>40</Y>
+			<W>350</W>
+			<H>400</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="KeyboardOptionGroup4" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>40</Y>
+			<W>350</W>
+			<H>400</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="KeyboardOptionGroup5" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>40</Y>
+			<W>350</W>
+			<H>400</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<BUTTON item="ControlTabBtn1" parent="KeyboardOptionGroup">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>65</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_68</TEXT>
+	</BUTTON>
+	<BUTTON item="ControlTabBtn2" parent="KeyboardOptionGroup">
+		<BOUNDS>
+			<X>70</X>
+			<Y>0</Y>
+			<W>65</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_69</TEXT>
+	</BUTTON>
+	<BUTTON item="ControlTabBtn3" parent="KeyboardOptionGroup">
+		<BOUNDS>
+			<X>140</X>
+			<Y>0</Y>
+			<W>65</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Action3</TEXT> <!-- Previously STR:UI_OPTION_70 -->
+	</BUTTON>
+	<BUTTON item="ControlTabBtn4" parent="KeyboardOptionGroup">
+		<BOUNDS>
+			<X>210</X>
+			<Y>0</Y>
+			<W>65</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_71</TEXT>
+	</BUTTON>
+	<BUTTON item="ControlTabBtn5" parent="KeyboardOptionGroup">
+		<BOUNDS>
+			<X>280</X>
+			<Y>0</Y>
+			<W>65</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_72</TEXT>
+	</BUTTON>
+
+	<TABCONTROL item="ControlTabControl">
+		<TAB button = "ControlTabBtn1" widget = "KeyboardOptionGroup1"/>
+		<TAB button = "ControlTabBtn2" widget = "KeyboardOptionGroup2"/>
+		<TAB button = "ControlTabBtn3" widget = "KeyboardOptionGroup3"/>
+		<TAB button = "ControlTabBtn4" widget = "KeyboardOptionGroup4"/>
+		<TAB button = "ControlTabBtn5" widget = "KeyboardOptionGroup5"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+	
+	<!-- action1 tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_22</TEXT> <!-- 앞으로 가기 -->
+	</LABEL>
+	<ACTIONKEY item="ForwardActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>0</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_23</TEXT> <!-- 뒤로 가기 -->
+	</LABEL>
+	<ACTIONKEY item="BackActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>30</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_24</TEXT> <!-- 왼쪽으로 가기 -->
+	</LABEL>
+	<ACTIONKEY item="LeftActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>60</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>90</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_25</TEXT> <!-- 오른쪽으로 가기 -->
+	</LABEL>
+	<ACTIONKEY item="RightActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>90</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>120</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_26</TEXT> <!-- 근접 무기 선택 -->
+	</LABEL>
+	<ACTIONKEY item="MeleeWeaponActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>120</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_27</TEXT> <!-- 주 무기 선택 -->
+	</LABEL>
+	<ACTIONKEY item="PrimaryWeaponActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>150</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>180</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_28</TEXT> <!-- 보조 무기 선택 -->
+	</LABEL>
+	<ACTIONKEY item="SecondaryWeaponActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>180</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>210</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_59</TEXT> <!-- 무기 사용 -->
+	</LABEL>
+	<ACTIONKEY item="UseWeaponActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>210</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>240</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_73</TEXT> <!-- 무기 사용2 -->
+	</LABEL>
+	<ACTIONKEY item="UseWeapon2ActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>240</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>270</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_34</TEXT> <!-- 재장전 -->
+	</LABEL>
+	<ACTIONKEY item="ReloadActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>270</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>300</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	<TEXT>STR:UI_OPTION_35</TEXT> <!-- 점프 -->
+	</LABEL>
+	<ACTIONKEY item="JumpActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>120</X>
+			<Y>300</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	
+	
+	<!-- action2 tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_39</TEXT> <!-- 방어 -->
+	</LABEL>
+	<ACTIONKEY item="DefenceActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>0</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_29</TEXT> <!-- 아이템1 선택 -->
+	</LABEL>
+	<ACTIONKEY item="Item1ActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>30</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_30</TEXT> <!-- 아이템2 선택 -->
+	</LABEL>
+	<ACTIONKEY item="Item2ActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>60</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>90</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_31</TEXT> <!-- 이전무기 -->
+	</LABEL>
+	<ACTIONKEY item="PreviousWeaponActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>90</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>120</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_32</TEXT> <!-- 다음무기 -->
+	</LABEL>
+	<ACTIONKEY item="NextWeaponActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>120</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<!--<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_OPTION_33</TEXT>
+	</LABEL>
+	<ACTIONKEY item="MenuActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>150</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</ACTIONKEY>-->
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Show full chat</TEXT>
+	</LABEL>
+	<ACTIONKEY item="ShowFullChatActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>150</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>180</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_40</TEXT> <!-- 채팅창보기 -->
+	</LABEL>
+	<ACTIONKEY item="ToggleChatActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>180</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>210</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_36</TEXT> <!-- 점수 보기 -->
+	</LABEL>
+	<ACTIONKEY item="ScoreActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>210</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>240</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_37</TEXT> <!-- 스크린샷 -->
+	</LABEL>
+	<ACTIONKEY item="ScreenShotActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>240</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>270</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_38</TEXT> <!-- 녹화/재생 -->
+	</LABEL>
+	<ACTIONKEY item="RecordActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>270</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>300</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Voice chat</TEXT> <!-- 녹화/재생 -->
+	</LABEL>
+	<ACTIONKEY item="VoiceChatActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>120</X>
+			<Y>300</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	
+	
+	
+	
+	<!-- emotion tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_60</TEXT>
+	</LABEL>
+	<ACTIONKEY item="TauntActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>120</X>
+			<Y>0</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_61</TEXT> <!-- 인사 -->
+	</LABEL>
+	<ACTIONKEY item="BowActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>120</X>
+			<Y>30</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_62</TEXT> <!-- 손 흔들기 -->
+	</LABEL>
+	<ACTIONKEY item="WaveActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>120</X>
+			<Y>60</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>90</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_63</TEXT> <!-- 웃기 -->
+	</LABEL>
+	<ACTIONKEY item="LaughActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>120</X>
+			<Y>90</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>120</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_64</TEXT> <!-- 울기 -->
+	</LABEL>
+	<ACTIONKEY item="CryActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>120</X>
+			<Y>120</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_65</TEXT> <!-- 춤 -->
+	</LABEL>
+	<ACTIONKEY item="DanceActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>120</X>
+			<Y>150</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>210</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Chat</TEXT> <!-- 춤 -->
+	</LABEL>
+	<ACTIONKEY item="ChatActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>120</X>
+			<Y>210</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>240</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Team chat</TEXT> <!-- 춤 -->
+	</LABEL>
+	<ACTIONKEY item="TeamChatActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>120</X>
+			<Y>240</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	
+	<!-- mouse tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup4">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>3</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_20</TEXT> <!-- 마우스 감도 -->
+	</LABEL>
+	<SLIDER item="MouseSensitivitySlider" parent="KeyboardOptionGroup4">
+		<BOUNDS>
+			<X>105</X>
+			<Y>3</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	
+	<EDIT item="MouseSensitivityEdit" parent="KeyboardOptionGroup4">
+		<BOUNDS>
+			<X>105</X>
+			<Y>32</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup4">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>62</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_21</TEXT> <!-- 마우스 상하 반전 -->
+	</LABEL>
+	<BUTTON item="InvertMouse" parent="KeyboardOptionGroup4">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>326</X>
+			<Y>62</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	
+	<!-- joystick tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup5">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>3</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_66</TEXT> <!-- 조이스틱 아날로그 감도 -->
+	</LABEL>
+	<SLIDER item="JoystickSensitivitySlider" parent="KeyboardOptionGroup5">
+		<BOUNDS>
+			<X>105</X>
+			<Y>3</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup5">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>32</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_67</TEXT> <!-- 조이스틱 상하 반전 -->
+	</LABEL>
+	<BUTTON item="InvertJoystick" parent="KeyboardOptionGroup5">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>326</X>
+			<Y>32</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+		
+		
+	<BUTTON item="DefaultSettingLoad" parent="KeyboardOptionGroup">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>0</X>
+			<Y>389</Y>
+			<W>140</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_41</TEXT> <!-- 기본설정으로 -->
+		<WIRELOOK/>
+	</BUTTON>
+
+<!-- Etc Option -->
+	<FRAME item="EtcOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>140</X>
+			<Y>70</Y>
+			<W>350</W>
+			<H>350</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_42</TEXT> <!-- 포트포워딩 포트설정 -->
+	</LABEL>
+	<EDIT item="NetworkPort1" parent="EtcOptionGroup">
+		<BOUNDS>
+			<X>210</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>275</X>
+			<Y>0</Y>
+			<W>20</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>~</TEXT>
+	</LABEL>
+	<EDIT item="NetworkPort2" parent="EtcOptionGroup">
+		<BOUNDS>
+			<X>290</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+<!--	
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>30</Y>
+			<W>320</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_43</TEXT> 
+	</LABEL>		
+-->		
+	<TEXTAREA item="Option_Textarea01" parent="EtcOptionGroup">
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>30</Y>
+			<W>310</W>
+			<H>55</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_43</TEXT> <!-- 성능 최대화(일부시스템에서 마우스가 느려질수 있습니다) -->
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+		
+
+	<BUTTON item="BoostOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>30</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>80</Y>
+			<W>320</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_44</TEXT> <!-- 채팅 필터 옵션 -->
+	</LABEL>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>102</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_45</TEXT> <!-- 일반 채팅 말 무시 -->
+	</LABEL>
+	<BUTTON item="NormalChatOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>102</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>200</X>
+			<Y>102</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_46</TEXT> <!-- 팀 채팅 말 무시 -->
+	</LABEL>
+	<BUTTON item="TeamChatOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>102</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>122</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_47</TEXT> <!-- 클랜 채팅 말 무시 -->
+	</LABEL>
+	<BUTTON item="ClanChatOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>122</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>200</X>
+			<Y>122</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_48</TEXT> <!-- 귓말 거부 -->
+	</LABEL>
+	<BUTTON item="WhisperOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>122</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>170</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_49</TEXT> <!-- 초대거부 -->
+	</LABEL>
+	<BUTTON item="InviteOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>229</X>
+			<Y>170</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>210</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_50</TEXT> <!-- 조준점 -->
+	</LABEL>
+	<CANVAS item="CrossHairPreviewCanvas" parent="EtcOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>50</X>
+			<Y>240</Y>
+			<W>64</W>
+			<H>64</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>FALSE</RESIZABLE>
+		<MOVABLE>FALSE</MOVABLE>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</CANVAS>
+	<COMBOBOX item="CrossHairComboBox" parent="EtcOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>105</X>
+			<Y>210</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</COMBOBOX>
+
+<!-- Macro Option -->
+	<FRAME item="MacroOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>140</X>
+			<Y>70</Y>
+			<W>350</W>
+			<H>300</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_51</TEXT> <!-- F1 Key -->
+	</LABEL>
+	<EDIT item="MacroF1" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>30</X>
+			<Y>0</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_52</TEXT> <!-- F2 Key -->
+	</LABEL>
+	<EDIT item="MacroF2" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>30</X>
+			<Y>30</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>60</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_53</TEXT> <!-- F3 Key -->
+	</LABEL>
+	<EDIT item="MacroF3" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>30</X>
+			<Y>60</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>90</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_54</TEXT> <!-- F4 Key -->
+	</LABEL>
+	<EDIT item="MacroF4" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>30</X>
+			<Y>90</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>120</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_55</TEXT> <!-- F5 Key -->
+	</LABEL>
+	<EDIT item="MacroF5" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>30</X>
+			<Y>120</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>150</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_56</TEXT> <!-- F6 Key -->
+	</LABEL>
+	<EDIT item="MacroF6" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>30</X>
+			<Y>150</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>	<HALIGN>right</HALIGN></ALIGN>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>180</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_57</TEXT> <!-- F7 Key -->
+	</LABEL>
+	<EDIT item="MacroF7" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>30</X>
+			<Y>180</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>	<HALIGN>right</HALIGN></ALIGN>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>210</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_58</TEXT> <!-- F8 Key -->
+	</LABEL>
+	<EDIT item="MacroF8" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>30</X>
+			<Y>210</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>	<HALIGN>right</HALIGN></ALIGN>
+	</EDIT>
+	
+	<FRAME item="ChatOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>140</X>
+			<Y>70</Y>
+			<W>350</W>
+			<H>350</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<BUTTON item="HitboxOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>10</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>10</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Show hitboxes</TEXT>
+	</LABEL>
+	
+	<BUTTON item="DrawTrailsOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>40</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>40</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Draw trails</TEXT>
+	</LABEL>
+	
+	<BUTTON item="CamFixOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>70</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>70</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Widescreen FOV fix</TEXT>
+	</LABEL>
+	
+	<BUTTON item="InterfaceFixOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>100</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>100</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Interface fix</TEXT>
+	</LABEL>
+	
+	<BUTTON item="SlashEffectOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>130</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>130</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Slash effect</TEXT>
+	</LABEL>
+	
+	<BUTTON item="UnlockedDirOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>160</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>160</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Unlocked dir</TEXT>
+	</LABEL>
+	
+	<BUTTON item="ShowDebugInfoOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>10</X>
+			<Y>190</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>40</X>
+			<Y>190</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Show debug info</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>220</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Field of view</TEXT>
+	</LABEL>
+	<EDIT item="FOVOption" parent="ChatOptionGroup">
+		<BOUNDS>
+			<X>160</X>
+			<Y>220</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>250</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Chat font</TEXT>
+	</LABEL>
+	<EDIT item="ChatFontOption" parent="ChatOptionGroup">
+		<BOUNDS>
+			<X>160</X>
+			<Y>250</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<BUTTON item="ChatFontBoldOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>255</X>
+			<Y>250</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>285</X>
+			<Y>250</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Bold</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>280</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Chat font size</TEXT>
+	</LABEL>
+	<EDIT item="ChatFontSizeOption" parent="ChatOptionGroup">
+		<BOUNDS>
+			<X>160</X>
+			<Y>280</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>310</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Chat background color</TEXT>
+	</LABEL>
+	<EDIT item="ChatBackgroundColorOption" parent="ChatOptionGroup">
+		<BOUNDS>
+			<X>160</X>
+			<Y>310</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<BUTTON item="ColorInvertOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>190</X>
+			<Y>10</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>220</X>
+			<Y>10</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Color inversion</TEXT>
+	</LABEL>
+	
+	<BUTTON item="MonochromeOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>190</X>
+			<Y>40</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>220</X>
+			<Y>40</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Monochrome</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>220</X>
+			<Y>70</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Logical FPS limit</TEXT>
+	</LABEL>
+	<EDIT item="LogicalFPSLimitOption" parent="ChatOptionGroup">
+		<BOUNDS>
+			<X>170</X>
+			<Y>70</Y>
+			<W>48</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>220</X>
+			<Y>100</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Visual FPS limit</TEXT>
+	</LABEL>
+	<EDIT item="VisualFPSLimitOption" parent="ChatOptionGroup">
+		<BOUNDS>
+			<X>170</X>
+			<Y>100</Y>
+			<W>48</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<BUTTON item="AsyncScreenshotsOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>190</X>
+			<Y>130</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>220</X>
+			<Y>130</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Async screenshots</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>220</X>
+			<Y>160</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Screenshot format</TEXT>
+	</LABEL>
+	<COMBOBOX item="ScreenshotFormatOption" parent="ChatOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>160</X>
+			<Y>160</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM>BMP</LISTITEM>
+		<LISTITEM>JPG</LISTITEM>
+		<LISTITEM selected="true">PNG</LISTITEM>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+	
+	<BUTTON item="FastWeaponCycleOption" parent="ChatOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>190</X>
+			<Y>190</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="ChatOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>220</X>
+			<Y>190</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Fast weapon cycle</TEXT>
+	</LABEL>
+
+
+
+
+<!-- 옵션 메뉴 버튼들 -->
+
+	<BMBUTTON item = "ShowVideoOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>52</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<STRETCH/>
+		<BITMAP type="up">video_blue.tga</BITMAP>
+		<BITMAP type="over">video_blue.tga</BITMAP>
+		<BITMAP type="down">video_green.tga</BITMAP>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+	</BMBUTTON>
+
+	<BMBUTTON item = "ShowAudioOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>122</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<STRETCH/>
+		<BITMAP type="up">speaker_blue.tga</BITMAP>
+		<BITMAP type="over">speaker_blue.tga</BITMAP>
+		<BITMAP type="down">speaker_green.tga</BITMAP>
+		<PUSHBUTTON/>
+	</BMBUTTON>
+
+	<!--
+	<BMBUTTON item = "ShowMouseOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>192</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<STRETCH/>
+		<BITMAP type="up">mouse_blue.tga</BITMAP>
+		<BITMAP type="over">mouse_blue.tga</BITMAP>
+		<BITMAP type="down">mouse_green.tga</BITMAP>
+		<PUSHBUTTON/>
+	</BMBUTTON>
+	-->
+
+
+	<BMBUTTON item = "ShowKeyboardOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>192</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<STRETCH/>
+		<BITMAP type="up">keyboard_blue.tga</BITMAP>
+		<BITMAP type="over">keyboard_blue.tga</BITMAP>
+		<BITMAP type="down">keyboard_green.tga</BITMAP>
+		<PUSHBUTTON/>
+	</BMBUTTON>
+
+	<BMBUTTON item = "ShowMacroOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>262</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<STRETCH/>
+		<BITMAP type="up">macro_off.tga</BITMAP>
+		<BITMAP type="over">macro_off.tga</BITMAP>
+		<BITMAP type="down">macro_on.tga</BITMAP>
+		<PUSHBUTTON/>
+	</BMBUTTON>
+
+	<BMBUTTON item = "ShowEtcOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>332</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<STRETCH/>
+		<BITMAP type="up">misc_blue.tga</BITMAP>
+		<BITMAP type="over">misc_blue.tga</BITMAP>
+		<BITMAP type="down">misc_green.tga</BITMAP>
+		<PUSHBUTTON/>
+	</BMBUTTON>
+
+	<BMBUTTON item = "ShowChatOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>402</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<STRETCH/>
+		<BITMAP type="up">misc_blue.tga</BITMAP>
+		<BITMAP type="over">misc_blue.tga</BITMAP>
+		<BITMAP type="down">misc_green.tga</BITMAP>
+		<PUSHBUTTON/>
+	</BMBUTTON>
+
+	<TABCONTROL item="OptionTabControl">
+		<TAB button = "ShowVideoOptionGroup" widget = "VideoOptionGroup"/>
+		<TAB button = "ShowAudioOptionGroup" widget = "AudioOptionGroup"/>
+<!--		<TAB button = "ShowMouseOptionGroup" widget = "MouseOptionGroup"/>	-->
+		<TAB button = "ShowKeyboardOptionGroup" widget = "KeyboardOptionGroup"/>
+		<TAB button = "ShowEtcOptionGroup" widget = "EtcOptionGroup"/>
+		<TAB button = "ShowMacroOptionGroup" widget = "MacroOptionGroup"/>
+		<TAB button = "ShowChatOptionGroup" widget = "ChatOptionGroup"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+	
+<!-- 나가기 -->
+
+	<BUTTON item="SaveOptionButton" parent="OptionGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>304</X>
+			<Y>429</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="CancelOptionButton" parent="OptionGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>409</X>
+			<Y>429</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+
+</XML>

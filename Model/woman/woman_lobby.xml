@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<!-- 
+		AddBaseModel 은 기본 무기 더미가 붙어있는 파일로 지정한다.
+		
+		motion_type 은 무기별 에니메이션 값을 나타낸다. 
+		
+		1 : katana
+		2 : 1hpistol
+		3 : 2hpistol
+		4 : shotgun
+		5 : rifle
+		6 : grenade
+		7 : dagger
+		8 : item
+		
+	-->
+
+	<AddBaseModel name="womanbase1" filename="woman-parts02.elu"> </AddBaseModel>
+
+	<AddParts name="parts2" filename="woman-parts03.elu"> </AddParts>
+	<AddParts name="parts3" filename="woman-parts04.elu"> </AddParts>
+	<AddParts name="parts4" filename="woman-parts05.elu"> </AddParts>
+	<AddParts name="parts5" filename="woman-parts06.elu"> </AddParts>
+    <AddParts name="parts5" filename="woman-parts07.elu"> </AddParts>
+    <AddParts name="parts6" filename="woman-parts08.elu"> </AddParts>
+	
+	<AddAnimation name="login_intro"   filename="woman_login_1hpistol_intro.elu.ani"	        motion_type="2" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_1hpistol_idle.elu.ani"	 	motion_type="2" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_1hpistol_walk.elu.ani"	        motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+
+	<AddAnimation name="login_intro"   filename="woman_login_2hpistol_intro.elu.ani"	        motion_type="3" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_2hpistol_idle.elu.ani"	 	motion_type="3" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_2hpistol_walk.elu.ani"	        motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+		
+	<AddAnimation name="login_intro"   filename="woman_login_knife_intro.elu.ani"	        motion_type="1" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_knife_idle.elu.ani"	 	motion_type="1" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_knife_walk.elu.ani"	        motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+
+	<AddAnimation name="login_intro"   filename="woman_login_rifle_intro.elu.ani"	        motion_type="4" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_rifle_idle.elu.ani"	 	motion_type="4" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_rifle_walk.elu.ani"	        motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+		
+	<AddAnimation name="login_intro"   filename="woman_login_rifle_intro.elu.ani"	        motion_type="5" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_rifle_idle.elu.ani"	 	motion_type="5" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_rifle_walk.elu.ani"	        motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	
+	<AddAnimation name="login_intro"   filename="woman_login_dagger_intro.elu.ani"	motion_type="7" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_dagger_idle.elu.ani"	 	motion_type="7" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_dagger_walk.elu.ani"	        motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+
+</xml>

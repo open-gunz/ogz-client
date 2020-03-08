@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="golem" filename="golem.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"		filename="golem_idle.elu.ani" 	 	gm="0"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="neglect"		filename="golem_neglect.elu.ani" 	 	gm="0"	motion_type="0" motion_loop_type="loop" > 
+	</AddAnimation>
+
+
+	<AddAnimation name="melee_attacked1"	filename="golem_damage_melee.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="melee_attacked2"	filename="golem_damage_melee2.elu.ani" gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="range_attacked1"	filename="golem_damage_range.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="lightning"		filename="golem_damage_lightning.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="melee_attack"	filename="golem_standshot.elu.ani"		gm="1"	motion_type="0" motion_loop_type="loop" 	> 
+		<AddAnimEvent eventtype="sound" filename="41_Golem_attack" 			beginframe="0" >	</AddAnimEvent>
+	</AddAnimation>
+
+	<AddAnimation name="run"		filename="golem_run.elu.ani"		gm="1" 	motion_type="0" motion_loop_type="loop" > 
+	</AddAnimation>
+
+	<AddAnimation name="die"		filename="golem_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 
+	</AddAnimation>
+
+	<AddAnimation name="special_attack1" 	filename="golem_special.elu.ani" gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 
+	</AddAnimation>
+	<AddAnimation name="special_attack2" 	filename="golem_special2.elu.ani" gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 
+	</AddAnimation>
+
+	<AddAnimation name="stunned" 		filename="golem_damage_down.elu.ani"	gm="1"	motion_type="0" motion_loop_type="lastframe" 	> </AddAnimation>
+
+</xml>

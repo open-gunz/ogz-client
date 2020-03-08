@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!-- 거리 단위 cm 기본값 : 150/4000, 1m = 100 -->
+<XML>	
+	<SOUNDOPTION NAME = "we_grenade_explosion" MINDISTANCE = "500" MAXDISTANCE = "8000" />	
+	<SOUNDOPTION NAME = "we_gasgrenade_explosion" MINDISTANCE = "300" MAXDISTANCE = "5000" />	
+	<SOUNDOPTION NAME = "we_flashbang_explosion" MINDISTANCE = "300" MAXDISTANCE = "5000" />					
+</XML>

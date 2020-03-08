@@ -1,0 +1,1630 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Equipment">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Game Result 화면 구성
+   
+   Last Update : 23.May.2005
+   Editor      : Lim Dong Hwan
+-->
+	
+
+<!-- FRAME : Game Result 화면 구성 -->
+	<FRAME item="GameResult">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 배경 이미지 -->
+	<PICTURE item="GameResult_Background" parent="GameResult">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	
+	
+<!-- FRAME : Combat Result 화면 구성 -->
+	<FRAME item="CombatResult" parent="GameResult">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>20</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : Finish -->
+	<PICTURE item="CombatResult_Finish" parent="CombatResult">
+		<BOUNDS>
+			<X>135</X>
+			<Y>34</Y>
+			<W>310</W>
+			<H>77</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>result_finish.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : Win/Lose/Draw -->
+	<PICTURE item="CombatResult_WinLoseDraw" parent="CombatResult">
+		<BOUNDS>
+			<X>170</X>
+			<Y>30</Y>
+			<W>230</W>
+			<H>85</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>result_win.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : Header -->
+	<PICTURE item="CombatResult_Header" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>139</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : Red team background -->
+	<PICTURE item="CombatResult_RedTeamBG00" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG01" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG02" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG03" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG04" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG05" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG06" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG07" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG08" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG09" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG10" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG11" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG12" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG13" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG14" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_RedTeamBG15" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>rednullframe.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : Blue team background -->
+	<PICTURE item="CombatResult_BlueTeamBG00" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG01" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG02" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG03" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG04" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG05" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG06" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG07" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG08" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG09" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG10" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG11" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG12" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG13" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG14" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_BlueTeamBG15" parent="CombatResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>165</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bluenullframe.tga</BITMAP>
+	</PICTURE>
+
+
+	<!-- Picture : 게임방 이미지 -->
+	<PICTURE item="CombatResult_GameRoomImg00" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg01" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg02" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg03" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg04" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg05" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg06" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg07" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg08" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg09" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg10" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg11" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg12" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg13" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg14" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg15" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	
+	
+	
+	<!-- Label : 플레이어 이름 리스트 레이블 -->
+	<LABEL item="CombatResult_PlayerNameListLabel" parent="CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>60</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_01</TEXT>
+	</LABEL>
+
+	<!-- TEXTAREA : 플레이어 이름 리스트 -->
+	<TEXTAREA item = "CombatResult_PlayerNameList" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>60</X>
+			<Y>165</Y>
+			<W>260</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- Label : 플레이어 점수 리스트 레이블 -->
+	<LABEL item="CombatResult_PlayerScoreListLabel" parent="CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>335</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_02</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 플레이어 점수 리스트 -->
+	<LABEL item = "CombatResult_PlayerScore0" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore1" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore2" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore3" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore4" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore5" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore6" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore7" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore8" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore9" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore10" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore11" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore12" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore13" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore14" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "CombatResult_PlayerScore15" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	
+	
+
+	<!-- Label : 플레이어 Kill 리스트 레이블 -->
+	<LABEL item="CombatResult_PlayerKillListLabel" parent="CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>400</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_03</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 Kill 리스트 -->
+	<TEXTAREA item = "CombatResult_PlayerKillList" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>400</X>
+			<Y>165</Y>
+			<W>50</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- Label : 플레이어 Death 리스트 레이블 -->
+	<LABEL item="CombatResult_PlayerDeathListLabel" parent="CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_04</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 Death 리스트 -->
+	<TEXTAREA item = "CombatResult_PlayerDeathList" parent = "CombatResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>165</Y>
+			<W>50</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	
+	
+
+<!-- FRAME : Clan Result 화면 구성 -->
+	<FRAME item="ClanResult" parent="GameResult">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>20</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<!-- Picture : Win -->
+	<PICTURE item="ClanResult_Win" parent="ClanResult">
+		<BOUNDS>
+			<X>205</X>
+			<Y>45</Y>
+			<W>230</W>
+			<H>85</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>result_win.tga</BITMAP>
+	</PICTURE>
+	
+	
+	<!-- PICTURE : 게임방 유저 표시 -->
+	<PICTURE item="ClanResult_GameRoomImg10" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg11" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg12" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg13" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	
+		
+	<!-- Picture : 클랜 마크 출력 1 -->
+	<PICTURE item="ClanResult_ClanBitmap1" parent="ClanResult">
+		<BOUNDS>
+			<X>30</X>
+			<Y>167</Y>
+			<W>64</W>
+			<H>64</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	<!-- Picture : Header 1 -->
+	<PICTURE item="ClanResult_Header1" parent="ClanResult">
+		<BOUNDS>
+			<X>97</X>
+			<Y>139</Y>
+			<W>413</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 플레이어 이름 리스트 레이블 -->
+	<LABEL item="ClanResult_PlayerNameListLabel1" parent="ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>112</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_01</TEXT>
+	</LABEL>
+
+	<!-- TEXTAREA : 플레이어 이름 리스트 -->
+	<TEXTAREA item = "ClanResult_PlayerNameList1" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>112</X>
+			<Y>165</Y>
+			<W>260</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- Label : 플레이어 점수 리스트 레이블 -->
+	<LABEL item="ClanResult_PlayerScoreListLabel1" parent="ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>335</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_02</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 플레이어 점수 리스트 -->
+	<LABEL item = "ClanResult_PlayerScore10" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "ClanResult_PlayerScore11" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "ClanResult_PlayerScore12" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "ClanResult_PlayerScore13" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	
+	<!-- Label : 플레이어 Kill 리스트 레이블 -->
+	<LABEL item="ClanResult_PlayerKillListLabel1" parent="ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>400</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_03</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 Kill 리스트 -->
+	<TEXTAREA item = "ClanResult_PlayerKillList1" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>400</X>
+			<Y>165</Y>
+			<W>50</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- Label : 플레이어 Death 리스트 레이블 -->
+	<LABEL item="ClanResult_PlayerDeathListLabel1" parent="ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_04</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 Death 리스트 -->
+	<TEXTAREA item = "ClanResult_PlayerDeathList1" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>165</Y>
+			<W>50</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<!-- Picture : Lose -->
+	<PICTURE item="ClanResult_Lose" parent="ClanResult">
+		<BOUNDS>
+			<X>205</X>
+			<Y>280</Y>
+			<W>230</W>
+			<H>85</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>result_lose.tga</BITMAP>
+	</PICTURE>
+	
+	
+	<!-- PICTURE : 게임방 유저 표시 -->
+	<PICTURE item="ClanResult_GameRoomImg20" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg21" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg22" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg23" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom_s.tga</BITMAP>-->
+	</PICTURE>
+		
+		
+	<!-- Picture : 클랜 마크 출력 2 -->
+	<PICTURE item="ClanResult_ClanBitmap2" parent="ClanResult">
+		<BOUNDS>
+			<X>30</X>
+			<Y>402</Y>
+			<W>64</W>
+			<H>64</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : Header 2 -->
+	<PICTURE item="ClanResult_Header2" parent="ClanResult">
+		<BOUNDS>
+			<X>97</X>
+			<Y>374</Y>
+			<W>413</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 플레이어 이름 리스트 레이블 -->
+	<LABEL item="ClanResult_PlayerNameListLabel2" parent="ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>112</X>
+			<Y>375</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_01</TEXT>
+	</LABEL>
+
+	<!-- TEXTAREA : 플레이어 이름 리스트 -->
+	<TEXTAREA item = "ClanResult_PlayerNameList2" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>112</X>
+			<Y>400</Y>
+			<W>260</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- Label : 플레이어 점수 리스트 레이블 -->
+	<LABEL item="ClanResult_PlayerScoreListLabel2" parent="ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>335</X>
+			<Y>375</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_02</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 플레이어 점수 리스트 -->
+	<LABEL item = "ClanResult_PlayerScore20" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "ClanResult_PlayerScore21" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "ClanResult_PlayerScore22" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item = "ClanResult_PlayerScore23" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>148</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>18</H>
+		</BOUNDS>
+	</LABEL>
+	
+	
+	<!-- Label : 플레이어 Kill 리스트 레이블 -->
+	<LABEL item="ClanResult_PlayerKillListLabel2" parent="ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>400</X>
+			<Y>375</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_03</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 Kill 리스트 -->
+	<TEXTAREA item = "ClanResult_PlayerKillList2" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>400</X>
+			<Y>400</Y>
+			<W>50</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- Label : 플레이어 Death 리스트 레이블 -->
+	<LABEL item="ClanResult_PlayerDeathListLabel2" parent="ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>375</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_04</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 Death 리스트 -->
+	<TEXTAREA item = "ClanResult_PlayerDeathList2" parent = "ClanResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>400</Y>
+			<W>50</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	
+<!-- Test
+	<EDIT item = "testedit" parent = "CombatResult">
+		<BOUNDS>
+			<X>20</X>
+			<Y>165</Y>
+			<W>260</W>
+			<H>400</H>
+		</BOUNDS>
+		<ENABLE>false</ENABLE>
+	</EDIT>
+	<EDIT item = "testedit" parent = "CombatResult">
+		<BOUNDS>
+			<X>280</X>
+			<Y>165</Y>
+			<W>80</W>
+			<H>400</H>
+		</BOUNDS>
+		<ENABLE>false</ENABLE>
+	</EDIT>
+	<EDIT item = "testedit" parent = "CombatResult">
+		<BOUNDS>
+			<X>360</X>
+			<Y>165</Y>
+			<W>50</W>
+			<H>400</H>
+		</BOUNDS>
+		<ENABLE>false</ENABLE>
+	</EDIT>
+	<EDIT item = "testedit" parent = "CombatResult">
+		<BOUNDS>
+			<X>410</X>
+			<Y>165</Y>
+			<W>50</W>
+			<H>400</H>
+		</BOUNDS>
+		<ENABLE>false</ENABLE>
+	</EDIT>
+-->
+
+<!-- FRAME : Quest Result 화면 구성 -->
+	<FRAME item="QuestResult" parent="GameResult">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	
+<!-- 정보 표시 -->
+	<!-- ZBMNUMLABEL : 획득 경험치 표시 -->
+	<ZBMNUMLABEL item="QuestResult_GetPlusXP" parent="QuestResult">
+		<BOUNDS>
+			<X>170</X>
+			<Y>118</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 벌점 경험치 표시 -->
+	<ZBMNUMLABEL item="QuestResult_GetMinusXP" parent="QuestResult">
+		<BOUNDS>
+			<X>170</X>
+			<Y>146</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<!-- ZBMNUMLABEL : 총 경험치 합계 표시 -->
+	<ZBMNUMLABEL item="QuestResult_GetTotalXP" parent="QuestResult">
+		<BOUNDS>
+			<X>170</X>
+			<Y>174</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<!-- ZBMNUMLABEL : 획득한 바운티 표시 -->
+	<ZBMNUMLABEL item="QuestResult_GetBounty" parent="QuestResult">
+		<BOUNDS>
+			<X>170</X>
+			<Y>216</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- LISTBOX : 획득한 아이템 목록 -->
+	<LISTBOX item="QuestResult_ItemListbox" parent="QuestResult">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>40</X>
+			<Y>270</Y>
+			<W>335</W>
+			<H>230</H>
+		</BOUNDS>
+		<STRETCH/>
+		<ENABLE>false</ENABLE>
+	</LISTBOX>
+	
+	
+	<!-- LABEL : 남은 시간 레이블 -->
+	<LABEL item="GameResult_RemaindTime" parent="GameResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>200</X>
+			<Y>555</Y>
+			<W>400</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	
+	<!-- BUTTON : 나가기 버튼 -->
+	<BUTTON item ="GameResult_ButtonQuit" parent="GameResult">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+</XML>

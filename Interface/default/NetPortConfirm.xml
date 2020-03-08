@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="ResizeConfirm">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes"/>
+	
+	<!-- 네트워크 포트 변경 재시작 메시지 창 -->
+	<FRAME item="NetworkPortConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>320</W>
+			<H>180</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_NPC_01</TEXT> <!-- 네트워크 포트 변경 -->
+	</FRAME>
+	
+	<TEXTAREA item="NetworkPortConfirm_LABEL" parent="NetworkPortConfirm" >
+		<BOUNDS>
+			<X>10</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>80</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_NPC_02</TEXT> <!-- 네트워크 포트 변경을 적용하려면 건즈를 다시 실행해야합니다.\종료하시겠습니까? -->
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<BUTTON item="NetworkPortChangeRestart" parent="NetworkPortConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>68</X>
+			<Y>120</Y>
+			<W>120</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_NPC_03</TEXT> <!-- 종 료 -->
+	</BUTTON>
+	<BUTTON item="NetworkPortChangeCancel" parent="NetworkPortConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>190</X>
+			<Y>120</Y>
+			<W>120</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_NPC_04</TEXT> <!-- 나중에 적용 -->
+	</BUTTON>
+</XML>

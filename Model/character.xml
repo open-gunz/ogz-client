@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML >
+
+	<AddXml name="heroman1" 	filename="model/man/man01.xml"> 		</AddXml>
+	<AddXml name="herowoman1" 	filename="model/woman/woman01.xml"> 	</AddXml>
+	<AddElu name="heroman_low1"	filename="model/lo/man_lo01.elu"> 		</AddElu>
+	<AddElu name="heroman_low2"	filename="model/lo/man_lo02.elu"> 		</AddElu>
+
+</XML>

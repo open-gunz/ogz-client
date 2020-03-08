@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Stage 화면 구성
+   
+   Last Update : 5.NOV.2004
+   Editor      : Lim Dong Hwan
+-->
+
+<!-- 프레임 생성 : StageSettingFrame -->
+	<FRAME item="StageSettingFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>620</W>
+			<H>436</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_SSF_01</TEXT> <!-- 기타 게임 설정 -->
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+
+	<!-- Label : 제한 시간 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>40</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SSF_02</TEXT> <!-- 제한 시간 -->
+	</LABEL>	
+	
+	<!-- COMBOBOX : 제한 시간 콤보박스 -->
+	<COMBOBOX item="StageLimitTime" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>137</X>
+			<Y>40</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	<!-- Label : 난입 허용 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>72</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SSF_03</TEXT> <!-- 난입 허용 -->
+	</LABEL>	
+
+	<!-- COMBOBOX : 난입 허용 콤보박스 -->
+	<COMBOBOX item="StageIntrude" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>137</X>
+			<Y>72</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 팀킬 여부 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>104</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SSF_04</TEXT> <!-- 팀킬 여부 -->
+	</LABEL>	
+
+	<!-- COMBOBOX : 팀킬 여부 콤보 박스 -->
+	<COMBOBOX item="StageTeamKill" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>137</X>
+			<Y>104</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 레벨 제한 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>136</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SSF_05</TEXT> <!-- 레벨 제한 -->
+	</LABEL>
+
+	<!-- COMBOBOX : 레벨 제한 콤보 박스 -->
+	<COMBOBOX item="StageLevelLimit" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>137</X>
+			<Y>136</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	<!-- LABEL : 팀밸런스 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>168</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SSF_08</TEXT> <!-- 팀밸런스 -->
+	</LABEL>	
+
+	<!-- COMBOBOX : 팀밸런스 콤보 박스 -->
+	<COMBOBOX item="StageTeamBalancing" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>137</X>
+			<Y>168</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+	</COMBOBOX>
+
+		
+	<!-- LABEL : 관전 허용 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>200</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SSF_06</TEXT> <!-- 관전 허용 -->
+	</LABEL>	
+
+	<!-- COMBOBOX : 관전 허용 콤보 박스 -->
+	<COMBOBOX item="StageObserver" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+			<X>20</X>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>137</X>
+			<Y>200</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+		<ENABLE>false</ENABLE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 투표 가능 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>232</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SSF_07</TEXT> <!-- 투표 가능 -->
+	</LABEL>	
+
+	<!-- COMBOBOX : 투표 가능 콤보 박스 -->
+	<COMBOBOX item="StageVote" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>137</X>
+			<Y>232</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+		<ENABLE>false</ENABLE>
+	</COMBOBOX>
+
+	<!-- COMBOBOX : 관전 허용 콤보 박스 -->
+	<COMBOBOX item="StageNetcode" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+			<X>20</X>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>137</X>
+			<Y>264</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+		<ENABLE>true</ENABLE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 투표 가능 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>264</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Netcode</TEXT> <!-- 투표 가능 -->
+	</LABEL>	
+
+	<BUTTON item="StageForceHPAP" parent="StageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>125</X>
+			<Y>296</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	
+	<!-- LABEL : 투표 가능 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>296</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Force HP/AP</TEXT> <!-- 투표 가능 -->
+	</LABEL>
+	
+	<EDIT item="StageHP" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>137</X>
+			<Y>328</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>328</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>HP</TEXT> <!-- 투표 가능 -->
+	</LABEL>
+	
+	<EDIT item="StageAP" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>137</X>
+			<Y>360</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>360</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>AP</TEXT> <!-- 투표 가능 -->
+	</LABEL>
+	
+	<BUTTON item="StageNoFlip" parent="StageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>425</X>
+			<Y>40</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	
+	<!-- LABEL : 투표 가능 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>320</X>
+			<Y>40</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>No flip</TEXT> <!-- 투표 가능 -->
+	</LABEL>
+	
+	<BUTTON item="StageSwordsOnly" parent="StageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>425</X>
+			<Y>72</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	
+	<!-- LABEL : 투표 가능 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>320</X>
+			<Y>72</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Swords only</TEXT> <!-- 투표 가능 -->
+	</LABEL>
+	
+	<BUTTON item="StageVanillaMode" parent="StageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>425</X>
+			<Y>104</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ENABLE>true</ENABLE>
+	</BUTTON>
+	
+	<!-- LABEL : 투표 가능 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>320</X>
+			<Y>104</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Vanilla mode</TEXT>
+	</LABEL>
+	
+	<BUTTON item="StageInvulnerabilityStates" parent="StageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>425</X>
+			<Y>136</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<ENABLE>true</ENABLE>
+	</BUTTON>
+	
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>320</X>
+			<Y>136</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Invulnerability states</TEXT>
+	</LABEL>
+	
+
+	
+
+<!-- 버튼 -->
+	<!-- BUTTON : 확인 버튼 -->
+	<BUTTON item="StageSettingApplyBtn" parent="StageSettingFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>205</X>
+			<Y>383</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+
+	<!-- BUTTON : 취소 버튼 -->
+	<BUTTON item="ParentClose" parent="StageSettingFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>315</X>
+			<Y>383</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+</XML>

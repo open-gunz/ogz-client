@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<!--
+		AddBaseModel 은 기본 무기 더미가 붙어있는 파일로 지정한다.
+
+		motion_type 은 무기별 에니메이션 값을 나타낸다.
+
+		1  : katana
+		2  : 1hpistol
+		3  : 2hpistol
+		4  : shotgun
+		5  : rifle
+		6  : grenade
+		7  : dagger
+		8  : item
+		9  : rocketrauncher
+		10 : 1hSMG
+		11 : 2hSMG
+		12 : sword
+		13 : blade
+		14 : 2hdagger
+		
+	-->
+	
+	<CharacterModel></CharacterModel>
+
+	<AddBaseModel name="womanbase1" filename="woman-parts01.elu"> </AddBaseModel>
+
+	<AddParts name="parts2" filename="woman-parts03.elu"> </AddParts>
+	<AddParts name="parts3" filename="woman-parts04.elu"> </AddParts>
+	<AddParts name="parts4" filename="woman-parts05.elu"> </AddParts>
+	<AddParts name="parts5" filename="woman-parts06.elu"> </AddParts>
+ 	<AddParts name="parts6" filename="woman-parts07.elu"> </AddParts>
+ 	<AddParts name="parts7" filename="woman-parts08.elu"> </AddParts>
+ 	<AddParts name="parts8" filename="woman-parts09.elu"> </AddParts>
+ 	<AddParts name="parts9" filename="woman-parts10.elu"> </AddParts>
+ 	<AddParts name="parts10" filename="woman-parts11.elu"> </AddParts>
+    <AddParts name="parts16" filename="woman-parts16.elu"> </AddParts>
+    <AddParts name="parts17" filename="woman-parts07_1.elu"> </AddParts>
+    <AddParts name="parts13" filename="woman-parts02.elu"> </AddParts>
+    <AddParts name="parts11" filename="woman-parts12.elu"> </AddParts>
+    <AddParts name="parts20" filename="woman-parts18.elu"> </AddParts>
+    <AddParts name="parts12" filename="woman-parts13.elu"> </AddParts>
+    <AddParts name="parts19" filename="woman-parts_staff.elu"> </AddParts>
+    <AddParts name="parts20" filename="woman-parts20.elu"> </AddParts>
+    <AddParts name="parts21" filename="woman-parts21.elu"> </AddParts>
+    <AddParts name="parts22" filename="woman-parts22.elu"> </AddParts>
+    <AddParts name="parts23" filename="woman-parts23.elu"> </AddParts>
+    <AddParts name="parts24" filename="woman-parts_santa.elu"> </AddParts>
+    <AddParts name="parts25" filename="woman-parts24.elu"> </AddParts>
+    <AddParts name="parts26" filename="woman-parts25.elu"> </AddParts>
+    <AddParts name="parts18" filename="woman-parts17.elu"> </AddParts>
+    <AddParts name="parts27" filename="woman-parts26.elu"> </AddParts>
+    <AddParts name="parts33" filename="woman_bigi.elu"> </AddParts>
+    <AddParts name="parts34" filename="woman-parts28.elu"> </AddParts>
+    <AddParts name="parts35" filename="woman-parts_hanbok.elu"> </AddParts>
+    <AddParts name="parts36" filename="woman-parts27.elu"> </AddParts>
+    <AddParts name="parts37" filename="woman-parts_worldcup.elu"> </AddParts>
+    <AddParts name="parts38" filename="woman-parts14.elu"> </AddParts>
+    <AddParts name="parts39" filename="woman-parts_hat.elu"> </AddParts>
+    <AddParts name="parts40" filename="woman-parts_zeus.elu"> </AddParts>
+    <AddParts name="parts40" filename="woman-parts_pumpkin.elu"> </AddParts>
+    <AddParts name="parts41" filename="woman-parts30.elu"> </AddParts>
+    <AddParts name="parts43" filename="woman-parts33.elu"> </AddParts>
+    <AddParts name="parts44" filename="woman-parts34.elu"> </AddParts>
+	<AddParts name="parts45" filename="woman-parts_quest.elu"> </AddParts>
+	<AddParts name="parts46" filename="woman-parts35.elu"> </AddParts>
+	<AddParts name="parts47" filename="woman-parts_quest.elu"> </AddParts>
+    <AddParts name="parts48" filename="woman-parts36.elu"> </AddParts>
+	<AddParts name="parts49" filename="woman-parts_cat.elu"> </AddParts>
+	<AddParts name="parts48" filename="woman-parts_rabbit.elu"> </AddParts>
+	<AddParts name="parts51" filename="woman-parts_noir.elu"> </AddParts>
+	<AddParts name="parts52" filename="woman-parts_swim.elu"> </AddParts>
+	<AddParts name="parts53" filename="woman-parts_guard.elu"> </AddParts>
+	<AddParts name="parts54" filename="woman-parts_quest_lizard.elu"> </AddParts>
+	<AddParts name="parts55" filename="woman-parts_school.elu"> </AddParts>
+	<AddParts name="parts56" filename="woman-parts_winter.elu"> </AddParts>
+	<AddParts name="parts57" filename="woman-parts_aura.elu"> </AddParts>
+	<AddParts name="parts58" filename="woman-parts_clanmaster.elu"> </AddParts>
+	<AddParts name="parts58" filename="woman-parts_face.elu"> </AddParts>
+	<AddParts name="parts59" filename="woman-parts_sum08.elu"> </AddParts>
+	<AddParts name="parts59" filename="woman-parts_valkyrie.elu"> </AddParts>
+	<AddParts name="parts60" filename="woman-parts_quest_gold.elu"> </AddParts>
+	<AddParts name="parts61" filename="woman-parts_gm.elu"> </AddParts>
+	<AddParts name="parts62" filename="woman-parts29.elu"> </AddParts>
+	<AddParts name="parts63" filename="woman-parts32.elu"> </AddParts>
+	<AddParts name="parts64" filename="woman-parts31.elu"> </AddParts>
+	<AddParts name="parts65" filename="woman-parts_event08.elu"> </AddParts>	
+	<AddParts name="parts78" filename="woman-parts_assassin.elu"> </AddParts>
+	<AddParts name="parts79" filename="woman-parts_royal.elu"> </AddParts>
+	<AddParts name="parts80" filename="woman-parts_judge.elu"> </AddParts>
+	<AddParts name="parts81" filename="woman-parts_navy.elu"> </AddParts>
+	<AddParts name="parts89" filename="woman-parts_yohawk.elu"> </AddParts>
+	<AddParts name="parts90" filename="woman-parts_wed.elu"> </AddParts>
+	<AddParts name="parts91" filename="woman-parts_crown.elu"> </AddParts>
+	<AddParts name="parts92" filename="woman-parts_angel.elu"> </AddParts>	
+	<AddParts name="parts84" filename="woman-parts_eola.elu"> </AddParts>	
+	<AddParts name="parts85" filename="woman-parts_axium_high.elu"> </AddParts>	
+	<AddParts name="parts86" filename="woman-parts_axium_uniform.elu"> </AddParts>	
+	<AddParts name="parts96" filename="woman-parts_heavy.elu"> </AddParts>
+	<AddParts name="parts97" filename="woman-parts_kungfu.elu"> </AddParts>
+        <AddParts name="parts102" filename="woman-parts_magic.elu"> </AddParts>
+        <AddParts name="parts103" filename="woman-parts_halem.elu"> </AddParts>
+        <AddParts name="parts104" filename="woman-parts_jhunter.elu"> </AddParts>
+        <AddParts name="parts105" filename="woman-parts_shadow.elu"> </AddParts>
+        <AddParts name="parts106" filename="woman-parts_pirate.elu"> </AddParts>
+        <AddParts name="parts107" filename="woman-parts_blackdragon.elu"> </AddParts>
+        <AddParts name="parts108" filename="woman-parts_ninja.elu"> </AddParts>
+        <AddParts name="parts109" filename="woman-parts_crusader.elu"> </AddParts>
+
+<!--
+    	
+	<AddParts name="parts15" filename="woman-parts15.elu"> </AddParts>
+
+    -->
+
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"    filename="woman_1hpistol_idle.elu.ani" 	 			gm="1"	motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_1hpistol_run.elu.ani"		 			gm="1"	motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_1hpistol_run_back.elu.ani"	 			gm="1"	motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"						gm="1"	motion_type="2" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="2" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="2" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall.elu.ani"						gm="1"	motion_type="2" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down.elu.ani" 			gm="1"	motion_type="2" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall.elu.ani" 					gm="1"	motion_type="2" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down.elu.ani" 			gm="1"	motion_type="2" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_1hpistol_jump_up.elu.ani"	 			gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_1hpistol_jump_down.elu.ani"	 		sound="man_jump" gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_1hpistol_standshot.elu.ani"			gm="1"	motion_type="2" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="2" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="2" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="2" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="2" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_1hpistol_run_wall_down.elu.ani"	gm="1" 	motion_type="2" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 				gm="1"	motion_type="2" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"				gm="1"	motion_type="2" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"				gm="1"	motion_type="2" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 						gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 			gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 			gm="1"	motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 			gm="1"	motion_type="2" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="reload"  filename="woman_1hpistol_reload.elu.ani"				gm="1"	motion_type="2" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_1hpistol_load.elu.ani"					gm="1"	motion_type="2" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"						gm="1"	motion_type="2" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"						gm="1"	motion_type="2" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"				gm="1"	motion_type="2" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove.elu.ani"	 	gm="1"    motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_1hpistol_intro.elu.ani"		motion_type="2" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_1hpistol_idle.elu.ani"	 		motion_type="2" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_1hpistol_walk.elu.ani"	        motion_type="2" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_1hpistol_taunt.elu.ani"						gm="1"	motion_type="2" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="2" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_1hpistol_bow.elu.ani" 	 	gm="1"	motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_1hpistol_wave.elu.ani" 	 	gm="1"	motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_1hpistol_cry.elu.ani" 	 	gm="1"	motion_type="2" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_1hpistol_laugh.elu.ani"  	gm="1"	motion_type="2" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+
+
+	
+	<AddAnimation name="idle"    filename="woman_2hpistol_idle.elu.ani" 		 		gm="1"	motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_2hpistol_run.elu.ani"		 			gm="1"	motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_2hpistol_run_back.elu.ani"	 			gm="1"	motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"						gm="1"	motion_type="3" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="3" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="3" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall.elu.ani"						gm="1"	motion_type="3" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down.elu.ani" 			gm="1"	motion_type="3" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall.elu.ani" 					gm="1"	motion_type="3" motion_loop_type="lonceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down.elu.ani" 			gm="1"	motion_type="3" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_2hpistol_jump_up.elu.ani"	 			gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_2hpistol_jump_down.elu.ani"	 		sound="man_jump" gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_2hpistol_standshot.elu.ani"			gm="1"	motion_type="3" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="3" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="3" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="3" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="3" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_2hpistol_run_wall_down.elu.ani"	gm="1" 	motion_type="3" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 				gm="1"	motion_type="3" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"				gm="1"	motion_type="3" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"				gm="1"	motion_type="3" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 						gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 			gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 			gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 			gm="1"	motion_type="3" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="reload"  filename="woman_2hpistol_reload.elu.ani"				gm="1"	motion_type="3" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_2hpistol_load.elu.ani"					gm="1"	motion_type="3" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"						gm="1"	motion_type="3" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"						gm="1"	motion_type="3" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"				gm="1"	motion_type="3" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove.elu.ani"	 	gm="1"	motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_2hpistol_intro.elu.ani"		motion_type="3" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_2hpistol_idle.elu.ani"	 		motion_type="3" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_2hpistol_walk.elu.ani"	        motion_type="3" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_2hpistol_taunt.elu.ani"						gm="1"	motion_type="3" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="3" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_2hpistol_bow.elu.ani" 	 	gm="1"	motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_2hpistol_wave.elu.ani" 	 	gm="1"	motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_2hpistol_cry.elu.ani" 	 	gm="1"	motion_type="3" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_2hpistol_laugh.elu.ani"  	gm="1"	motion_type="3" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+
+
+	<AddAnimation name="idle"    filename="woman_knife_idle.elu.ani" 	 				gm="1"	motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_knife_run.elu.ani"		 				gm="1"	motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_knife_run_back.elu.ani"	 			gm="1"	motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall_melee.elu.ani"						gm="1"	motion_type="1" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"   filename="woman_run_wall_down_meleef.elu.ani" 		gm="1"	motion_type="1" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"   filename="woman_run_wall_down_meleeb.elu.ani" 		gm="1"	motion_type="1" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall_melee.elu.ani"						gm="1"	motion_type="1" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down_melee.elu.ani" 			gm="1"	motion_type="1" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall_melee.elu.ani" 					gm="1"	motion_type="1" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down_melee.elu.ani" 			gm="1"	motion_type="1" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_knife_jump_up.elu.ani"	 			gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_knife_jump_down.elu.ani"	 			sound="man_jump" gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"			gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"			gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"			gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"			gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_knife_dash.elu.ani"					sound="fx_dash" gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_knife_dash_back.elu.ani"				sound="fx_dash" gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_knife_dash_Lside.elu.ani"				sound="fx_dash" gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_knife_dash_Rside.elu.ani"				sound="fx_dash" gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down_melee.elu.ani"	 	gm="1"	motion_type="1" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 				gm="1"	motion_type="1" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"				gm="1"	motion_type="1" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"				gm="1"	motion_type="1" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 						gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 			gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 			gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 			gm="1"	motion_type="1" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_knife_load.elu.ani"						gm="1"	motion_type="1" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="bind"   filename="woman_knife_bind.elu.ani"	 					gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="uppercut" filename="woman_knife_uppercut.elu.ani"				gm="1"	motion_type="1" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="attack1" filename="woman_knife_standshot_1.elu.ani"				gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack1_ret" filename="woman_knife_standshot_1_return.elu.ani"	gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack2" filename="woman_knife_standshot_2.elu.ani"				gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack2_ret" filename="woman_knife_standshot_2_return.elu.ani"	gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack3" filename="woman_knife_standshot_3.elu.ani"				gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack3_ret" filename="woman_knife_standshot_3_return.elu.ani"	gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack4" filename="woman_knife_standshot_4.elu.ani"				gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack2_1.5" filename="woman_knife_standshot_2_1.5.elu.ani"				gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack3_1.5" filename="woman_knife_standshot_3_1.5.elu.ani"				gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack4_1.5" filename="woman_knife_standshot_4_1.5.elu.ani"				gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack_Jump" filename="woman_knife_attack_jump.elu.ani"			gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"						gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"						gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"				gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove_melee.elu.ani"	 	gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_knife_intro.elu.ani"				motion_type="1" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_knife_idle.elu.ani"	 			motion_type="1" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_knife_walk.elu.ani"					motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="guard_start"   filename="woman_knife_guard_start2.elu.ani"		gm="1"	motion_type="1" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="guard_idle"    filename="woman_knife_guard_idle.elu.ani"	 	gm="1"	motion_type="1" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="guard_block1" filename="woman_knife_guard_block_1.elu.ani"		gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_block1_ret" filename="woman_knife_guard_block_1_return.elu.ani" gm="1" motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_block2" filename="woman_knife_guard_block_2.elu.ani"		gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_cancel"   filename="woman_knife_guard_cancel.elu.ani"		gm="1"	motion_type="1" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_knife_taunt.elu.ani"						gm="1"	motion_type="1" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="1" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_knife_bow.elu.ani" 	 	gm="1"	motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_knife_wave.elu.ani" 	 	gm="1"	motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_knife_cry.elu.ani" 	 	gm="1"	motion_type="1" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_knife_laugh.elu.ani" 	 	gm="1"	motion_type="1" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cancel"	filename="woman_knife_cancel.elu.ani" 	gm="1"	motion_type="1" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="charge"	filename="woman_knife_charge.elu.ani" 	gm="1"	motion_type="1" sound="we_fem_05"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="slash"	filename="woman_knife_slash.elu.ani"			gm="1"	motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="jump_slash1" filename="woman_knife_jump_slash1.elu.ani"		gm="1"		motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="jump_slash2" filename="woman_knife_jump_slash2.elu.ani"		gm="1"		motion_type="1" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+
+
+
+	<AddAnimation name="idle"    filename="woman_shotgun_idle.elu.ani" 	 			gm="1"		motion_type="4" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_shotgun_run.elu.ani"		 		gm="1"		motion_type="4" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_shotgun_run_back.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"	 				gm="1"		motion_type="4" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="4" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="4" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall.elu.ani"	 				gm="1"		motion_type="4" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down.elu.ani" 		gm="1"		motion_type="4" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall.elu.ani"	 				gm="1"		motion_type="4" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down.elu.ani" 		gm="1"		motion_type="4" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_shotgun_jump_up.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_shotgun_jump_down.elu.ani"	 	sound="man_jump" gm="1"		motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_shotgun_standshot.elu.ani"			gm="1"		motion_type="4" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="4" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 			gm="1"		motion_type="4" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"		motion_type="4" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"		motion_type="4" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 					gm="1"		motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 		gm="1"		motion_type="4" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="reload"  filename="woman_shotgun_reload.elu.ani"			gm="1"		motion_type="4" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_shotgun_load.elu.ani"				gm="1"		motion_type="4" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"					gm="1"		motion_type="4" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"					gm="1"		motion_type="4" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"			gm="1"		motion_type="4" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove.elu.ani"	gm="1" 		motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_shotgun_intro.elu.ani"	        motion_type="4" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_shotgun_idle.elu.ani"	 		motion_type="4" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_shotgun_walk.elu.ani"	        motion_type="4" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_shotgun_taunt.elu.ani"						gm="1"	motion_type="4" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="4" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_shotgun_bow.elu.ani" 	 	gm="1"	motion_type="4" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_shotgun_wave.elu.ani" 	 	gm="1"	motion_type="4" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_shotgun_cry.elu.ani" 	 	gm="1"	motion_type="4" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_shotgun_laugh.elu.ani"  	gm="1"	motion_type="4" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="4" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="4" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="4" motion_loop_type="loop" 		> </AddAnimation>
+
+
+	<AddAnimation name="idle"    filename="woman_rifle_idle.elu.ani" 	 			gm="1"		motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_rifle_run.elu.ani"		 			gm="1"		motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_rifle_run_back.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"	 				gm="1"		motion_type="5" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="5" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="5" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall.elu.ani"	 				gm="1"		motion_type="5" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down.elu.ani" 		gm="1"		motion_type="5" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall.elu.ani"	 				gm="1"		motion_type="5" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down.elu.ani" 		gm="1"		motion_type="5" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_rifle_jump_up.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_rifle_jump_down.elu.ani"	 		sound="man_jump" gm="1"		motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_rifle_standshot.elu.ani"			gm="1"		motion_type="5" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="5" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 			gm="1"		motion_type="5" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"		motion_type="5" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"		motion_type="5" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 					gm="1"		motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 		gm="1"		motion_type="5" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="reload"  filename="woman_rifle_reload.elu.ani"				gm="1"		motion_type="5" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_rifle_load.elu.ani"					gm="1"		motion_type="5" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"					gm="1"		motion_type="5" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"					gm="1"		motion_type="5" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"			gm="1"		motion_type="5" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove.elu.ani"	gm="1" 		motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_rifle_intro.elu.ani"	        motion_type="5" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_rifle_idle.elu.ani"	 		motion_type="5" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_rifle_walk.elu.ani"				motion_type="5" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_rifle_taunt.elu.ani"						gm="1"	motion_type="5" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="5" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_rifle_bow.elu.ani" 	 	gm="1"	motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_rifle_wave.elu.ani" 	 	gm="1"	motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_rifle_cry.elu.ani" 	 	gm="1"	motion_type="5" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_rifle_laugh.elu.ani"  	gm="1"	motion_type="5" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+
+
+
+	<AddAnimation name="idle"    filename="woman_grenade_idle.elu.ani" 	 			gm="1"		motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_grenade_run.elu.ani"		 		gm="1"		motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_grenade_run_back.elu.ani"			gm="1"		motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"					gm="1"		motion_type="6" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="6" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="6" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall_melee.elu.ani"					gm="1"		motion_type="6" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down_melee.elu.ani" 		gm="1"		motion_type="6" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall_melee.elu.ani"					gm="1"		motion_type="6" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down_melee.elu.ani" 		gm="1"		motion_type="6" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_grenade_jump_up.elu.ani"	 		gm="1"		motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_grenade_jump_down.elu.ani"	 	sound="man_jump" gm="1"		motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_grenade_standshot.elu.ani"			gm="1"		motion_type="6" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 					gm="1"		motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 		gm="1"		motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 		gm="1"		motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 		gm="1"		motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down.elu.ani"	 		gm="1"		motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 			gm="1"		motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"		motion_type="6" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"		motion_type="6" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_grenade_load.elu.ani"	 			gm="1"		motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"					gm="1"		motion_type="6" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"					gm="1"		motion_type="6" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"			gm="1"		motion_type="6" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove_melee.elu.ani"	gm="1" 		motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"    filename="woman_login_item_idle.elu.ani"	 			motion_type="6" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_item_idle.elu.ani"	 			motion_type="6" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_item_walk.elu.ani"	        motion_type="6" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_grenade_taunt.elu.ani"						gm="1"	motion_type="6" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_item_idle.elu.ani"	 			motion_type="6" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="6" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_grenade_bow.elu.ani" 	 	gm="1"	motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_grenade_wave.elu.ani" 	 	gm="1"	motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_grenade_cry.elu.ani" 	 	gm="1"	motion_type="6" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_grenade_laugh.elu.ani"  	gm="1"	motion_type="6" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+
+
+
+	<AddAnimation name="idle"    filename="woman_dagger_idle.elu.ani" 	 			gm="1"		motion_type="7" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_dagger_run.elu.ani"		 		gm="1"		motion_type="7" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_dagger_run_back.elu.ani"			gm="1"		motion_type="7" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall_melee.elu.ani"					gm="1"		motion_type="7" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"   filename="woman_run_wall_down_meleef.elu.ani" 		gm="1"	motion_type="7" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"   filename="woman_run_wall_down_meleeb.elu.ani" 		gm="1"	motion_type="7" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall_melee.elu.ani"					gm="1"		motion_type="7" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down_melee.elu.ani" 		gm="1"		motion_type="7" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall_melee.elu.ani"					gm="1"		motion_type="7" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down_melee.elu.ani" 		gm="1"		motion_type="7" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_dagger_jump_up.elu.ani"	 		gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_dagger_jump_down.elu.ani"	 		sound="man_jump" gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_dagger_standshot.elu.ani"			gm="1"		motion_type="7" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+        <AddAnimation name="tumbleF" filename="woman_dagger_tumble.elu.ani"			sound="fx_dash" gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_dagger_tumble_back.elu.ani"		sound="fx_dash" gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_dagger_tumble_Lside.elu.ani"		sound="fx_dash" gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_dagger_tumble_Rside.elu.ani"		sound="fx_dash" gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 					gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 		gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 		gm="1"		motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 		gm="1"		motion_type="7" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down_melee.elu.ani"	 		gm="1"		motion_type="7" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 			gm="1"		motion_type="7" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"		motion_type="7" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"		motion_type="7" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_dagger_load.elu.ani"	 				gm="1"		motion_type="7" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="bind"    filename="woman_knife_bind.elu.ani"	 			gm="1"	motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"					gm="1"		motion_type="7" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"					gm="1"		motion_type="7" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"			gm="1"		motion_type="7" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove_melee.elu.ani"	gm="1" 	    motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_dagger_intro.elu.ani"			motion_type="7" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_dagger_idle.elu.ani"	 		motion_type="7" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_dagger_walk.elu.ani"				motion_type="7" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_dagger_taunt.elu.ani"						gm="1"	motion_type="7" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="7" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="uppercut" filename="woman_dagger_uppercut.elu.ani"					gm="1"	motion_type="7" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_dagger_bow.elu.ani" 	 	gm="1"	motion_type="7" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_dagger_wave.elu.ani" 	 	gm="1"	motion_type="7" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_dagger_cry.elu.ani" 	 	gm="1"	motion_type="7" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_dagger_laugh.elu.ani"  	gm="1"	motion_type="7" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="7" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cancel"	filename="woman_knife_cancel.elu.ani" 	gm="1"	motion_type="7" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="charge"	filename="woman_dagger_charge.elu.ani" 	gm="1"	motion_type="7" sound="we_fem_05"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="slash"	filename="woman_dagger_slash.elu.ani"			gm="1"	motion_type="7" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="jump_slash1" filename="woman_dagger_jump_slash1.elu.ani"		gm="1"		motion_type="7" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="jump_slash2" filename="woman_dagger_jump_slash2.elu.ani"		gm="1"		motion_type="7" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="7" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="7" motion_loop_type="loop" 		> </AddAnimation>
+
+
+	<AddAnimation name="idle"    filename="woman_medikit_idle.elu.ani" 	 			gm="1"		motion_type="8" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_medikit_run.elu.ani"		 		gm="1"		motion_type="8" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_medikit_run_back.elu.ani"			gm="1"		motion_type="8" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"					gm="1"		motion_type="8" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="8" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="8" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall_melee.elu.ani"					gm="1"		motion_type="8" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down_melee.elu.ani" 		gm="1"		motion_type="8" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall_melee.elu.ani"					gm="1"		motion_type="8" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down_melee.elu.ani" 		gm="1"		motion_type="8" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_medikit_jump_up.elu.ani"	 		gm="1"		motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_medikit_jump_down.elu.ani"	 	sound="man_jump" gm="1"		motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_medikit_standshot.elu.ani"				gm="1"		motion_type="8" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 					gm="1"		motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 		gm="1"		motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 		gm="1"		motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 		gm="1"		motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down.elu.ani"	 		gm="1"		motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 			gm="1"		motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"		motion_type="8" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"		motion_type="8" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_medikit_load.elu.ani"	 			gm="1"		motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"					gm="1"		motion_type="8" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"					gm="1"		motion_type="8" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"			gm="1"		motion_type="8" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove_melee.elu.ani"	gm="1" 	    motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"    filename="woman_login_item_idle.elu.ani"	 			motion_type="8" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_item_idle.elu.ani"	 			motion_type="8" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_item_walk.elu.ani"	        motion_type="8" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="8" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_medikit_bow.elu.ani" 	 	gm="1"	motion_type="8" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_medikit_wave.elu.ani" 	 	gm="1"	motion_type="8" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_medikit_cry.elu.ani" 	 	gm="1"	motion_type="8" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_medikit_laugh.elu.ani"  	gm="1"	motion_type="8" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="8" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="8" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="8" motion_loop_type="loop" 		> </AddAnimation>
+
+
+	<AddAnimation name="idle"    filename="woman_rl_idle.elu.ani" 	 				gm="1"		motion_type="9" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_rl_run.elu.ani"		 			gm="1"		motion_type="9" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_rl_run_back.elu.ani"	 			gm="1"		motion_type="9" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"	 				gm="1"		motion_type="9" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="9" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="9" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall.elu.ani"	 				gm="1"		motion_type="9" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down.elu.ani" 		gm="1"		motion_type="9" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall.elu.ani"	 				gm="1"		motion_type="9" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down.elu.ani" 		gm="1"		motion_type="9" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_rl_jump_up.elu.ani"	 			gm="1"		motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_rl_jump_down.elu.ani"	 			sound="man_jump" gm="1"		motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_rl_standshot.elu.ani"				gm="1"		motion_type="9" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="9" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="9" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="9" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="9" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down.elu.ani"	 		gm="1"		motion_type="9" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 			gm="1"		motion_type="9" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"		motion_type="9" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"		motion_type="9" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 					gm="1"		motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 		gm="1"		motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 		gm="1"		motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 		gm="1"		motion_type="9" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="reload"  filename="woman_rl_reload.elu.ani"					gm="1"		motion_type="9" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_rl_load.elu.ani"						gm="1"		motion_type="9" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"					gm="1"		motion_type="9" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"					gm="1"		motion_type="9" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"			gm="1"		motion_type="9" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove.elu.ani"	gm="1" 	    motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_rl_intro.elu.ani"				motion_type="9" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_rl_idle.elu.ani"	 			motion_type="9" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_rl_walk.elu.ani"					motion_type="9" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_rl_taunt.elu.ani"						gm="1"	motion_type="9" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="9" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_rl_bow.elu.ani" 	 	gm="1"	motion_type="9" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_rl_wave.elu.ani" 	 	gm="1"	motion_type="9" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_rl_cry.elu.ani" 	 	gm="1"	motion_type="9" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_rl_laugh.elu.ani"  		gm="1"	motion_type="9" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="9" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="9" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="9" motion_loop_type="loop" 		> </AddAnimation>
+
+
+	<AddAnimation name="idle"    filename="woman_1hpistol_idle.elu.ani" 	 			gm="1"	motion_type="10" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_1hpistol_run.elu.ani"		 			gm="1"	motion_type="10" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_1hpistol_run_back.elu.ani"	 			gm="1"	motion_type="10" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"						gm="1"	motion_type="10" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="10" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="10" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall.elu.ani"						gm="1"	motion_type="10" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down.elu.ani" 			gm="1"	motion_type="10" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall.elu.ani" 					gm="1"	motion_type="10" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down.elu.ani" 			gm="1"	motion_type="10" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_1hpistol_jump_up.elu.ani"	 			gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_1hpistol_jump_down.elu.ani"	 		sound="man_jump" gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_1hpistol_standshot.elu.ani"			gm="1"	motion_type="10" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="10" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="10" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="10" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="10" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_1hpistol_run_wall_down.elu.ani"	gm="1" 	motion_type="10" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 				gm="1"	motion_type="10" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"				gm="1"	motion_type="10" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"				gm="1"	motion_type="10" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 						gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 			gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 			gm="1"	motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 			gm="1"	motion_type="10" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="reload"  filename="woman_1hpistol_reload.elu.ani"				gm="1"	motion_type="10" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_1hpistol_load.elu.ani"					gm="1"	motion_type="10" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"						gm="1"	motion_type="10" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"						gm="1"	motion_type="10" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"				gm="1"	motion_type="10" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove.elu.ani"	 	gm="1"  motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_1hsmg_intro.elu.ani"			motion_type="10" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_1hsmg_idle.elu.ani"	 		motion_type="10" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_1hsmg_walk.elu.ani"				motion_type="10" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_1hsmg_taunt.elu.ani"						gm="1"	motion_type="10" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="10" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_1hpistol_bow.elu.ani" 	 		gm="1"	motion_type="10" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_1hpistol_wave.elu.ani" 	 		gm="1"	motion_type="10" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_1hpistol_cry.elu.ani" 	 		gm="1"	motion_type="10" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_1hpistol_laugh.elu.ani" 	 	gm="1"	motion_type="10" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"		 	 	gm="1"	motion_type="10" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="10" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="10" motion_loop_type="loop" 		> </AddAnimation>
+
+
+
+	<AddAnimation name="idle"    filename="woman_2hpistol_idle.elu.ani" 		 		gm="1"	motion_type="11" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_2hpistol_run.elu.ani"		 			gm="1"	motion_type="11" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_2hpistol_run_back.elu.ani"	 			gm="1"	motion_type="11" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall.elu.ani"						gm="1"	motion_type="11" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"	filename="woman_run_wall_downf.elu.ani" 	gm="1"	motion_type="11" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"	filename="woman_run_wall_downb.elu.ani" 	gm="1"	motion_type="11" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall.elu.ani"						gm="1"	motion_type="11" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down.elu.ani" 			gm="1"	motion_type="11" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall.elu.ani" 					gm="1"	motion_type="11" motion_loop_type="lonceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down.elu.ani" 			gm="1"	motion_type="11" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_2hpistol_jump_up.elu.ani"	 			gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_2hpistol_jump_down.elu.ani"	 		sound="man_jump" gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attackS" filename="woman_2hpistol_standshot.elu.ani"			gm="1"	motion_type="11" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_tumbleF.elu.ani" 		        gm="1"		motion_type="11" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_tumbleB.elu.ani"	 		gm="1"		motion_type="11" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_tumbleR.elu.ani"	 		gm="1"		motion_type="11" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_tumbleL.elu.ani"	 		gm="1"		motion_type="11" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_2hpistol_run_wall_down.elu.ani"	gm="1" 	motion_type="11" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 				gm="1"	motion_type="11" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"				gm="1"	motion_type="11" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"				gm="1"	motion_type="11" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 						gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 			gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 			gm="1"	motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 			gm="1"	motion_type="11" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="reload"  filename="woman_2hpistol_reload.elu.ani"				gm="1"	motion_type="11" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_2hpistol_load.elu.ani"					gm="1"	motion_type="11" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"						gm="1"	motion_type="11" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"						gm="1"	motion_type="11" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"				gm="1"	motion_type="11" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove.elu.ani"	 	gm="1"  motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_2hsmg_intro.elu.ani"			motion_type="11" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_2hsmg_idle.elu.ani"	 		motion_type="11" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_2hsmg_walk.elu.ani"				motion_type="11" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_2hsmg_taunt.elu.ani"						gm="1"	motion_type="11" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="11" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_2hpistol_bow.elu.ani" 	 	gm="1"	motion_type="11" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_2hpistol_wave.elu.ani" 	 	gm="1"	motion_type="11" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_2hpistol_cry.elu.ani" 	 	gm="1"	motion_type="11" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_2hpistol_laugh.elu.ani"  	gm="1"	motion_type="11" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="11" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="11" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="11" motion_loop_type="loop" 		> </AddAnimation>
+
+
+
+	<AddAnimation name="idle"    filename="woman_sword_idle.elu.ani" 	 			gm="1"	motion_type="12" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_sword_run.elu.ani"		 		gm="1"	motion_type="12" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_sword_run_back.elu.ani"	 		gm="1"	motion_type="12" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall_melee.elu.ani"				gm="1"	motion_type="12" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"   filename="woman_run_wall_down_meleef.elu.ani" 		gm="1"	motion_type="12" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"   filename="woman_run_wall_down_meleeb.elu.ani" 		gm="1"	motion_type="12" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall_melee.elu.ani"				gm="1"	motion_type="12" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down_melee.elu.ani" 	gm="1"	motion_type="12" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall_melee.elu.ani" 				gm="1"	motion_type="12" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down_melee.elu.ani" 	gm="1"	motion_type="12" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_sword_jump_up.elu.ani"	 		gm="1"	motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_sword_jump_down.elu.ani"	 	gm="1"	sound="man_jump" motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="load" 	 filename="woman_sword_load.elu.ani"				gm="1"	motion_type="12" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="bind"   filename="woman_knife_bind.elu.ani"	 					gm="1"	motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_sword_ftumble.elu.ani"	 			sound="fx_dash" gm="1"	motion_type="12" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_sword_btumble.elu.ani"	 	 	sound="fx_dash" gm="1"	motion_type="12" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_sword_rtumble.elu.ani"	 	sound="fx_dash" gm="1"	motion_type="12" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_sword_ltumble.elu.ani"	 	sound="fx_dash" gm="1"	motion_type="12" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down_melee.elu.ani"	gm="1"	motion_type="12" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallF"   filename="woman_jump_wallB.elu.ani"			gm="1"	motion_type="12" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"	motion_type="12" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"	motion_type="12" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 	            gm="1"    motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 	gm="1"    motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 	gm="1"    motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 	gm="1"		motion_type="12" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="attack1" filename="woman_sword_standshot_1.elu.ani"		gm="1"		motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack1_ret" filename="woman_sword_standshot_1_return.elu.ani"	gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack2" filename="woman_sword_standshot_2.elu.ani"				gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack2_ret" filename="woman_sword_standshot_2_return.elu.ani"	gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack3" filename="woman_sword_standshot_3.elu.ani"				gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack3_ret" filename="woman_sword_standshot_3_return.elu.ani"	gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack4" filename="woman_sword_standshot_4.elu.ani"				gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack_Jump" filename="woman_sword_attack_jump.elu.ani"			gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"							gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"						gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"				gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove_melee.elu.ani"	 		gm="1"  motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_sword_intro.elu.ani"	        		motion_type="12" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_sword_idle.elu.ani"	 				motion_type="12" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_sword_walk.elu.ani"					motion_type="12" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"   filename="woman_sword_taunt.elu.ani"			gm="1"	motion_type="12" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="12" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_sword_bow.elu.ani" 	 	gm="1"	motion_type="12" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_sword_wave.elu.ani" 	 	gm="1"	motion_type="12" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_sword_cry.elu.ani" 	 	gm="1"	motion_type="12" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_sword_laugh.elu.ani"  	gm="1"	motion_type="12" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="12" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="uppercut" filename="woman_sword_uppercut.elu.ani"		gm="1"	motion_type="12" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="cancel"	filename="woman_knife_cancel.elu.ani" 	gm="1"	motion_type="12" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="12" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="charge"	filename="woman_sword_charge.elu.ani" 	gm="1"	motion_type="12" sound="we_fem_05"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="slash"	filename="woman_sword_slash.elu.ani"			gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="jump_slash1" filename="woman_sword_jump_slash1.elu.ani"		gm="1"		motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="jump_slash2" filename="woman_sword_jump_slash2.elu.ani"		gm="1"		motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_start"   filename="woman_sword_guard_start2.elu.ani"				gm="1"	motion_type="12" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="guard_idle"    filename="woman_sword_guard_idle.elu.ani"	 			gm="1"	motion_type="12" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="guard_block1" filename="woman_sword_guard_block_1.elu.ani"			gm="1"	motion_type="12" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_cancel"   filename="woman_sword_guard_cancel.elu.ani"			gm="1"	motion_type="12" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="12" motion_loop_type="loop" 		> </AddAnimation>
+
+
+
+
+	<AddAnimation name="idle"    filename="woman_blade_idle.elu.ani" 	 			gm="1"	motion_type="13" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_blade_run.elu.ani"		 		gm="1"	motion_type="13" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_blade_run_back.elu.ani"	 		gm="1"	motion_type="13" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW"    filename="woman_run_wall_melee.elu.ani"				gm="1"	motion_type="13" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"   filename="woman_run_wall_down_meleef.elu.ani" 		gm="1"	motion_type="13" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"   filename="woman_run_wall_down_meleeb.elu.ani" 		gm="1"	motion_type="13" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall_melee.elu.ani"				gm="1"	motion_type="13" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down_melee.elu.ani" 	gm="1"	motion_type="13" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall_melee.elu.ani" 				gm="1"	motion_type="13" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down_melee.elu.ani" 	gm="1"	motion_type="13" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_blade_jump_up.elu.ani"	 		gm="1"	motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_blade_jump_down.elu.ani"	 	gm="1"	sound="man_jump" motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="load" 	 filename="woman_blade_load.elu.ani"				gm="1"	motion_type="13" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="bind"   filename="woman_knife_bind.elu.ani"	 					gm="1"	motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleF" filename="woman_blade_ftumble.elu.ani"	 			sound="fx_dash" gm="1"	motion_type="13" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_blade_btumble.elu.ani"	 	 	sound="fx_dash" gm="1"	motion_type="13" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_blade_rtumble.elu.ani"	 	sound="fx_dash" gm="1"	motion_type="13" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_blade_ltumble.elu.ani"	 	sound="fx_dash" gm="1"	motion_type="13" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down_melee.elu.ani"	gm="1"	motion_type="13" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallF"   filename="woman_jump_wallB.elu.ani"			gm="1"	motion_type="13" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"	motion_type="13" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"	motion_type="13" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 	            gm="1"    motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 	gm="1"    motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 	gm="1"    motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 	gm="1"		motion_type="13" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attack1" filename="woman_blade_standshot_1.elu.ani"		gm="1"		motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack1_ret" filename="woman_blade_standshot_1_return.elu.ani"	gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack2" filename="woman_blade_standshot_2.elu.ani"				gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack2_ret" filename="woman_blade_standshot_2_return.elu.ani"	gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack3" filename="woman_blade_standshot_3.elu.ani"				gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack3_ret" filename="woman_blade_standshot_3_return.elu.ani"	gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack4" filename="woman_blade_standshot_4.elu.ani"				gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack2_1.5" filename="woman_blade_standshot_2_1.5.elu.ani"				gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack3_1.5" filename="woman_blade_standshot_3_1.5.elu.ani"				gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack4_1.5" filename="woman_blade_standshot_4_1.5.elu.ani"				gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="attack_Jump" filename="woman_blade_attack_jump.elu.ani"			gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"							gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"						gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"				gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_start"   filename="woman_blade_guard_start2.elu.ani"		gm="1"	motion_type="13" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="guard_idle"    filename="woman_knife_guard_idle.elu.ani"	 	gm="1"	motion_type="13" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="guard_block1" filename="woman_knife_guard_block_1.elu.ani"		gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_block1_ret" filename="woman_knife_guard_block_1_return.elu.ani" gm="1" motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_block2" filename="woman_knife_guard_block_2.elu.ani"		gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_cancel"   filename="woman_blade_guard_cancel.elu.ani"		gm="1"	motion_type="13" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove_melee.elu.ani"	 		gm="1"  motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_blade_intro.elu.ani"	        		motion_type="13" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_blade_idle.elu.ani"	 				motion_type="13" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_blade_walk.elu.ani"					motion_type="13" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"   filename="woman_blade_taunt.elu.ani"			gm="1"	motion_type="13" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="13" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_blade_bow.elu.ani" 	 	gm="1"	motion_type="13" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_blade_wave.elu.ani" 	 	gm="1"	motion_type="13" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_blade_cry.elu.ani" 	 	gm="1"	motion_type="13" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_blade_laugh.elu.ani"  	gm="1"	motion_type="13" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="13" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="uppercut" filename="woman_blade_uppercut.elu.ani"		gm="1"	motion_type="13" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="cancel"	filename="woman_knife_cancel.elu.ani" 	gm="1"	motion_type="13" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="charge"	filename="woman_blade_charge.elu.ani" 	gm="1"	motion_type="13" sound="we_fem_05"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="slash"	filename="woman_blade_slash.elu.ani"			gm="1"	motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="jump_slash1" filename="woman_blade_jump_slash1.elu.ani"		gm="1"		motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="jump_slash2" filename="woman_blade_jump_slash2.elu.ani"		gm="1"		motion_type="13" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="13" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="13" motion_loop_type="loop" 		> </AddAnimation>
+
+
+	<AddAnimation name="idle"    filename="woman_2hdagger_idle.elu.ani" 	 		gm="1"		motion_type="14" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="woman_2hdagger_run.elu.ani"		 		gm="1"		motion_type="14" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runB"    filename="woman_2hdagger_run_back.elu.ani"			gm="1"		motion_type="14" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="runW_downF"   filename="woman_run_wall_down_meleef.elu.ani" gm="1"	motion_type="14" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_downB"   filename="woman_run_wall_down_meleeb.elu.ani" gm="1"	motion_type="14" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runW_down"   filename="woman_run_wall_down_melee.elu.ani" 		gm="1"		motion_type="14" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runLW"   filename="woman_run_Lwall_melee.elu.ani"				gm="1"		motion_type="14" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runLW_down"   filename="woman_run_Lwall_down_melee.elu.ani" 	gm="1"		motion_type="14" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="runRW"   filename="woman_run_Rwall_melee.elu.ani"				gm="1"		motion_type="14" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="runRW_down"   filename="woman_run_Rwall_down_melee.elu.ani" 	gm="1"		motion_type="14" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="jumpU"    filename="woman_2hdagger_jump_up.elu.ani"	 		gm="1"		motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpD"    filename="woman_2hdagger_jump_down.elu.ani"	 	gm="1"		sound="man_jump" motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="attack1" filename="woman_2hdagger_standshot_1.elu.ani"		gm="1"		motion_type="14" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="attack1_ret" filename="woman_2hdagger_standshot_1_return.elu.ani"		gm="1"		motion_type="14" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="attack2" filename="woman_2hdagger_standshot_2.elu.ani"		gm="1"		motion_type="14" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="attack_Jump" filename="woman_2hdagger_attack_jump.elu.ani"			gm="1"	motion_type="14" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="die"	filename="woman_die.elu.ani"		gm="1"	motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die2" 	filename="woman_die2.elu.ani"		gm="1"	motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die3" 	filename="woman_die3.elu.ani"		gm="1"	motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="die4" 	filename="woman_die4.elu.ani"		gm="1"	motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+    <AddAnimation name="tumbleF" filename="woman_dagger_tumble.elu.ani"		sound="fx_dash" gm="1"		motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleB" filename="woman_dagger_tumble_back.elu.ani"		sound="fx_dash" gm="1"		motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleL" filename="woman_dagger_tumble_Lside.elu.ani"		sound="fx_dash" gm="1"		motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="tumbleR" filename="woman_dagger_tumble_Rside.elu.ani"		sound="fx_dash" gm="1"		motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast"   filename="woman_blast.elu.ani"	 				gm="1"		motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_fall"    filename="woman_blast_fall.elu.ani"	 	gm="1"      motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop"    filename="woman_blast_drop.elu.ani"	 	gm="1"      motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_stand"  filename="woman_blast_stand.elu.ani"	 	gm="1"      motion_type="14" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="blast_dagger"   filename="woman_blast_dagger.elu.ani"	 				gm="1"	motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="blast_drop_dagger"    filename="woman_blast_drop_dagger.elu.ani"	 			gm="1"	motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="jumpwallB"   filename="woman_run_wall_down_melee.elu.ani"	 	gm="1"		motion_type="14" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallF"  filename="woman_jump_wallB.elu.ani"	 		gm="1"		motion_type="14" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="jumpwallL"   filename="woman_jump_wallL.elu.ani"			gm="1"		motion_type="14" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="jumpwallR"   filename="woman_jump_wallR.elu.ani"			gm="1"		motion_type="14" motion_loop_type="onceidle" 		> </AddAnimation>
+	<AddAnimation name="load"  filename="woman_2hdagger_load.elu.ani"	 			gm="1"		motion_type="14" motion_loop_type="onceidle" 	> </AddAnimation>
+	<AddAnimation name="bind"    filename="woman_knife_bind.elu.ani"	 			gm="1"	motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="damage"  filename="woman_damage.elu.ani"					gm="1"		motion_type="14" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage2"  filename="woman_damage2.elu.ani"				gm="1"		motion_type="14" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="damage_down"  filename="woman_damage_down.elu.ani"		gm="1"		motion_type="14" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="blast_airmove"    filename="woman_blast_airmove_melee.elu.ani"	gm="1" 	    motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="login_intro"   filename="woman_login_dagger_intro.elu.ani"		motion_type="14" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="login_idle"    filename="woman_login_dagger_idle.elu.ani"	 		motion_type="14" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="login_walk"  filename="woman_login_dagger_walk.elu.ani"	        motion_type="14" motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="taunt"  filename="woman_2hdagger_taunt.elu.ani"	        gm="1"  motion_type="14" sound="we_fem_11"	sound="we_fem_12"	sound="we_fem_13"	motion_loop_type="lastframe" 	> </AddAnimation>
+	<AddAnimation name="pit"  filename="woman_pit.elu.ani"						gm="1"	motion_type="14" motion_loop_type="loop"> </AddAnimation>
+	<AddAnimation name="bow"	filename="woman_2hdagger_bow.elu.ani" 	 	gm="1"	motion_type="14" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="wave"	filename="woman_2hdagger_wave.elu.ani" 	 	gm="1"	motion_type="14" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="cry"	filename="woman_2hdagger_cry.elu.ani" 	 	gm="1"	motion_type="14" sound="we_fem_02"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="laugh"	filename="woman_2hdagger_laugh.elu.ani"  	gm="1"	motion_type="14" sound="we_fem_01"	motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="dance"	filename="woman_dance.elu.ani"	 	 	gm="1"	motion_type="14" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="uppercut" filename="woman_2hdagger_uppercut.elu.ani"		gm="1"	motion_type="14" motion_loop_type="onceLowerbody"> </AddAnimation>
+	<AddAnimation name="cancel"	filename="woman_knife_cancel.elu.ani" 	gm="1"	motion_type="14" motion_loop_type="lastframe" 		> </AddAnimation>
+	<AddAnimation name="lightning"	filename="woman_damage_lightning.elu.ani" 	gm="1"	motion_type="14" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="guard_start"   filename="woman_2hdagger_guard_start.elu.ani"		gm="1"	motion_type="13" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="guard_idle"    filename="woman_knife_guard_idle.elu.ani"	 	gm="1"	motion_type="14" motion_loop_type="loop" 	> </AddAnimation>
+	<AddAnimation name="guard_block1" filename="woman_knife_guard_block_1.elu.ani"		gm="1"	motion_type="14" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_block1_ret" filename="woman_knife_guard_block_1_return.elu.ani" gm="1" motion_type="14" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_block2" filename="woman_knife_guard_block_2.elu.ani"		gm="1"	motion_type="14" motion_loop_type="lastframe"> </AddAnimation>
+	<AddAnimation name="guard_cancel"   filename="woman_2hdagger_guard_cancel.elu.ani"		gm="1"	motion_type="14" motion_loop_type="onceLowerbody" 	> </AddAnimation>
+	<AddAnimation name="stun"	filename="woman_stun.elu.ani" 		 	gm="1"	motion_type="14" motion_loop_type="loop" 		> </AddAnimation>
+
+</xml>

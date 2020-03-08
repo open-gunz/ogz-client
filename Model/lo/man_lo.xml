@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+	<AddBaseModel name="manbase1" filename="man_lo01.elu"> </AddBaseModel>
+	
+	<AddParts name="parts1" filename="man_lo02.elu"> </AddParts>
+	
+	<AddAnimation name="idle"    filename="man_lo_1hpistol_idle.elu.ani" 	 		motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="man_lo_1hpistol_run.elu.ani"		 	sound="run_a_male" motion_type="2" motion_loop_type="loop" 		> </AddAnimation>
+
+	<AddAnimation name="idle"    filename="man_lo_2hpistol_idle.elu.ani" 	 		motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="man_lo_2hpistol_run.elu.ani"		 	sound="run_a_male" motion_type="3" motion_loop_type="loop" 		> </AddAnimation>
+	
+		
+	<AddAnimation name="idle"    filename="man_lo_knife_idle.elu.ani" 	 			motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="man_lo_knife_run.elu.ani"		 		sound="run_a_male" motion_type="1" motion_loop_type="loop" 		> </AddAnimation>
+	
+		
+	<AddAnimation name="idle"    filename="man_lo_rifle_idle.elu.ani" 	 			motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="man_lo_rifle_run.elu.ani"		 		sound="run_a_male" motion_type="5" motion_loop_type="loop" 		> </AddAnimation>
+	
+	<AddAnimation name="idle"    filename="man_lo_grenade_idle.elu.ani" 	 		motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	<AddAnimation name="run"     filename="man_lo_rifle_run.elu.ani"		 		sound="run_a_male" motion_type="6" motion_loop_type="loop" 		> </AddAnimation>
+	
+
+</XML>

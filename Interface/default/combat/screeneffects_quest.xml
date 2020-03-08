@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<!--
+		퀘스트에서만 사용하는 이펙트
+		
+		AddEffectElu - 모델만 있는  이펙트와 연결할 경우
+
+			등록된 에니메이션의 이름은 기본적으로는 "play" 로 호출
+			에니메이션의 종류가 하나 이상이라면 프로그래머에게 이야기 하여야 함..
+
+		lit_model : 라이트의 영향을 안받는 렌더링.( 1 : true 0 : false ) 이펙트 모델은 기본 true
+		name_sort : 모델 내부에서의 이름 정렬 .
+	-->
+
+	<AddEffectElu name="boss_hppanel">
+		<AddBaseModel name="boss_hppanel" filename="ef_boss_gauge.elu" />
+<!--		<AddAnimation name="play" filename="ef_in_hp.elu.ani" motion_type="0" motion_loop_type="lastframe" /> -->
+	</AddEffectElu>
+
+	<AddEffectElu name="arrow">
+		<AddBaseModel name="arrow" filename="ef_quest_arrow.elu" />
+<!--		<AddAnimation name="play" filename="ef_in_hp.elu.ani" motion_type="0" motion_loop_type="lastframe" /> -->
+	</AddEffectElu>
+	
+	<AddEffectElu name="ko">
+		<AddBaseModel name="ko" filename="ef_ko.elu" />
+		<AddAnimation name="play" filename="ef_ko.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	
+	<AddEffectElu name="ko0">
+		<AddBaseModel name="ko0" filename="ef_ko_num_0.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko1">
+		<AddBaseModel name="ko1" filename="ef_ko_num_1.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_1.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko2">
+		<AddBaseModel name="ko2" filename="ef_ko_num_2.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_2.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko3">
+		<AddBaseModel name="ko3" filename="ef_ko_num_3.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_3.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko4">
+		<AddBaseModel name="ko4" filename="ef_ko_num_4.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_4.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko5">
+		<AddBaseModel name="ko5" filename="ef_ko_num_5.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_5.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko6">
+		<AddBaseModel name="ko6" filename="ef_ko_num_6.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_6.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko7">
+		<AddBaseModel name="ko7" filename="ef_ko_num_7.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_7.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko8">
+		<AddBaseModel name="ko8" filename="ef_ko_num_8.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_8.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ko9">
+		<AddBaseModel name="ko9" filename="ef_ko_num_9.elu" />
+		<AddAnimation name="play" filename="ef_ko_num_9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+</xml>

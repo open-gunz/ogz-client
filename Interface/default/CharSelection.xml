@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   캐릭터 선택 윈도우
+   
+   Last Update : 29.OCT.2004
+   Editor      : Lim Dong Hwan
+-->
+
+	
+<!-- 프레임 생성 : CharSelection -->
+	<FRAME item="CharSelection">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+
+<!-- 배경 이미지 -->
+	<!-- Picture : 배경 이미지 : Top -->
+	<PICTURE item="CharSel_BGImgTop" parent="CharSelection">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>802</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+	
+	
+<!-- 배경 이미지 -->
+	<!-- Picture : 배경 이미지 : Bottom -->
+	<PICTURE item="CharSel_BGImgBottom" parent="CharSelection">
+		<BOUNDS>
+			<X>0</X>
+			<Y>540</Y>
+			<W>802</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+
+
+
+<!-- 선택 막대 이미지 -->
+	<!-- Picture : 선택 막대 이미지0 -->
+	<PICTURE item="CharSel_Selectbar0" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>320</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>selectbar.tga</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Picture : 선택 막대 이미지1 -->
+	<PICTURE item="CharSel_Selectbar1" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>370</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>selectbar.tga</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Picture : 선택 막대 이미지2 -->
+	<PICTURE item="CharSel_Selectbar2" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>420</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>selectbar.tga</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<!-- Picture : 선택 막대 이미지3 -->
+	<PICTURE item="CharSel_Selectbar3" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>470</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>selectbar.tga</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+			
+		
+<!-- 이름 -->
+	<!-- Label : 이름0 -->
+	<LABEL item="CharSel_Name0" parent="CharSelection">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>571</X>
+			<Y>320</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_01</TEXT> <!-- 이름 -->
+	</LABEL>
+
+	<!-- Label : 이름1 -->
+	<LABEL item="CharSel_Name1" parent="CharSelection">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>571</X>
+			<Y>370</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_01</TEXT> <!-- 이름 -->
+	</LABEL>
+
+	<!-- Label : 이름2 -->
+	<LABEL item="CharSel_Name2" parent="CharSelection">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>571</X>
+			<Y>420</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_01</TEXT> <!-- 이름 -->
+	</LABEL>
+
+	<!-- Label : 이름3 -->
+	<LABEL item="CharSel_Name3" parent="CharSelection">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>571</X>
+			<Y>470</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_01</TEXT> <!-- 이름 -->
+	</LABEL>
+
+	
+<!-- 레벨 -->
+	<!-- Label : 레벨0 -->
+	<LABEL item="CharSel_Level0" parent="CharSelection">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>720</X>
+			<Y>320</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!-- 0 Lv. -->
+	</LABEL>
+
+	<!-- Label : 레벨1 -->
+	<LABEL item="CharSel_Level1" parent="CharSelection">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>720</X>
+			<Y>370</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!-- 0 Lv. -->
+	</LABEL>
+
+	<!-- Label : 레벨2 -->
+	<LABEL item="CharSel_Level2" parent="CharSelection">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>720</X>
+			<Y>420</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!-- 0 Lv. -->
+	</LABEL>
+
+	<!-- Label : 레벨3 -->
+	<LABEL item="CharSel_Level3" parent="CharSelection">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>720</X>
+			<Y>470</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!-- 0 Lv. -->
+	</LABEL>
+
+	
+	
+<!-- 클랜 -->
+	<!-- Label : 클랜0 -->
+	<LABEL item="CharSel_ClanName0" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>576</X>
+			<Y>342</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_03</TEXT> <!-- 클랜 -->
+	</LABEL>
+
+	<!-- Label : 클랜1 -->
+	<LABEL item="CharSel_ClanName1" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>576</X>
+			<Y>392</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_03</TEXT> <!-- 클랜 -->
+	</LABEL>
+
+	<!-- Label : 클랜2 -->
+	<LABEL item="CharSel_ClanName2" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>576</X>
+			<Y>442</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_03</TEXT> <!-- 클랜 -->
+	</LABEL>
+
+	<!-- Label : 클랜3 -->
+	<LABEL item="CharSel_ClanName3" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>576</X>
+			<Y>492</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_03</TEXT> <!-- 클랜 -->
+	</LABEL>
+	
+	
+<!-- 캐릭터 선택 버튼-->
+	<!-- BUTTON : 캐릭터 선택 버튼0 -->
+	<BMBUTTON item="CharSel_SelectBtn0" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>320</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+	</BMBUTTON>
+	
+	<!-- BUTTON : 캐릭터 선택 버튼1 -->
+	<BMBUTTON item="CharSel_SelectBtn1" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>370</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+	</BMBUTTON>
+	
+	<!-- BUTTON : 캐릭터 선택 버튼2 -->
+	<BMBUTTON item="CharSel_SelectBtn2" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>420</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+	</BMBUTTON>
+
+	<!-- BUTTON : 캐릭터 선택 버튼3 -->
+	<BMBUTTON item="CharSel_SelectBtn3" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>470</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+	</BMBUTTON>
+
+		
+<!-- 클랜 -->
+	<!-- Label : 클랜
+	<LABEL item="CS_LabelClanName" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>115</R>
+			<G>146</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>578</X>
+			<Y>325</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>클랜</TEXT>
+	</LABEL> -->
+	
+	<!-- Label : 클랜 표시
+	<LABEL item="CS_ClanNameLabel" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>115</R>
+			<G>146</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>628</X>
+			<Y>325</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+	</LABEL> -->
+
+
+<!-- 바운티 -->
+	<!-- Label : 바운티
+	<LABEL item="CS_LabelBP" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>115</R>
+			<G>146</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>578</X>
+			<Y>361</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>바운티</TEXT>
+	</LABEL> -->
+
+	<!-- Label : 바운티 표시
+	<LABEL item="CS_BPLabel" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>115</R>
+			<G>146</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>628</X>
+			<Y>361</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL> -->
+
+ 
+ 
+<!-- 버튼 -->
+	<!-- Button : 생성 -->
+	<BMBUTTON item="CS_CreateChar" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>562</Y>
+			<W>136</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">char_create_off_kr.tga</BITMAP>
+		<BITMAP type="over">char_create_on_kr.tga</BITMAP>
+		<BITMAP type="down">char_create_on_kr.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- Button : 삭제 -->
+	<BMBUTTON item="CS_DeleteChar" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>160</X>
+			<Y>562</Y>
+			<W>136</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">char_delete_off_kr.tga</BITMAP>
+		<BITMAP type="over">char_delete_on_kr.tga</BITMAP>
+		<BITMAP type="down">char_delete_on_kr.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- Button : 선택 -->
+	<BMBUTTON item="CS_SelectChar" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>525</X>
+			<Y>562</Y>
+			<W>136</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">char_select_off_kr.tga</BITMAP>
+		<BITMAP type="over">char_select_on_kr.tga</BITMAP>
+		<BITMAP type="down">char_select_on_kr.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- Button : 선택 -->
+	<BUTTON item="CS_SelectCharDefKey" parent="CharSelection">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_04</TEXT> <!-- 선택(&amp;G) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+
+
+	<!-- Button : 로그아웃 -->
+	<BMBUTTON item="CS_Prev" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>670</X>
+			<Y>562</Y>
+			<W>120</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">logout_off_kr.tga</BITMAP>
+		<BITMAP type="over">logout_on_kr.tga</BITMAP>
+		<BITMAP type="down">logout_on_kr.tga</BITMAP>
+		<CONFIRMMESSAGE>STR:UI_CS_05</CONFIRMMESSAGE> <!-- GUNZ를 종료하시겠습니까? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BMBUTTON>
+	
+
+<!-- Picture : 게임방 유저 표시 -->
+	<PICTURE item="CharSel_GameRoomUser" parent="CharSelection">
+		<BOUNDS>
+			<X>660</X>
+			<Y>30</Y>
+			<W>116</W>
+			<H>84</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!--<BITMAP>icon_gameroom.tga</BITMAP>-->
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+
+
+<!-- Picture : 배경 이미지 : Top screen -->
+	<PICTURE item="CharSel_TopScreen" parent="CharSelection">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>802</W>
+			<H>602</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+
+
+	
+	
+<!-- 프레임 생성 : 캐릭터 삭제 확인 -->
+	<FRAME item="CS_ConfirmDeleteChar">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CS_06</TEXT> <!-- 캐릭터 삭제 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	
+	<!-- Label : 캐릭터 삭제... -->
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_07</TEXT> <!-- 캐릭터를 삭제하려면 YES 를 입력하고, -->
+	</LABEL>
+
+	<!-- Label : 캐릭터 삭제... -->
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>19</X>
+			<Y>66</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_08</TEXT> <!-- 확인버튼을 눌러주십시오. -->
+	</LABEL>
+
+	<!-- Edit : 'YES' 입력창 -->
+	<EDIT item="CS_DeleteCharNameEdit" parent="CS_ConfirmDeleteChar">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>19</X>
+			<Y>92</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+	</EDIT>
+	
+	<!-- Button : 확인 버튼 -->
+	<BUTTON item="CS_DeleteCharButton" parent="CS_ConfirmDeleteChar">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+
+	<!-- Button : 취소 버튼 -->
+	<BUTTON item="CS_CloseConfirmDeleteCharButton" parent="CS_ConfirmDeleteChar">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+</XML>

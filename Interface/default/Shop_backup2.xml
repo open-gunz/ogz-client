@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Shop">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Shop 화면 구성
+   
+   Last Update : 29.NOV.2004
+   Editor      : Lim Dong Hwan
+-->
+
+
+<!-- 프레임 생성 : Shop -->
+	<FRAME item="Shop">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 상단 바탕화면 이미지 -->
+	<PICTURE item="Shop_MainBGTop" parent="Shop">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_t.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 상단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="Shop_StripTop" parent="Shop_MainBGTop">
+		<BOUNDS>
+			<X>288</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+		<DRAWMODE>1</DRAWMODE>
+	</PICTURE>
+
+	<!-- Picture : 좌측 상단 GUNZ 로고 -->
+	<PICTURE item="Shop_Logo" parent="Shop">
+		<BOUNDS>
+			<X>10</X>
+			<Y>3</Y>
+			<W>164</W>
+			<H>76</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gunz_logo_hq.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 하단 바탕화면 이미지 -->
+	<PICTURE item="Shop_MainBGBottom" parent="Shop">
+		<BOUNDS>
+			<X>0</X>
+			<Y>552</Y>
+			<W>800</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_b.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 하단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="Shop_StripBottom" parent="Shop_MainBGBottom">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- CHARACTERVIEW : 캐릭터 표시창 -->
+	<CHARACTERVIEW item="EquipmentInformationShop" parent="Shop">
+		<BOUNDS>
+			<X>0</X>
+			<Y>120</Y>
+			<W>460</W>
+			<H>420</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLEEQUIPMENT>true</VISIBLEEQUIPMENT>
+	</CHARACTERVIEW>
+	
+
+<!-- 프레임 생성 : Main Window -->
+	<FRAME item="Shop_Main_Frame" parent="Shop">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>800</W>
+			<H>467</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 상점 정보 표시창 이미지 출력 -->
+	<PICTURE item ="Shop_MessageBG" parent="Shop">
+		<BOUNDS>
+			<X>0</X>
+			<Y>80</Y>
+			<W>800</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>title_bar.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 상점 정보 표시 -->
+	<LABEL item="Shop_Message" parent="Shop">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>36</X>
+			<Y>86</Y>
+			<W>380</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_01</TEXT> <!-- 로비 > 상점 -->
+	</LABEL>
+	
+	<!-- Picture : 상점 프레임 이미지 출력 -->
+	<PICTURE item ="Shop_Frame" parent="Shop">
+		<BOUNDS>
+			<X>327</X>
+			<Y>175</Y>
+			<W>464</W>
+			<H>364</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>framepanel.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 탭 라밸 이미지 출력 -->
+	<PICTURE item ="Shop_TabLabelBg" parent="Shop">
+		<BOUNDS>
+			<X>678</X>
+			<Y>110</Y>
+			<W>109</W>
+			<H>28</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>framepaneltab0.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 탭 라밸 이미지 출력 -->
+	<PICTURE item ="Shop_TabLabel" parent="Shop">
+		<BOUNDS>
+			<X>327</X>
+			<Y>106</Y>
+			<W>464</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>framepaneltab1.tga</BITMAP>
+	</PICTURE>
+	
+ 	<!-- BMBUTTON : 장비 구입 버튼 -->
+	<BMBUTTON item="AllEquipmentListCaller" parent="Shop">
+		<BOUNDS>
+			<X>470</X>
+			<Y>112</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shop_buy_off.tga</BITMAP>
+		<BITMAP type="over">shop_buy_on.tga</BITMAP>
+		<BITMAP type="down">shop_buy_on.tga</BITMAP>
+	</BMBUTTON>
+	
+	<!-- BUTTON : 장비 판매 버튼 -->	
+	<BMBUTTON item="MyAllEquipmentListCaller" parent="Shop">
+		<BOUNDS>
+			<X>577</X>
+			<Y>112</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shop_sell_off.tga</BITMAP>
+		<BITMAP type="over">shop_sell_on.tga</BITMAP>
+		<BITMAP type="down">shop_sell_on.tga</BITMAP>
+	</BMBUTTON>
+
+ 	<!-- BMBUTTON : 캐쉬 장비 구입 버튼 -->
+	<BMBUTTON item="CashEquipmentListCaller" parent="Shop">
+		<BOUNDS>
+			<X>684</X>
+			<Y>112</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shop_buycash_off.tga</BITMAP>
+		<BITMAP type="over">shop_buycash_on.tga</BITMAP>
+		<BITMAP type="down">shop_buycash_on.tga</BITMAP>
+	</BMBUTTON>
+
+	
+<!-- 장비 목록 -->
+	<!-- EQUIPMENTLISTBOX : 상점에 있는 물건 -->
+	<EQUIPMENTLISTBOX item="AllEquipmentList" parent="Shop">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>477</X>
+			<Y>177</Y>
+			<W>302</W>
+			<H>262</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<NUMCOLUMN>2</NUMCOLUMN>
+	</EQUIPMENTLISTBOX>
+
+	<!-- Picture : 프레임 탭 라벨1 출력 -->
+	<PICTURE item ="Shop_FrameTabLabel1" parent="Shop">
+		<BOUNDS>
+			<X>470</X>
+			<Y>107</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>shop_buy_on.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- EQUIPMENTLISTBOX : 내가 가지고 있는 물건 -->
+	<EQUIPMENTLISTBOX item="MyAllEquipmentList" parent="Shop">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>477</X>
+			<Y>177</Y>
+			<W>302</W>
+			<H>262</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<NUMCOLUMN>2</NUMCOLUMN>
+	</EQUIPMENTLISTBOX>
+	
+
+	<!-- Picture : 프레임 탭 라벨2 출력 -->
+	<PICTURE item ="Shop_FrameTabLabel2" parent="Shop">
+		<BOUNDS>
+			<X>577</X>
+			<Y>107</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>shop_sell_on.tga</BITMAP>
+	</PICTURE>
+	
+	
+	<!-- EQUIPMENTLISTBOX : 캐쉬샵 아이템 -->
+	<EQUIPMENTLISTBOX item="CashEquipmentList" parent="Shop">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>477</X>
+			<Y>177</Y>
+			<W>302</W>
+			<H>262</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<NUMCOLUMN>2</NUMCOLUMN>
+	</EQUIPMENTLISTBOX>
+	
+	<!-- Picture : 프레임 탭 라벨3 출력 -->
+	<PICTURE item ="Shop_FrameTabLabel3" parent="Shop">
+		<BOUNDS>
+			<X>684</X>
+			<Y>107</Y>
+			<W>98</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>shop_buycash_on.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 리스트 라벨 출력 -->
+	<PICTURE item ="Shop_ListLabel" parent="Shop">
+		<BOUNDS>
+			<X>474</X>
+			<Y>146</Y>
+			<W>278</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>listlabel.tga</BITMAP>
+	</PICTURE>
+
+	<!-- LABEL : 장비 종류 -->
+	<LABEL item="lavel" parent="Shop">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>477</X>
+			<Y>145</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_02</TEXT> <!-- 장비 종류 :  -->
+	</LABEL>
+		
+	<!-- COMBOBOX : 종류별로 보기 -->
+	<COMBOBOX item="Shop_AllEquipmentFilter" parent="Shop">
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>549</X>
+			<Y>145</Y>
+			<W>230</W>
+			<H>25</H>
+		</BOUNDS>
+		<LISTITEM selected="true">STR:UI_SHOP_LIST_01_01</LISTITEM> <!--    모든 장비 보기 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_02</LISTITEM>					<!--	머리 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_03</LISTITEM>					<!--	상의 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_04</LISTITEM>					<!--	장갑 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_05</LISTITEM>					<!--	하의 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_06</LISTITEM>					<!--	신발 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_07</LISTITEM>					<!--	반지 -->
+		<!--<LISTITEM>STR:UI_SHOP_LIST_01_08</LISTITEM>-->					<!--	세트 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_09</LISTITEM>					<!--	아바타 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_10</LISTITEM>					<!--	근거리 무기 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_11</LISTITEM>					<!--	원거리 무기 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_12</LISTITEM>					<!--	전투 보조 아이템 -->
+		<!--<LISTITEM>STR:UI_SHOP_LIST_01_13</LISTITEM>-->					<!--	카트리지 아이템 -->
+		<!--<LISTITEM>STR:UI_SHOP_LIST_01_14</LISTITEM>-->					<!--	커뮤니티 아이템 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_15</LISTITEM>					<!--	퀘스트 아이템 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_16</LISTITEM>					<!--	뽑기 아이템 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_17</LISTITEM>					<!--	인챈트 아이템 -->
+		<!--<LISTITEM>STR:UI_SHOP_LIST_01_18</LISTITEM>-->					<!--	편의성 아이템 -->
+		<LISTITEM>STR:UI_SHOP_LIST_01_19</LISTITEM>					<!--	기타 아이템 -->
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<DROPSIZE>400</DROPSIZE>
+	</COMBOBOX>
+
+	<!-- BUTTON : 구입하기 버튼 -->	
+	<BUTTON item="BuyConfirmCaller" parent="Shop">
+	<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>490</X>
+			<Y>449</Y>
+			<W>267</W>
+			<H>33</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_03</TEXT> <!-- 구매(&amp;B) -->
+		<CONFIRMMESSAGE>STR:UI_SHOP_04</CONFIRMMESSAGE> <!-- 선택한 장비를 구입하시겠습니까? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BUTTON>
+
+	<!-- BUTTON : 구입하기 버튼 -->	
+	<BUTTON item="BuyCashConfirmCaller" parent="Shop">
+	<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>490</X>
+			<Y>449</Y>
+			<W>267</W>
+			<H>33</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_05</TEXT> <!-- 구매(&amp;B) -->
+		<CONFIRMMESSAGE>STR:UI_SHOP_06</CONFIRMMESSAGE> <!-- 캐쉬 아이템의 구매는 웹페이지에서만 가능합니다. '확인' 버튼을 누르면 웹페이지로 화면을 전환합니다. -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BUTTON>
+	
+	<!-- BUTTON : 판매하기 버튼 -->	
+	<BUTTON item="SellConfirmCaller" parent="Shop">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>490</X>
+			<Y>449</Y>
+			<W>267</W>
+			<H>33</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_07</TEXT> <!-- 판매(&amp;S) -->
+		<CONFIRMMESSAGE>STR:UI_SHOP_08</CONFIRMMESSAGE> <!-- 선택한 장비를 판매하시겠습니까? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BUTTON>
+
+	<!-- BUTTON : 판매하기 버튼 -->	
+	<BUTTON item="SellQuestItemConfirmCaller" parent="Shop">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>490</X>
+			<Y>449</Y>
+			<W>267</W>
+			<H>33</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_09</TEXT> <!-- 판매(&amp;S) -->
+		<VISIBLE>false</VISIBLE>
+	</BUTTON>
+	
+	<!-- TEXTAREA : 캐릭터 정보 표시 -->
+	<TEXTAREA item="Shop_MyInfo" parent="Shop">
+		<BOUNDS>
+			<X>326</X>
+			<Y>119</Y>
+			<W>150</W>
+			<H>150</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- LABEL : Bounty 표시 - [ 바운티 ]
+	<LABEL item="label" parent="Shop">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>326</X>
+			<Y>111</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_10</TEXT>
+	</LABEL> -->
+
+	<!-- LABEL : 가진 bounty 표시 - 0 Bounty
+	<LABEL item="MyCash" parent="Shop">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>170</R>
+			<G>170</G>
+			<B>170</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>335</X>
+			<Y>126</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_11</TEXT>
+	</LABEL> -->
+	
+	<!-- LABEL : LV/WEIGHT 표시 - [ 레벨 / 무게 ]
+	<LABEL item="label" parent="Shop">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>326</X>
+			<Y>152</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_12</TEXT>
+	</LABEL> -->
+	
+	<!-- LABEL : LV/WEIGHT 표시 라벨 - 0Lv.  /  0 (0)
+	<LABEL item="Shop_MyInfo" parent="Shop">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>170</R>
+			<G>170</G>
+			<B>170</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>335</X>
+			<Y>167</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_13</TEXT>
+	</LABEL> -->
+
+	
+<!-- 선택한 장비 표시창 -->
+	<!-- Picture : 선택한 장비 아이콘 -->
+	<PICTURE item ="Shop_ItemIcon" parent="Shop">
+		<BOUNDS>
+			<X>337</X>
+			<Y>207</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- TEXTAREA : 장비 설명 -->
+	<TEXTAREA item="Shop_ItemDescription" parent="Shop">
+		<BOUNDS>
+			<X>332</X>
+			<Y>245</Y>
+			<W>120</W>
+			<H>187</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- TEXTAREA : 장비 설명2 -->
+	<TEXTAREA item="Shop_ItemDescription2" parent="Shop">
+		<BOUNDS>
+			<X>332</X>
+			<Y>451</Y>
+			<W>120</W>
+			<H>50</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- TEXTAREA : 장비 설명3 -->
+	<TEXTAREA item="Shop_ItemDescription3" parent="Shop">
+		<BOUNDS>
+			<X>332</X>
+			<Y>503</Y>
+			<W>450</W>
+			<H>32</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+<!-- 장비 리스트 -->
+	<FRAME item="Shop_MyEquipListFrame" parent="Shop">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>94</Y>
+			<W>300</W>
+			<H>450</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- BMBUTTON : 장착된 장비 탭 버튼 -->
+	<BMBUTTON item="Shop_ArmorEquipmentTab" parent="Shop_MyEquipListFrame">
+		<BOUNDS>
+			<X>2</X>
+			<Y>26</Y>
+			<W>27</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>ArmorWeaponTabShop</GROUP>
+		<TOOLTIP>STR:UI_SHOP_24</TOOLTIP>
+		<BITMAP type="up">equiptab_armor_off.tga</BITMAP>
+		<BITMAP type="over">equiptab_armor_over.tga</BITMAP>
+		<BITMAP type="down">equiptab_armor_on.tga</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="Shop_WeaponEquipmentTab" parent="Shop_MyEquipListFrame">
+		<BOUNDS>
+			<X>32</X>
+			<Y>26</Y>
+			<W>27</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<GROUP>ArmorWeaponTabShop</GROUP>
+		<TOOLTIP>STR:UI_SHOP_25</TOOLTIP>
+		<BITMAP type="up">equiptab_weapon_off.tga</BITMAP>
+		<BITMAP type="over">equiptab_weapon_over.tga</BITMAP>
+		<BITMAP type="down">equiptab_weapon_on.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- Picture : 리스트 프레임 배경 이미지(Close) -->
+	<PICTURE item="Shop_BGListFrameClose" parent="Shop_MyEquipListFrame">
+		<BOUNDS>
+			<X>2</X>
+			<Y>26</Y>
+			<W>65</W>
+			<H>419</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>listframeclose.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 리스트 프레임 배경 이미지(Open) -->
+	<PICTURE item="Shop_BGListFrameOpen" parent="Shop_MyEquipListFrame">
+		<BOUNDS>
+			<X>2</X>
+			<Y>26</Y>
+			<W>265</W>
+			<H>419</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>listframeopen.tga</BITMAP>
+	</PICTURE>
+
+	<!-- ITEMSLOT : 머리 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Head" parent="Shop_MyEquipListFrame" parts="head">
+		<BOUNDS>
+			<X>10</X>
+			<Y>32</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>			
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 가슴 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Chest" parent="Shop_MyEquipListFrame" parts="chest">
+		<BOUNDS>
+			<X>10</X>
+			<Y>66</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 손 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Hands" parent="Shop_MyEquipListFrame" parts="hands">
+		<BOUNDS>
+			<X>10</X>
+			<Y>100</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 다리 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Legs" parent="Shop_MyEquipListFrame" parts="legs">
+		<BOUNDS>
+			<X>10</X>
+			<Y>134</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 발 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Feet" parent="Shop_MyEquipListFrame" parts="feet">
+		<BOUNDS>
+			<X>10</X>
+			<Y>168</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 아이템1 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_FingerL" parent="Shop_MyEquipListFrame" parts="fingerl">
+		<BOUNDS>
+			<X>10</X>
+			<Y>372</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 아이템2-->
+	<ITEMSLOT item="Shop_EquipmentSlot_FingerR" parent="Shop_MyEquipListFrame" parts="fingerr">
+		<BOUNDS>
+			<X>10</X>
+			<Y>406</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 아바타 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Avatar" parent="Shop_MyEquipListFrame" parts="avatar">
+		<BOUNDS>
+			<X>10</X>
+			<Y>353</Y>
+			<W>220</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 보조 무기 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Melee" parent="Shop_MyEquipListFrame" parts="melee">
+		<BOUNDS>
+			<X>10</X>
+			<Y>202</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 주 무기1 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Primary" parent="Shop_MyEquipListFrame" parts="primary">
+		<BOUNDS>
+			<X>10</X>
+			<Y>236</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 주 무기2 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Secondary" parent="Shop_MyEquipListFrame" parts="secondary">
+		<BOUNDS>
+			<X>10</X>
+			<Y>270</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 아이템 1 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Custom1" parent="Shop_MyEquipListFrame" parts="custom1">
+		<BOUNDS>
+			<X>10</X>
+			<Y>304</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	
+	<!-- ITEMSLOT : 아이템 2 -->
+	<ITEMSLOT item="Shop_EquipmentSlot_Custom2" parent="Shop_MyEquipListFrame" parts="custom2">
+		<BOUNDS>
+			<X>10</X>
+			<Y>338</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 아이템 3 -->
+	<!--<ITEMSLOT item="Shop_EquipmentSlot_Community1" parent="Shop_MyEquipListFrame" parts="community1">
+		<BOUNDS>
+			<X>10</X>
+			<Y>267</Y>
+			<W>220</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	-->
+	<!-- ITEMSLOT : 아이템 4 -->
+	<!--<ITEMSLOT item="Shop_EquipmentSlot_Community2" parent="Shop_MyEquipListFrame" parts="community2">
+		<BOUNDS>
+			<X>10</X>
+			<Y>310</Y>
+			<W>220</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	-->
+	<!-- ITEMSLOT : 아이템 5 -->
+	<!--<ITEMSLOT item="Shop_EquipmentSlot_LongBuff1" parent="Shop_MyEquipListFrame" parts="longbuff1">
+		<BOUNDS>
+			<X>10</X>
+			<Y>353</Y>
+			<W>220</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	-->
+	<!-- ITEMSLOT : 아이템 6 -->
+	<!--<ITEMSLOT item="Shop_EquipmentSlot_LongBuff2" parent="Shop_MyEquipListFrame" parts="longbuff2">
+		<BOUNDS>
+			<X>10</X>
+			<Y>396</Y>
+			<W>220</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_empty.tga</BITMAP>	
+	</ITEMSLOT>
+	-->
+	<!-- BMBUTTON : 리스트 프레임 Open 버튼 -->
+	<BMBUTTON item="Shop_EquipListFrameOpenButton" parent="Shop_MyEquipListFrame">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>48</X>
+			<Y>159</Y>
+			<W>22</W>
+			<H>110</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">listframeopenbtn_off.tga</BITMAP>
+		<BITMAP type="over">listframeopenbtn_on.tga</BITMAP>
+		<BITMAP type="down">listframeopenbtn_on.tga</BITMAP>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</BMBUTTON>
+
+	<!-- BMBUTTON : 리스트 프레임 Close 버튼 -->
+	<BMBUTTON item="Shop_EquipListFrameCloseButton" parent="Shop_MyEquipListFrame">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>248</X>
+			<Y>159</Y>
+			<W>22</W>
+			<H>110</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">listframeclosebtn_off.tga</BITMAP>
+		<BITMAP type="over">listframeclosebtn_on.tga</BITMAP>
+		<BITMAP type="down">listframeclosebtn_on.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>	
+	
+	
+<!-- 상단 버튼 배열 -->
+	<!-- Picture : 장비버튼 -->
+	<!-- <PICTURE item="Shop_nullbutton" parent="Shop">
+		<BOUNDS>
+			<X>289</X>
+			<Y>32</Y>
+			<W>93</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>shop_on_kr.tga</BITMAP>
+	</PICTURE> -->
+	
+	<!-- BMBUTTON : 상점버튼 -->
+	<BMBUTTON item="Shop_nullbutton" parent="Shop">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>289</X>
+			<Y>32</Y>
+			<W>93</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shop_off_kr.tga</BITMAP>
+		<BITMAP type="over">shop_on_kr.tga</BITMAP>
+		<BITMAP type="down">shop_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+		<ENABLE>false</ENABLE>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 장비버튼 -->
+	<BMBUTTON item="Shop_to_Equipment" parent="Shop">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>392</X>
+			<Y>32</Y>
+			<W>89</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">equip_off_kr.tga</BITMAP>
+		<BITMAP type="over">equip_on_kr.tga</BITMAP>
+		<BITMAP type="down">equip_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 옵션버튼 -->
+	<BMBUTTON item="Shop_OptionFrame" parent="Shop">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>689</X>
+			<Y>32</Y>
+			<W>91</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">option_off_kr.tga</BITMAP>
+		<BITMAP type="over">option_on_kr.tga</BITMAP>
+		<BITMAP type="down">option_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+		<ENABLE>false</ENABLE>
+	</BMBUTTON>
+
+
+<!-- 하단 버튼 배열 -->
+	<!-- BMBUTTON : 나가기 버튼 -->
+	<BMBUTTON item ="ShopClose" parent="Shop">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>677</X>
+			<Y>562</Y>
+			<W>112</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">exit_off_kr.tga</BITMAP>
+		<BITMAP type="over">exit_on_kr.tga</BITMAP>
+		<BITMAP type="down">exit_on_kr.tga</BITMAP>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BMBUTTON>
+
+	<!-- BUTTON : 나가기 버튼 -->
+	<BUTTON item ="ShopClose" parent="Shop">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+	<!-- FRAME : 상점/장비창에서 복수 아이템을 사거나, 팔거나, 중앙은행 보낼 때 수량을 입력하는 대화상자 프레임 -->
+	<FRAME item="TradeCountableItemFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>325</W>
+			<H>215</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_SHOP_14</TEXT> <!-- 아이템 판매 -->
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+
+	<!-- TEXTAREA : 메시지 -->
+	<TEXTAREA item="TradeCountableItem_Message" parent="TradeCountableItemFrame">
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>12</X>
+			<Y>28</Y>
+			<W>300</W>
+			<H>34</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXT>STR:UI_SHOP_15</TEXT> <!-- 판매할 수량을 입력해 주시기 바랍니다. -->
+	</TEXTAREA>
+	
+	<!-- Label : 판매 수량 -->
+	<LABEL item="TradeCountableItem_NullLabel" parent="TradeCountableItemFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>45</X>
+			<Y>74</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_16</TEXT> <!-- 판매 수량 -->
+	</LABEL>
+	
+	<!-- BMBUTTON : 수량 증가 -->
+	<BMBUTTON item="TradeCountableItem_CountUp" parent="TradeCountableItemFrame">
+		<BOUNDS>
+			<X>250</X>
+			<Y>74</Y>
+			<W>22</W>
+			<H>14</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">scrollbtn_up_off.png</BITMAP>
+		<BITMAP type="over">scrollbtn_up_off.png</BITMAP>
+		<BITMAP type="down">scrollbtn_up_on.png</BITMAP>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 수량 감소 -->
+	<BMBUTTON item="TradeCountableItem_CountDn" parent="TradeCountableItemFrame">
+		<BOUNDS>
+			<X>250</X>
+			<Y>88</Y>
+			<W>22</W>
+			<H>14</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">scrollbtn_dn_off.png</BITMAP>
+		<BITMAP type="over">scrollbtn_dn_off.png</BITMAP>
+		<BITMAP type="down">scrollbtn_dn_on.png</BITMAP>
+	</BMBUTTON>
+	
+	<!-- Edit : 수량 입력 -->
+	<EDIT item="TradeCountableItem_CountNum" parent="TradeCountableItemFrame">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>120</X>
+			<Y>73</Y>
+			<W>128</W>
+			<H>27</H>
+		</BOUNDS>
+		<NUMBERONLY>true</NUMBERONLY>
+		<TEXT></TEXT>
+	</EDIT>
+	
+	<!-- PICTURE : 분리선 표시 -->
+	<PICTURE item ="TradeCountableItem_SeperateBar" parent="TradeCountableItemFrame">
+		<BOUNDS>
+			<X>12</X>
+			<Y>119</Y>
+			<W>300</W>
+			<H>1</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 대상 아이템 아이콘 출력 -->
+	<PICTURE item ="TradeCountableItem_ItemIcon" parent="TradeCountableItemFrame">
+		<BOUNDS>
+			<X>12</X>
+			<Y>125</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	<!-- Label : 계산 -->
+	<LABEL item="TradeCountableItem_Calculate" parent="TradeCountableItemFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>43</X>
+			<Y>121</Y>
+			<W>260</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- Label : 합 -->
+	<LABEL item="TradeCountableItem_Total" parent="TradeCountableItemFrame">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>70</X>
+			<Y>136</Y>
+			<W>260</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- Button : 복수 아이템 수량 입력 확인 버튼 -->
+	<BUTTON item="TradeCountableItem_Ok" parent="TradeCountableItemFrame">
+		<BOUNDS>
+			<X>105</X>
+			<Y>170</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_17</TEXT> <!-- 판매(&amp;S) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+	
+	<!-- Button : 복수 아이템 수량 입력 취소 버튼 -->
+	<BUTTON item="TradeCountableItem_Cancel" parent="TradeCountableItemFrame">
+		<BOUNDS>
+			<X>210</X>
+			<Y>170</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+	<!-- FRAME : 상점에서 아이템 구매시 세부 선택을 결정하도록 하는 창 (기간이나 묶음 갯수 등) -->
+	<FRAME item="BuyItemDetailFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>360</W>
+			<H>400</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_SHOP_20</TEXT> <!-- 아이템 구매 -->
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 아이템 썸네일 이미지 -->
+	<PICTURE item ="BuyItemDetailFrame_Thumbnail" parent="BuyItemDetailFrame">
+		<BOUNDS>
+			<X>276</X>
+			<Y>40</Y>
+			<W>64</W>
+			<H>64</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- TEXTAREA : 아이템 정보 표시 -->
+	<TEXTAREA item="BuyItemDetailFrame_Desc" parent="BuyItemDetailFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>40</Y>
+			<W>320</W>
+			<H>300</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<!-- textarea 영역 확인용 <PICTURE item ="BOUND_TEST" parent="BuyItemDetailFrame">
+		<BOUNDS>
+			<X>84</X>
+			<Y>30</Y>
+			<W>256</W>
+			<H>265</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+	</PICTURE>-->
+	
+	<!-- COMBOBOX : 세부사항 선택 (내용은 코드에서 채움) -->
+	<COMBOBOX item="BuyItemDetailFrame_DetailCombo" parent="BuyItemDetailFrame">
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>205</Y>
+			<W>320</W>
+			<H>25</H>
+		</BOUNDS>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<DROPSIZE>270</DROPSIZE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 보유 캐쉬 -->
+	<LABEL item="BuyItemDetailFrame_LabelMyCash" parent="BuyItemDetailFrame">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>240</Y>
+			<W>320</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_26</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 보유 캐쉬량 출력 -->
+	<LABEL item="BuyItemDetailFrame_MyCash" parent="BuyItemDetailFrame">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>240</Y>
+			<W>320</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+		</TEXTALIGN>
+		<TEXT>0</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 필요 캐쉬 -->
+	<LABEL item="BuyItemDetailFrame_LabelRequiredCash" parent="BuyItemDetailFrame">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>270</Y>
+			<W>320</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_27</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 필요 캐쉬량 출력 -->
+	<LABEL item="BuyItemDetailFrame_RequiredCash" parent="BuyItemDetailFrame">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>270</Y>
+			<W>320</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+		</TEXTALIGN>
+		<TEXT>0</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 남는 캐쉬 -->
+	<LABEL item="BuyItemDetailFrame_LabelRemainCash" parent="BuyItemDetailFrame">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>300</Y>
+			<W>320</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_28</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 남는 캐쉬량 출력 -->
+	<LABEL item="BuyItemDetailFrame_RemainCash" parent="BuyItemDetailFrame">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>300</Y>
+			<W>320</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+		</TEXTALIGN>
+		<TEXT>0</TEXT>
+	</LABEL>
+	
+	<!-- Button : 구입 버튼 -->
+	<BUTTON item="BuyItemDetailFrame_Buy" parent="BuyItemDetailFrame">
+		<BOUNDS>
+			<X>15</X>
+			<Y>350</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_29</TEXT> <!-- 구매(&amp;B) -->
+	</BUTTON>
+	
+	<!-- Button : 선물 버튼 -->
+	<BUTTON item="BuyItemDetailFrame_Gift" parent="BuyItemDetailFrame">
+		<BOUNDS>
+			<X>128</X>
+			<Y>350</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_30</TEXT> <!--선물(&amp;G) -->
+	</BUTTON>
+	
+	<!-- Button : 취소 버튼 -->
+	<BUTTON item="BuyItemDetailFrame_Cancel" parent="BuyItemDetailFrame">
+		<BOUNDS>
+			<X>241</X>
+			<Y>350</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_31</TEXT> <!-- 취소 -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+	
+	<!-- FRAME : 캐쉬아이템을 바운티로 판매할 경우의 확인창 -->
+	<FRAME item="SellCashItemConfirmFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>400</W>
+			<H>230</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_SHOP_14</TEXT> <!-- 아이템 구매 -->
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 아이템 썸네일 이미지 -->
+	<PICTURE item ="SellCashItemConfirmFrame_Thumbnail" parent="SellCashItemConfirmFrame">
+		<BOUNDS>
+			<X>15</X>
+			<Y>40</Y>
+			<W>64</W>
+			<H>64</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 아이템 이름 -->
+	<LABEL item="SellCashItemConfirmFrame_ItemName" parent="SellCashItemConfirmFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>40</Y>
+			<W>320</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT> </TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 바운티로 팔때 가격 -->
+	<LABEL item="SellCashItemConfirmFrame_Bounty" parent="SellCashItemConfirmFrame">
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>70</Y>
+			<W>320</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT> </TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 경고문 표시 -->
+	<TEXTAREA item="SellCashItemConfirmFrame_Warning" parent="SellCashItemConfirmFrame">
+		<BOUNDS>
+			<X>15</X>
+			<Y>130</Y>
+			<W>370</W>
+			<H>300</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<!-- Button : 판매 버튼 -->
+	<BUTTON item="SellCashItemConfirmFrame_Sell" parent="SellCashItemConfirmFrame">
+		<BOUNDS>
+			<X>165</X>
+			<Y>180</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_17</TEXT> <!-- 판매(&amp;B) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+
+	<!-- Button : 취소 버튼 -->
+	<BUTTON item="SellCashItemConfirmFrame_Cancel" parent="SellCashItemConfirmFrame">
+		<BOUNDS>
+			<X>275</X>
+			<Y>180</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_31</TEXT> <!-- 취소 -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+
+</XML>

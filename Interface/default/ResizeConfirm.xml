@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="ResizeConfirm">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes"/>
+	
+	<!-- 해상도 변경하기전에 경고 메시지 출력하는 메시지 창 -->
+	<FRAME item="ResizeConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>400</W>
+			<H>200</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_RC_01</TEXT> <!-- 해상도 변경 -->
+	</FRAME>
+	
+	<LABEL item="Label" parent="ResizeConfirm">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>400</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_RC_02</TEXT> <!-- 새로운 해상도를 적용합니다. -->
+	</LABEL>
+	<LABEL item="Label" parent="ResizeConfirm">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>66</Y>
+			<W>400</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_RC_03</TEXT> <!-- 새로운 해상도가 적용되지 않으면, -->
+	</LABEL>
+	<LABEL item="Label" parent="ResizeConfirm">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>86</Y>
+			<W>400</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_RC_04</TEXT> <!-- 10초뒤에 이전의 해상도로 복구됩니다. -->
+	</LABEL>
+	<LABEL item="Label" parent="ResizeConfirm">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>106</Y>
+			<W>400</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_RC_05</TEXT> <!-- 새로운 해상도를 적용하시겠습니까? -->
+	</LABEL>
+
+	
+	<BUTTON item="ResizeRequest" parent="ResizeConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>95</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="ResizeCancel" parent="ResizeConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>205</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+	
+	<!-- 해상도 변경한 후 보이는지 다시 한번 묻는 창 -->
+
+	<FRAME item="ViewConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>420</W>
+			<H>190</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<!-- <TEXT>STR:UI_COMMON_OK</TEXT> --> <!-- 재확인 -->
+	</FRAME>
+	
+	<LABEL item="Label" parent="ViewConfirm">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>43</Y>
+			<W>420</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_RC_06</TEXT> <!-- 새로운 해상도를 적용하였습니다. -->
+	</LABEL>
+	<LABEL item="Label" parent="ViewConfirm">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>61</Y>
+			<W>420</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_RC_07</TEXT> <!-- 이 해상도로 변경하시겠습니까? -->
+	</LABEL>
+	
+	<LABEL item="ViewConfirm_CountDown" parent="ViewConfirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>93</Y>
+			<W>420</W>
+			<H>30</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<BUTTON item="ResizeAccept" parent="ViewConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>105</X>
+			<Y>140</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_RC_08</TEXT> <!-- 변경(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="ResizeReject" parent="ViewConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>215</X>
+			<Y>140</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+	
+</XML>

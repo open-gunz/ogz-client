@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Info">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="TargetFrame">
+		<FRAMELOOK>InfoFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>-163</X>
+			<Y>0</Y>
+			<W>163</W>
+			<H>116</H>
+		</BOUNDS>
+		<TEXT>Target</TEXT>
+	</FRAME>
+</XML>
